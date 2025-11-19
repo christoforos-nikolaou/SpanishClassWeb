@@ -30,7 +30,7 @@
   - C1. EMIO: Tareas 2,3. p.24-27.  
   - Claves C1. EMIO: Oral p. 33-36.    
   
-- **jueves, 6 de noviembre**: Gramática   
+- **jueves, 6 de noviembre**: Gramática y Literatura     
   - Claves C1. Unidad 2, Partes 1 a 3. p. 38-41.  
   - Gramática: Tiempos del pasado. Unidad 42.  
   - [Literatura](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md/#La-Paloma-Rafael-Alberti): Vocabulario de literatura. ("La Paloma", "Poema 15", "Alfonsina y el mar").  
