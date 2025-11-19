@@ -4,10 +4,19 @@
 #### septiembre 2025
 ---
 
-- **jueves, 18 de septiembre**: Clase de gramática - Verbos regulares
-- **lunes, 21 de septiembre**: Práctica de conversación - Presentaciones personales
-- **jueves, 25 de septiembre**: Clase de vocabulario - Números y colores
-- **martes, 30 de septiembre**: Actividad cultural - Fiestas
+- **jueves, 18 de septiembre**: Introducción al curso - Objetivos y expectativas  
+  - Hablamos un poco sobre los objetivos y vocabulario básico del curso.  
+   
+- **lunes, 21 de septiembre**: Gramatica. Concordancia de tiempos del pasado  
+  - Práctica con ejercicios escritos
+
+- **jueves, 25 de septiembre**: Un primer ensayo. Lectura de articulos en periodico.
+  - Un pequeño ensayo sobre la marcha atlética.  
+  - Lectura de dos articulos en "El País", que puedes encontrar [aqui](https://elpais.com/deportes/2025-09-21/alegna-gonzalez-subcampeona-del-mundo-de-marcha-yo-sonaba-con-el-oro-y-lo-busque-pero-tuve-plata.html) y [aqui](https://elpais.com/deportes/2025-09-20/maria-perez-resuelve-el-duelo-con-la-mexicana-alegna-gonzalez-en-el-kilometro-16-y-logra-el-doblete-en-los-20-kilometros-marcha.html).  
+  
+- **martes, 30 de septiembre**: Gramatica. Repaso de ser y estar.  
+  - :: Práctica con ejercicios escritos. [Ser y Estar + Ejercicios](https://www.dropbox.com/scl/fi/vr9mkz1g2420quc2pjnjf/Gramatica_Ser_y_Estar.pdf?rlkey=dy70g7cpu3cvb0dy8tt2dv1l4&dl=0)
+  - 
 
 ---
 #### octubre 2025
@@ -26,14 +35,15 @@
 #### noviembre 2025
 ---
 
-- **martes, 4 de noviembre**: Practica de Expresión, mediación e interacción oral 
+- **martes, 4 de noviembre**: Practica de Expresión, mediación e interacción oral (EMIO)
   - C1. EMIO: Tareas 2,3. p.24-27.  
   - Claves C1. EMIO: Oral p. 33-36.    
   
 - **jueves, 6 de noviembre**: Gramática y Literatura     
   - Claves C1. Unidad 2, Partes 1 a 3. p. 38-41.  
   - Gramática: Tiempos del pasado. Unidad 42.  
-  - [Literatura](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md/#La-Paloma-Rafael-Alberti): Vocabulario de literatura. ("La Paloma", "Poema 15", "Alfonsina y el mar").  
+  - [Literatura](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md/#La-Paloma-Rafael-Alberti): Vocabulario de literatura. ("La Paloma", "Poema 15", "Alfonsina y el mar"). 
+  - Vocabulario: Llenar huecos con vocabulario literario. [Poesia](https://www.dropbox.com/scl/fi/k0rlh0iowwd7oc0buqbqb/Poesia_I.pdf?rlkey=upt7gjugnjlrkyq25arqcferc&dl=0) 
      
 - **martes, 11 de noviembre**: Practica de expresión escrita - Lectura.    
   - _Repasamos el vocabulario de las lecturas (ve abajo)._    
