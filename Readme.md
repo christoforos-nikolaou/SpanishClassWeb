@@ -5,7 +5,7 @@ Este es el sitio web de nuestras clases de español. Aquí encontrarás toda la 
 En esta pagina encontrarás:
 - El [calendario de clases](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Calendario_de_clases.md), con detalles sobre las cosas que aprendemos en cada clase y sesión.
 - Información sobre las tareas y ejercicios.
-- Ejemplos de ensayos, cartas, articulos y trabajos escritos.
+- [Ejemplarios de ensayos](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Ejemplarios_de_cartas_y_ensayos.md), cartas, articulos y trabajos escritos.
 - Notas y cuadernos de gramática.
 - Enlaces a los recursos auditivos que utilizamos en clase.
 - 
