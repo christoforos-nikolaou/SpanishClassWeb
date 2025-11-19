@@ -1,30 +1,30 @@
-# Calendario de Clases
+### Calendario de Clases
 
-## Septiembre 2025
+## septiembre 2025
 
-- **Jueves, 18 de Septiembre**: Clase de gramática - Verbos regulares
-- **Martes, 23 de Septiembre**: Práctica de conversación - Presentaciones personales
-- **Jueves, 25 de Septiembre**: Clase de vocabulario - Números y colores
-- **Martes, 30 de Septiembre**: Actividad cultural - Fiestas
+- **jueves, 18 de septiembre**: Clase de gramática - Verbos regulares
+- **lunes, 21 de septiembre**: Práctica de conversación - Presentaciones personales
+- **jueves, 25 de septiembre**: Clase de vocabulario - Números y colores
+- **martes, 30 de septiembre**: Actividad cultural - Fiestas
 
-## Octubre 2025
+## octubre 2025
 
-- **Jueves, 2 de Octubre**: Práctica de conversación - Saludos y Presentaciones
-- **Martes, 7 de Octubre**: Clase de vocabulario - Comida y Bebidas
-- **Jueves, 9 de Octubre**: Actividad cultural - Música y Baile     
-- **Martes, 14 de Octubre**: Clase de gramática - Presente de Indicativo
-- **Jueves, 16 de Octubre**: Práctica de conversación - Descripciones físicas
-- **Martes, 21 de Octubre**: Clase de vocabulario - Ropa y Accesorios
-- **Jueves, 23 de Octubre**: Actividad cultural - Cine Español      
-- **Miercoles, 29 de Octubre**: Clase de gramática - Verbos irregulares
+- **jueves, 2 de octubre**: Práctica de conversación - Saludos y Presentaciones
+- **martes, 7 de octubre**: Clase de vocabulario - Comida y Bebidas
+- **jueves, 9 de octubre**: Actividad cultural - Música y Baile     
+- **martes, 14 de octubre**: Clase de gramática - Presente de Indicativo
+- **jueves, 16 de octubre**: Práctica de conversación - Descripciones físicas
+- **martes, 21 de octubre**: Clase de vocabulario - Ropa y Accesorios
+- **jueves, 23 de octubre**: Actividad cultural - Cine Español      
+- **miercoles, 29 de octubre**: Clase de gramática - Verbos irregulares
 
-## Noviembre 2025
+## noviembre 2025
 
-- **Martes, 4 de Noviembre**: Práctica de conversación - Saludos y Presentaciones
-- **Jueves, 6 de Noviembre**: Actividad cultural - Música y Baile     
-- **Martes, 11 de Noviembre**: Clase de gramática - Presente de Indicativo
-- **Jueves, 13 de Noviembre**: Práctica de conversación - Descripciones físicas
-- **Martes, 18 de Noviembre**: Clase de vocabulario - Ropa y Accesorios
-- **Jueves, 20 de Noviembre**: Actividad cultural - Cine Español      
-- **Martes, 25 de Noviembre**: Clase de gramática - Verbos irregulares
-- **Jueves, 27 de Noviembre**: Práctica de conversación - Conversaciones cotidianas- 
+- **martes, 4 de noviembre**: Práctica de conversación - Saludos y Presentaciones
+- **jueves, 6 de noviembre**: Actividad cultural - Música y Baile     
+- **martes, 11 de noviembre**: Clase de gramática - Presente de Indicativo
+- **jueves, 13 de noviembre**: Práctica de conversación - Descripciones físicas
+- **martes, 18 de noviembre**: Clase de vocabulario - Ropa y Accesorios
+- **jueves, 20 de noviembre**: Actividad cultural - Cine Español      
+- **martes, 25 de noviembre**: Clase de gramática - Verbos irregulares
+- **jueves, 27 de noviembre**: Práctica de conversación - Conversaciones cotidianas- 
