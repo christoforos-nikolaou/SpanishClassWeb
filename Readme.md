@@ -16,4 +16,4 @@ En esta pagina encontrarás:
 - :book: Notas y cuadernos de gramática.
 - :headphones: Enlaces a los [recursos auditivos](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md) que utilizamos en clase.
 - :closed_book: Enlaces a [textos de literatura](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md), materiales de estudio y recursos útiles.
-- :🇪🇸: Recursos adicionales para el aprendizaje del español.
+- 🇪🇸 Recursos adicionales para el aprendizaje del español.
