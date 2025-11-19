@@ -25,13 +25,13 @@
 - **jueves, 2 de octubre**: Vocabulario. El cuerpo humano. Audición.
   - :pencil: _Claves C1. Paginas 6-8. Vocabulario del cuerpo humano_
   - :headphones: _Primer Auditivo. Partes 1 y 2. [Enlace a los recursos auditivos](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#2-de-octubre)_ 
-- 
+  
 - **martes, 7 de octubre**: Clase de vocabulario.
   - :pencil: _Claves C1. Paginas 9-11. Vocabulario de la salud y el bienestar._
   
 - **jueves, 9 de octubre**: Comprensión de lectura.
   - :pencil2: _Corregimos el C1. Examen 1. Prueba 1. Tarea 2. p. 8-17._
-- 
+  
 - **martes, 14 de octubre**: Clase de vocabulario y audicion
   - :book: _Claves C1. Unidad 1. Paginas 12-14. Vocabulario de la alimentación y la nutrición._
   - :headphones: _Claves C1. Unidad 1. Partes 3 y 4. [Enlace a los recursos auditivos](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#14-de-octubre)_ 
@@ -43,7 +43,7 @@
 - **martes, 21 de octubre**: Clase de vocabulario y de lectura.
   - :book: _Claves C1. Unidad 1. Partes 10-11. Comprensión de lectura. p. 19-20._
   - :pencil: _Repasamos "ser y estar" con ejercicios escritos._  
-- 
+  
 - **jueves, 23 de octubre**: Gramatica - Tiempos del pasado
   - :notebook: _Tiempos del pasado: [Imperfecto e indefinido](https://www.dropbox.com/scl/fi/zpua1v2tqmt728en5vtlt/Gramatica_Imperfecto_Indefinido_I.pdf?rlkey=jr86e69wm6y7yqm2vgtcmt47e&dl=0)_
   - :book: _Claves C1. Unidad 1. p. 26-27. Generos textuales_  
@@ -76,13 +76,15 @@
   - :headphones: _Hicimos un auditivo de práctica: Claves C1. Unidad 2, Parte 1. Servicios de una ciudad real :headphones: [link](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#13-de-noviembre)._ 
   - :pencil2: _Escibimos un test de expresión escrita: C1. Examen2. Prueba 3. Tarea 2. Opción 1. p. 44._
   
-- **martes, 18 de noviembre**: "Claves C1", Unidad 2, Partes 4 y 5. p. 42-44.   
-    * :notebook: _Hablamos de vocabulario de medios de comunicación, vocabulario de vivienda y anuncios clasificados._
+- **martes, 18 de noviembre**: Hablamos de vocabulario de medios de comunicación, vocabulario de vivienda y anuncios clasificados  
+    * :notebook: _"Claves C1", Unidad 2, Partes 4 y 5. p. 42-44._
+    * :pencil: _Presente historico: [Gramática y ejercicios](https://www.dropbox.com/scl/fi/kmfuuskdxi3x88ak53rb7/Gramatica_Presente.pdf?rlkey=pgqpzoc1f75jvvuatfoavv6op&dl=0)_
 
-- **jueves, 20 de noviembre**: "Claves C1", Unidad 2, Partes 6 a 10. p. 45-50.  
-    * :notebook: _Gramática: Expresiones con subjuntivo. Conectores consecutivos y causales._        
+- **jueves, 20 de noviembre**: Gramática: Expresiones con subjuntivo. Conectores consecutivos y causales.  
+    * :notebook: _"Claves C1", Unidad 2, Partes 6 a 10. p. 45-50._        
     * :notebook: _Vocabulario: Funciones del estado, vocabulario de justicia y constitución._  
-    * :headphones: _Audición: [Partes 6 y 9](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#20-de-noviembre)_   
+    * :headphones: _Audición: [Partes 6 y 9](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#20-de-noviembre)_  
+    * :pencil2: _Tareas: C1 Examen 2. Prueba 2. Comprension auditiva. p. 40-43. [Enlace de Tareas](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#25-de-noviembre)_ 
   
 - **martes, 25 de noviembre**: Clase de gramática - Subjuntivo
 - **jueves, 27 de noviembre**: tbd
