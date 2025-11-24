@@ -113,6 +113,9 @@
 - **martes, 25 de noviembre**: Clase de gramática - Expresiones consecutivas. Lectura - Comprensión de lectura con huecos.
    * :notebook: _Gramatica: La ultima clase vimos algunas expresiones de consecuencia. Hoy vamos a repasar y practicar mas. Aquí tienes un recurso para ayudarte: [Expresiones consecutivas y causales](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md/#Oraciones-consecutivas)._
    * :books: _Lectura: Claves C1. Unidad 2. Paginas 51-54. Vamos a estudiar como atacar la tarea mas dificil de la comprension de lectura, que es la de llenar huecos en un texto con frases dadas._
+   * :pencil2: _Tareas: Tendras dos tareas. 
+     * 1) Los ejercicios de gramatica que encontraras [aqui](https://www.dropbox.com/scl/fi/w5r6i2hgf9k7z9d6hmtl3/Gramatica_Oraciones_Consecutivas.pdf?rlkey=gsaaw5dx011bm96cjtbbvix3p&dl=0)
+     * 2) En el libro Claves C1 (p 55-58) tendras los auditivos que vas a encontrar[aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#27-de-noviembre)
    
 - **jueves, 27 de noviembre**: Como *estructurar* y escribir un ensayo, carta o artículo de opinión.
    * _En esta clase vamos a aprender a estructurar y escribir un ensayo._

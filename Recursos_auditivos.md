@@ -40,5 +40,10 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 
 ### 27 de noviembre
 
-* Claves C1. Unidad 2: Parte 10: "Guerra y paz". :headphones: [audio](https://www.dropbox.com/scl/fi/vykeiaj5nruzw8bc3xe0r/claves_c1_pista_12.mp3?rlkey=xahgrz229aayi5m0ip0i406xq&dl=0)
+* **Tareas para el 27 de noviembre**: 
+  * Claves C1. Pagina 55 [Audio 13](https://www.dropbox.com/scl/fi/1b033wyvofoy6eir92gax/claves_c1_pista_13.mp3?rlkey=wy3je6ix4h5j92qsefec7ar42&dl=0)  
+  * Claves C1. Pagina 57 [Audio 14](https://www.dropbox.com/scl/fi/rvci71ax3iu7fyuy6mcsn/claves_c1_pista_14.mp3?rlkey=e131np8dlmjuk92x0p6tyd0ub&dl=0)  
+  * Claves C1. Pagina 58 [Audio 15](https://www.dropbox.com/scl/fi/qwc0zkth8rds7milu6i4r/claves_c1_pista_15.mp3?rlkey=0o07c6hty9iw7ukz6k3kvbnon&dl=0)  
+  
+* **En Clase de 27 de noviembre**: Claves C1. Unidad 2: Parte 10: "Guerra y paz". :headphones: [audio](https://www.dropbox.com/scl/fi/vykeiaj5nruzw8bc3xe0r/claves_c1_pista_12.mp3?rlkey=xahgrz229aayi5m0ip0i406xq&dl=0)
 
