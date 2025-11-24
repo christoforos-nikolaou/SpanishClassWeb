@@ -39,3 +39,31 @@ Aqui tienes una tabla que resume el contraste en el uso del pretérito imperfect
 
 :pencil: Encuentra más información sobre el presente histórico y ejercicios en la [Guía de gramática - Presente histórico](https://www.dropbox.com/scl/fi/kmfuuskdxi3x88ak53rb7/Gramatica_Presente.pdf?rlkey=pgqpzoc1f75jvvuatfoavv6op&dl=0)
 
+### Oraciones consecutivas
+
+Las oraciones de consecuencia o resultado son aquellas que expresan el efecto o resultado lógico de una acción o situación mencionada en la oración principal. Indican qué sucede como consecuencia de lo anterior y suelen introducirse con conectores como así que, por lo tanto, en consecuencia, de modo que, entre otros. Estas oraciones siempre se colocan después de la principal y muestran el efecto directo de esta.
+
+Ten en cuenta las siguientes reglas para el uso de oraciones consecutivas:
+
+* Las expresiones consecutivas habituales llevan indicativo porque expresan una consecuencia real o segura.
+
+* La expresión "de ahí que" es particular y siempre va con subjuntivo, indicando consecuencia percibida con cierto grado de subjetividad o formalidad.
+
+* Las expresiones con "tan", "tanto" enfatizan cantidades o cualidades que implican la consecuencia expresada
+
+| Expresión                                    | Modo         | Ejemplo de uso                                                         |
+| -------------------------------------------- | ------------ | ---------------------------------------------------------------------- |
+| así que                                      | + indicativo | El coche se ha roto, así que tengo que ir en autobús.                  |
+| de forma que                                 | + indicativo | La película ya había empezado, de forma que no pude entrar en la sala. |
+| de manera que                                | + indicativo | El otro día llegué muy tarde a casa, de manera que al final no cené.   |
+| de modo que                                  | + indicativo | Está lloviendo mucho, de modo que la fiesta se canceló.                |
+| por eso                                      | + indicativo | No estudié, por eso suspendí el examen.                                |
+| tan + adjetivo + que                         | + indicativo | Es tan simpático que todos lo quieren.                                 |
+| tanto/tanta/tantos/tantas + sustantivo + que | + indicativo | Tengo tantos deberes que no puedo salir.                               |
+| verbo + tanto que                            | + indicativo | He comido tanto que ahora me duele la tripa.                           |
+| verbo + tan poco que                         | + indicativo | Habla tan poco que no se le entiende.                                  |
+| tal/tales + sustantivo + que                 | + indicativo | Tenía tal disgusto que se puso a llorar.                               |
+| de ahí que                                   | + subjuntivo | El coche se ha roto, de ahí que tenga que ir en autobús.               |
+
+Encontraras mas informacion sobre las oraciones consecutivas y ejercicios en la [Guía de gramática - Oraciones consecutivas](https://www.dropbox.com/scl/fi/w5r6i2hgf9k7z9d6hmtl3/Gramatica_Oraciones_Consecutivas.pdf?rlkey=gsaaw5dx011bm96cjtbbvix3p&dl=0)
+

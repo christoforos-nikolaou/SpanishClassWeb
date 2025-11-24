@@ -110,5 +110,11 @@
    * :headphones: _Audición: [Partes 6 y 9](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#20-de-noviembre)_
    * :pencil2: _Tareas: C1 Examen 2. Prueba 2. Comprension auditiva. p. 40-43. [Enlace de Tareas](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#25-de-noviembre)_
 
-- **martes, 25 de noviembre**: Clase de gramática - Subjuntivo
-- **jueves, 27 de noviembre**: tbd
+- **martes, 25 de noviembre**: Clase de gramática - Expresiones consecutivas
+   * :notebook: Gramatica: La ultima clase vimos algunas expresiones de consecuencia. Hoy vamos a repasar y practicar mas. Aquí tienes un recurso para ayudarte: [Expresiones consecutivas y causales](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md/#Oraciones-consecutivas).
+   * :book: Lectura: Claves C1. Unidad 2. Paginas 51-54. Vamos a estudiar como atacar la tarea mas dificil de la comprension de lectura, que es la de llenar huecos en un texto con frases dadas.
+   
+- **jueves, 27 de noviembre**: Como *estructurar* y escribir un ensayo, carta o artículo de opinión.
+   * En esta clase vamos a aprender a estructurar y escribir un ensayo.
+   * :pencil: Claves C1. Unidad 2. Paginas 59-62. Estructura de un ensayo, carta o artículo de opinión.
+   * :headphones: _Audición y Practica oral: [Parte 10](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#27-de-noviembre)_
