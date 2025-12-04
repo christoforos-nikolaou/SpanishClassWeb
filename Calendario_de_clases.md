@@ -111,14 +111,38 @@
    * :pencil2: _Tareas: C1 Examen 2. Prueba 2. Comprension auditiva. p. 40-43. [Enlace de Tareas](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#25-de-noviembre)_
 
 - **martes, 25 de noviembre**: Clase de gramática - Expresiones consecutivas. Lectura - Comprensión de lectura con huecos.
+
    * :notebook: _Gramatica: La ultima clase vimos algunas expresiones de consecuencia. Hoy vamos a repasar y practicar mas. Aquí tienes un recurso para ayudarte: [Expresiones consecutivas y causales](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md/#Oraciones-consecutivas)._
    * :books: _Lectura: Claves C1. Unidad 2. Paginas 51-54. Vamos a estudiar como atacar la tarea mas dificil de la comprension de lectura, que es la de llenar huecos en un texto con frases dadas._
-   * :pencil2: _Tareas: Tendras dos tareas. 
-     * 1) Los ejercicios de gramatica que encontraras [aqui](https://www.dropbox.com/scl/fi/w5r6i2hgf9k7z9d6hmtl3/Gramatica_Oraciones_Consecutivas.pdf?rlkey=gsaaw5dx011bm96cjtbbvix3p&dl=0)
-     * 2) En el libro Claves C1 (p 55-58) tendras los auditivos que vas a encontrar[aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#27-de-noviembre)
-   
+   * :pencil2: _Tareas: Tendras dos tareas.
+      * 1. Los ejercicios de gramatica que encontraras [aqui](https://www.dropbox.com/scl/fi/w5r6i2hgf9k7z9d6hmtl3/Gramatica_Oraciones_Consecutivas.pdf?rlkey=gsaaw5dx011bm96cjtbbvix3p&dl=0)
+
+      * 2. En el libro Claves C1 (p 55-58) tendras los auditivos que vas a encontrar[aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#27-de-noviembre)
+
 - **jueves, 27 de noviembre**: Como *estructurar* y escribir un ensayo, carta o artículo de opinión.
+
    * _En esta clase vamos a aprender a estructurar y escribir un ensayo._
    * :pencil: _Claves C1. Unidad 2. Paginas 59-62. Estructura de un ensayo, carta o artículo de opinión._
-   * :headphones: _Audición y Practica oral: [Parte 10](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#27-de-noviembre)_
-   * :books: _La parte auditiva de hoy contiene referencias a algunos poemas y canciones muy interesantes. Aquí tienes los textos para que puedas seguir mejor: [Textos adicionales](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md/#Guerra-y-paz)
+   * :books: _La parte auditiva de hoy contiene referencias a algunos poemas y canciones muy interesantes. Aquí tienes los textos para que puedas apreciarlos mejor: [Textos adicionales](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md/#Guerra-y-paz)_
+
+---
+
+diciembre 2025
+
+---
+
+- **martes, 2 de diciembre**: Gramatica. Oraciones de consecuencia 
+
+   - :notebook: _Trabajamos con las unidades 90-92 del libro (hojas) de gramatica_
+
+- **jueves, 4 de diciembre**: Lectura, Plan de articulo/ensayo y un cuento peregrino
+
+   - :notebook: _Claves C1. Hicimos el ejercicio de lectura con Luz Casal, p. 53-54_
+   - :pencil2: _Conversamos sobre el plan de un articulo de opinion. Claves de C1, p. 59-60._
+   - :book: _Hablamos del cuento de Garcia Marques "El avion con la bella durmiente"_
+   - :microphone: _Preparamos las tareas auditivas de las paginas 55-58 (Claves C1) que vas a encontrar [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md/#9-de-diciembre)_
+
+- **martes, 9 de diciembre**: Audicion y Vocabulario.
+
+   - :microphone: _Repasamos los ejercicios de audicion y el vocabulario correspondiente. Claves C1, p55-58._
+   - :books: _Leemos el cuento "Tramontana" de Gabriel Garcia Marquez_
