@@ -155,7 +155,7 @@
 
    - :notebook: _Entramos en la Unidad 3 que concierne de la vida laboral (Claves C1, paginas 68-72)_
    - :microphone: _Preparamos y hacemos una Prueba Oral (DELE C1, Examen 2, Prueba 4, p. 46-49)_
-   - :pencil 2: _Tareas:_  
+   - :pencil2: _Tareas:_  
      - 1. _DELE C1. Examen 3, Prueba 1, paginas 52-61_
      - 2. _Repaso de Gramatica. Libro B2. Ser y estar, p. 58-59_
      
