@@ -157,4 +157,5 @@
    - :microphone: _Preparamos y hacemos una Prueba Oral (DELE C1, Examen 2, Prueba 4, p. 46-49)
    - :pencil 2: _Tareas:_  
      - 1. _DELE C1. Examen 3, Prueba 1, paginas 52-61_
+     - 2. _Repaso de Gramatica. Libro B2. Ser y estar, p. 58-59_
      
