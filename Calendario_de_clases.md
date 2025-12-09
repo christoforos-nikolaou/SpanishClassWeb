@@ -147,14 +147,14 @@
    - :notebook: _Trabajamos con el vocabulario de la vida laboral (DELE C1, pagina 51)_
    - :microphone: _Repasamos los ejercicios de audicion y el vocabulario correspondiente. Claves C1, p55-58. Sigue los auditivos de estas unidades [aqui]()_
    - :books: _Leemos el cuento "Tramontana" de Gabriel Garcia Marquez_
-   - :pencil2: _Tareas. 
+   - :pencil2: _Tareas._ 
      - 1. _Repaso de gramatica: B2: Ejercicio de Preposiciones (Libro de B2, p.48-52)_
      - 2. _Lectura. Doce Cuentos Peregrinos, "Espantos de agosto"_
   
 - **jueves, 11 de diciembre**: Vocabulario y Prueba Oral.
 
    - :notebook: _Entramos en la Unidad 3 que concierne de la vida laboral (Claves C1, paginas 68-72)_
-   - :microphone: _Preparamos y hacemos una Prueba Oral (DELE C1, Examen 2, Prueba 4, p. 46-49)
+   - :microphone: _Preparamos y hacemos una Prueba Oral (DELE C1, Examen 2, Prueba 4, p. 46-49)_
    - :pencil 2: _Tareas:_  
      - 1. _DELE C1. Examen 3, Prueba 1, paginas 52-61_
      - 2. _Repaso de Gramatica. Libro B2. Ser y estar, p. 58-59_
