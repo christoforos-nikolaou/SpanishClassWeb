@@ -41,13 +41,18 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 ### 27 de noviembre
 
 * **Tareas para el 27 de noviembre**:
-
 * __En Clase de 27 de noviembre__: Claves C1. Unidad 2: Parte 10: "Guerra y paz". :headphones: [audio](https://www.dropbox.com/scl/fi/vykeiaj5nruzw8bc3xe0r/claves_c1_pista_12.mp3?rlkey=xahgrz229aayi5m0ip0i406xq&dl=0)
 
 ### 9 de diciembre
 
 * **Tareas para el 9 de diciembre**:
-   * Claves C1. Pagina 55 [Audio 13](https://www.dropbox.com/scl/fi/1b033wyvofoy6eir92gax/claves_c1_pista_13.mp3?rlkey=wy3je6ix4h5j92qsefec7ar42&dl=0)
-   * Claves C1. Pagina 57 [Audio 14](https://www.dropbox.com/scl/fi/rvci71ax3iu7fyuy6mcsn/claves_c1_pista_14.mp3?rlkey=e131np8dlmjuk92x0p6tyd0ub&dl=0)
-   * Claves C1. Pagina 58 [Audio 15](https://www.dropbox.com/scl/fi/qwc0zkth8rds7milu6i4r/claves_c1_pista_15.mp3?rlkey=0o07c6hty9iw7ukz6k3kvbnon&dl=0)
+   * :headphones: Claves C1. Pagina 55, [Audio 13](https://www.dropbox.com/scl/fi/1b033wyvofoy6eir92gax/claves_c1_pista_13.mp3?rlkey=wy3je6ix4h5j92qsefec7ar42&dl=0)
+   * :headphones: Claves C1. Pagina 57, [Audio 14](https://www.dropbox.com/scl/fi/rvci71ax3iu7fyuy6mcsn/claves_c1_pista_14.mp3?rlkey=e131np8dlmjuk92x0p6tyd0ub&dl=0)
+   * :headphones: Claves C1. Pagina 58, [Audio 15](https://www.dropbox.com/scl/fi/qwc0zkth8rds7milu6i4r/claves_c1_pista_15.mp3?rlkey=0o07c6hty9iw7ukz6k3kvbnon&dl=0)
+
+### 11 de diciembre
+
+* **Auditivos de Claves C1, "Hora de trabajar":**  
+  * :headphones: Claves C1. Pagina 69, [Audio 18](https://www.dropbox.com/scl/fi/j8ljvc6gl82s5h436ogau/claves_c1_pista_18.mp3?rlkey=kf389bgzmvgva5x1ts0utc3y7&st=8q1cl6n0&dl=0)  
+  * :headphones: Claves C1. Pagina 72, [Audio 19](https://www.dropbox.com/scl/fi/14ybzgmuxyift09nnxslt/claves_c1_pista_19.mp3?rlkey=nkrc10o9exvjv6sbscy8dxt78&st=43awy59u&dl=0)  
 
