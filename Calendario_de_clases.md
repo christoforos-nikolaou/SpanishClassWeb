@@ -152,10 +152,20 @@
 
       - 2. _Lectura. Doce Cuentos Peregrinos, "Espantos de agosto"_
 
-- **jueves, 11 de diciembre**: Vocabulario y Prueba Oral.
+- **martes, 16 de diciembre**: Vocabulario y Prueba Oral.
 
    - :notebook: _Entramos en la Unidad 3 que concierne de la vida laboral (Claves C1, paginas 68-72)_
    - :microphone: _Preparamos y hacemos una Prueba Oral (DELE C1, Examen 2, Prueba 4, p. 46-49)_
    - :pencil2: _Tareas:_
-      - 1. _DELE C1. Examen 3, Prueba 1, paginas 52-61_  
+      - 1. _DELE C1. Examen 3, Prueba 1, paginas 52-61_
+
       - 2. _Repaso de Gramatica. Libro B2. Ser y estar, p. 58-59_
+
+- **jueves, 18 de diciembre**: :christmas_tree: :snowflake: Especial de Navidades y Nochevieja.
+
+   - :notebook: _Seguimos con la Unidad 3 (Claves C1, paginas 68-72)_
+   - :microphone: _Hablamos de vacaciones, Navidades y Nochevieja_
+   - :pencil2: _Tareas para Navidades:_
+      - 1. _DELE C1. Examen 3, Prueba 3, paginas 66-67_
+      - 2. _Repaso de Gramatica. Libro B2. Unidad 22: Perifrasis, p. 116-121_
+      - 3. _Mas cosas sobre Navidad y Nochevieja en los paises hispanohablantes (a decidir)._
