@@ -161,11 +161,13 @@
 
       - 2. _Repaso de Gramatica. Libro B2. Ser y estar, p. 58-59_
 
-- **jueves, 18 de diciembre**: :christmas_tree: :snowflake: Especial de Navidades y Nochevieja.
+- __jueves, 18 de diciembre__: :christmas_tree: :snowflake: Especial de Navidades y Nochevieja.
 
    - :notebook: _Seguimos con la Unidad 3 (Claves C1, paginas 68-72)_
    - :microphone: _Hablamos de vacaciones, Navidades y Nochevieja_
    - :pencil2: _Tareas para Navidades:_
-      - 1. _DELE C1. Examen 3, Prueba 3, paginas 66-67_
+      - 1. _DELE C1. Examen 3, Prueba 3, paginas 66-67_ (Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#18-de-diciembre))
+
       - 2. _Repaso de Gramatica. Libro B2. Unidad 22: Perifrasis, p. 116-121_
+
       - 3. _Mas cosas sobre Navidad y Nochevieja en los paises hispanohablantes (a decidir)._

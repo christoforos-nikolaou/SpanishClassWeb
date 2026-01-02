@@ -52,7 +52,12 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 
 ### 11 de diciembre
 
-* **Auditivos de Claves C1, "Hora de trabajar":**  
-  * :headphones: Claves C1. Pagina 69, [Audio 18](https://www.dropbox.com/scl/fi/j8ljvc6gl82s5h436ogau/claves_c1_pista_18.mp3?rlkey=kf389bgzmvgva5x1ts0utc3y7&st=8q1cl6n0&dl=0)  
-  * :headphones: Claves C1. Pagina 72, [Audio 19](https://www.dropbox.com/scl/fi/14ybzgmuxyift09nnxslt/claves_c1_pista_19.mp3?rlkey=nkrc10o9exvjv6sbscy8dxt78&st=43awy59u&dl=0)  
+* **Auditivos de Claves C1, "Hora de trabajar":**
+   * :headphones: Claves C1. Pagina 69, [Audio 18](https://www.dropbox.com/scl/fi/j8ljvc6gl82s5h436ogau/claves_c1_pista_18.mp3?rlkey=kf389bgzmvgva5x1ts0utc3y7&st=8q1cl6n0&dl=0)
+   * :headphones: Claves C1. Pagina 72, [Audio 19](https://www.dropbox.com/scl/fi/14ybzgmuxyift09nnxslt/claves_c1_pista_19.mp3?rlkey=nkrc10o9exvjv6sbscy8dxt78&st=43awy59u&dl=0)
+
+### 18 de diciembre
+
+* Auditivo. C1: Examen 3. Prueba 3, Expression Escrita.
+  * :headphones: Tarea 1, Pagina 66, [Audio 15](https://www.dropbox.com/scl/fi/xqg6yn253zr7xd5c59de0/pista15.mp3?rlkey=dtnbtzrlljd1vdl4jgsjo8awa&st=m5bw6zuz&dl=0)  
 
