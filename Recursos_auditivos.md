@@ -61,7 +61,7 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 * Auditivo. C1: Examen 3. Prueba 3, Expression Escrita.
   * :headphones: Tarea 1, Pagina 66, [Audio 15](https://www.dropbox.com/scl/fi/xqg6yn253zr7xd5c59de0/pista15.mp3?rlkey=dtnbtzrlljd1vdl4jgsjo8awa&st=m5bw6zuz&dl=0)  
 
-### 13 de enero
+### 8 de enero
 
 * DELE C1: Examen 4. Prueba 2, Comprension auditiva: Tareas 1-4
    * :headphones: [Tarea 1](https://www.dropbox.com/scl/fi/64rqnipcasd2gcziqd5kq/pista16.mp3?rlkey=d87y9xb42pfykbmioen5ajwlq&dl=0)
