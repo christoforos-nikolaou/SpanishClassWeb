@@ -61,16 +61,23 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 * Auditivo. C1: Examen 3. Prueba 3, Expression Escrita.
    * :headphones: Tarea 1, Pagina 66, [Audio 15](https://www.dropbox.com/scl/fi/xqg6yn253zr7xd5c59de0/pista15.mp3?rlkey=dtnbtzrlljd1vdl4jgsjo8awa&st=m5bw6zuz&dl=0)
 
-### 13 de enero
+### 8 de enero
 
 * DELE C1: Examen 4. Prueba 2, Comprension auditiva: Tareas 1-4
+
    * :headphones: [Tarea 1](https://www.dropbox.com/scl/fi/64rqnipcasd2gcziqd5kq/pista16.mp3?rlkey=d87y9xb42pfykbmioen5ajwlq&dl=0)
    * :headphones: [Tarea 2](https://www.dropbox.com/scl/fi/hsh8bljr1qrcawg8aorbj/pista17.mp3?rlkey=kfkwtp85zmrp3tiaz0e3z6skg&dl=0)
    * :headphones: [Tarea 3](https://www.dropbox.com/scl/fi/5p8oqk6lpid4qqdj9k8ty/pista18.mp3?rlkey=wf7r91nvsxuev5ji3b626g4sz&dl=0)
    * :headphones: [Tarea 4](https://www.dropbox.com/scl/fi/4t3e0ewgj6m65f2uiqq6i/pista19.mp3?rlkey=3dovtav490i0bqpbqk2prj013&dl=0)
 
+* En clase:  
+   **Auditivos de Claves C1, "Hora de trabajar":**
 
-### Todavia no asignado
+   * :headphones: Claves C1. Pagina 69, [Audio 18](https://www.dropbox.com/scl/fi/j8ljvc6gl82s5h436ogau/claves_c1_pista_18.mp3?rlkey=kf389bgzmvgva5x1ts0utc3y7&st=8q1cl6n0&dl=0)
+   * :headphones: Claves C1. Pagina 72, [Audio 19](https://www.dropbox.com/scl/fi/14ybzgmuxyift09nnxslt/claves_c1_pista_19.mp3?rlkey=nkrc10o9exvjv6sbscy8dxt78&st=43awy59u&dl=0)
+
+### 13 de enero
+
 * DELE C1: Examen 3. Prueba 2, Comprension auditiva: Tareas 1-4 (paginas 62-65)
    * :headphones: [Tarea 1](https://www.dropbox.com/scl/fi/2tx05fj5017nc20j8xm3f/pista11.mp3?rlkey=iv0ouc8omvf3rx6sdf4slgxaf&dl=0)
    * :headphones: [Tarea 2](https://www.dropbox.com/scl/fo/yee6ln6d32eikcnvdsg8h/AGBRTnKuwYT-5B-nu1dNcBI?rlkey=h9mqjvvimb3shev9sg8evrgc2&dl=0)

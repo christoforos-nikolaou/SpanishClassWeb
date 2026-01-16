@@ -161,7 +161,7 @@
 
       - 2. _Repaso de Gramatica. Libro B2. Ser y estar, p. 58-59_
 
-- **jueves, 18 de diciembre**: :christmas_tree: :snowflake: Especial de Navidades y Nochevieja.
+- __jueves, 18 de diciembre__: :christmas_tree: :snowflake: Especial de Navidades y Nochevieja.
 
    - :notebook: _Seguimos con la Unidad 3 (Claves C1, paginas 68-72)_
    - :microphone: _Hablamos de vacaciones, Navidades y Nochevieja_
@@ -183,5 +183,31 @@
    - :notebook: _Corregimos los textos del Examen 4, Prueba 1 de DELE C1_
    - :notebook: _Intentamos un repaso de vocabulario_
    - :pencil2: _Tareas_:
-     - 1. DELE C1. Examen 4, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)
-     - 2. DELE C1. Vocabulario. Examen 4.
+      - 1. DELE C1. Examen 4, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#8-de-enero)
+
+      - 2. DELE C1. Vocabulario. Examen 4.
+
+- **martes, 13 de enero**: Claves C1. Unidad 3 - El mundo laboral
+
+   - :books: _Corregimos los textos del Examen 4, Prueba 1 de DELE C1_
+   - :notebook: _Intentamos un repaso de vocabulario_
+   - :pencil2: _Tareas_:
+      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)  
+  
+      - 2. DELE C1. Vocabulario. Examen 4.
+
+- **martes, 13 de enero**: Claves C1. Unidad 3 - El mundo laboral
+
+   - :books: _Claves C1. Unidad 3, Partes 1B,C; 2; 4;_
+   - :notebook: _Intentamos un repaso de vocabulario_
+   - :pencil2: _Tareas_:
+      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)  
+      - 2. Claves C1. Unidad 3, Parte 1; Lectura de Unidad 3, Parte 6
+
+- **martes, 13 de enero**: Claves C1. Unidad 3. Test de Vocabulario
+
+   - :books: _Claves C1. Unidad 3, Partes 3; 5;
+   - :pencil: _Test de Vocabulario_
+   - :pencil2: _Tareas_:
+      - 1. Claves C1. Unidad 3, Parte 9 - Escrito  
+      - 2. Claves C1. Unidad 3, Partes 12, 13; Lecturas
