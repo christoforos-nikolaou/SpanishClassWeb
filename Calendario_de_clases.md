@@ -192,9 +192,7 @@
    - :books: _Corregimos los textos del Examen 4, Prueba 1 de DELE C1_
    - :notebook: _Intentamos un repaso de vocabulario_
    - :pencil2: _Tareas_:
-      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)
-
-      - 2. DELE C1. Vocabulario. Examen 4.
+      - 1. DELE C1. Vocabulario. Examen 4.
 
 - **jueves, 15 de enero**: Claves C1. Unidad 3 - El mundo laboral
 
