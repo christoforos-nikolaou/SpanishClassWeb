@@ -192,22 +192,32 @@
    - :books: _Corregimos los textos del Examen 4, Prueba 1 de DELE C1_
    - :notebook: _Intentamos un repaso de vocabulario_
    - :pencil2: _Tareas_:
-      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)  
-  
+      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)
+
       - 2. DELE C1. Vocabulario. Examen 4.
 
-- **martes, 13 de enero**: Claves C1. Unidad 3 - El mundo laboral
+- **jueves, 15 de enero**: Claves C1. Unidad 3 - El mundo laboral
 
    - :books: _Claves C1. Unidad 3, Partes 1B,C; 2; 4;_
    - :notebook: _Intentamos un repaso de vocabulario_
    - :pencil2: _Tareas_:
-      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)  
+      - 1. DELE C1. Examen 3, Prueba 2. Encuentra el auditivo [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#13-de-enero)
+
       - 2. Claves C1. Unidad 3, Parte 1; Lectura de Unidad 3, Parte 6
 
-- **martes, 13 de enero**: Claves C1. Unidad 3. Test de Vocabulario
+- **martes, 20 de enero**: Claves C1. Unidad 3. 
 
    - :books: _Claves C1. Unidad 3, Partes 3; 5;_
-   - :pencil: _Test de Vocabulario_
    - :pencil2: _Tareas_:
-      - 1. Claves C1. Unidad 3, Parte 9 - Escrito  
-      - 2. Claves C1. Unidad 3, Partes 12, 13; Lecturas
+      - 1. Claves C1. Unidad 3, Parte 9 - Escrito
+      - 2. Claves C1. Unidad 3, Partes 12, 13; Lecturas  
+  
+- **jueves, 22 de enero**: Claves C1. Unidad 3
+
+   - :books: _Gramatica: Oraciones Temporales_
+   - :pencil2: _Tareas:_   
+     - 1. Un ensayo sobre la vida profesional de mi padre/madre  
+     - 2. Libro C1. Examen 5. Prueba 1.  
+  
+- **martes, 27 de enero**: C1. Examen 5. Prueba 1
+  - :pencil2: Corregimos en Examen y hablemos de vocabulario, Gaudi y "Goodheart's Law". 
