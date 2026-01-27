@@ -206,7 +206,7 @@
 
 - **martes, 13 de enero**: Claves C1. Unidad 3. Test de Vocabulario
 
-   - :books: _Claves C1. Unidad 3, Partes 3; 5;
+   - :books: _Claves C1. Unidad 3, Partes 3; 5;_
    - :pencil: _Test de Vocabulario_
    - :pencil2: _Tareas_:
       - 1. Claves C1. Unidad 3, Parte 9 - Escrito  
