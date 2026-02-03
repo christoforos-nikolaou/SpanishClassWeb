@@ -238,4 +238,9 @@
 - **martes, 3 de febrero**: A enforzar el vocabulario y la practica oral. 
 
    - :notebook: _Lecturas y vocabulario. Claves C1. p 83-86_
+   - :pencil2: _Tareas: Un ensayo sobre el texto de p. 86. El acustico de p. 87 que puedes encontrar [aqui](https://www.dropbox.com/scl/fi/ud8c7zxw6sy7ew7jaid0g/claves_c1_pista_21.mp3?rlkey=tb2xrkjt8xwc8n16h91q8j4o9&st=igp1oydk&dl=0)._
+  
+   
+- **jueves, 5 de febrero**: A enforzar el vocabulario y la practica oral. 
+  
    - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 3. p 49_
