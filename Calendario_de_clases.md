@@ -203,19 +203,39 @@
 
       - 2. Claves C1. Unidad 3, Parte 1; Lectura de Unidad 3, Parte 6
 
-- **martes, 20 de enero**: Claves C1. Unidad 3. 
+- **martes, 20 de enero**: Claves C1. Unidad 3.
 
    - :books: _Claves C1. Unidad 3, Partes 3; 5;_
    - :pencil2: _Tareas_:
       - 1. Claves C1. Unidad 3, Parte 9 - Escrito
-      - 2. Claves C1. Unidad 3, Partes 12, 13; Lecturas  
-  
+
+      - 2. Claves C1. Unidad 3, Partes 12, 13; Lecturas
+
 - **jueves, 22 de enero**: Claves C1. Unidad 3
 
    - :books: _Gramatica: Oraciones Temporales_
-   - :pencil2: _Tareas:_   
-     - 1. Un ensayo sobre la vida profesional de mi padre/madre  
-     - 2. Libro C1. Examen 5. Prueba 1.  
-  
+   - :pencil2: _Tareas:_
+      - 1. Un ensayo sobre la vida profesional de mi padre/madre
+
+      - 2. Libro C1. Examen 5. Prueba 1.
+
 - **martes, 27 de enero**: C1. Examen 5. Prueba 1
-  - :pencil2: Corregimos en Examen y hablemos de vocabulario, Gaudi y "Goodheart's Law". 
+
+   - :pencil2: Corregimos en Examen y hablemos de vocabulario, Gaudi y "Goodheart's Law".
+
+- **jueves, 29 de enero**: Practica oral, Test de vocabulario
+
+   - :pencil: _Hicimos un test de vocabulario de alta dificultad (porque asi se debe)_  
+   - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 1. p 46-47._  
+   - _Busca mas informacion y notas sobre las pruebas orales [aqui]()_  
+
+---
+
+#### febrero 2026
+
+---
+
+- **martes, 3 de febrero**: A enforzar el vocabulario y la practica oral. 
+
+   - :notebook: _Lecturas y vocabulario. Claves C1. p 83-86_
+   - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 3. p 49_
