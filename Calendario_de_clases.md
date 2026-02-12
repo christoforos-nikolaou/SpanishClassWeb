@@ -242,7 +242,7 @@
 - **jueves, 5 de febrero**: A enforzar el vocabulario y la practica oral.
    - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 3. p 49_
    - :books: _Leimos el inicio del cuento ["Solo vine a hablar por telefono"](https://ciudadseva.com/texto/solo-vine-a-hablar-por-telefono/) de Gabriel Garcia Marquez._  
-   - :🗣️: _Encuentra aqui mas informacion sobre las pruebas orales: [Pruebas Orales]()  
+   - :🗣️: _Encuentra aqui mas informacion sobre las pruebas orales: [Pruebas Orales](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md#notas-de-tener-en-cuenta-en-las-pruebas-orales)  
 
 - **martes, 10 de febrero**: Ejercicios auditivas. Arranque de Unidad 4 (Claves de C1) 
    - :headphones: _Practica Oral. Claves C1. p 90 [Audio](https://www.dropbox.com/scl/fi/jtt7ldb7ltiu6bax2mo2r/claves_c1_pista_22.mp3?rlkey=i3l9qbukln3259h90ut47jqng&dl=0)_
