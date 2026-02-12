@@ -2,12 +2,13 @@
 
 ---
 
-### "Doce Cuentos Peregrinos", Gabriel García Márquez 
+### "Doce Cuentos Peregrinos", Gabriel García Márquez
 
 * Primer Cuento: _"El avión de la bella durmiente"_ (encuentralo [aqui](https://www.literatura.us/garciamarquez/avion.html))  
-  Leemos este cuento primero entre el 2 y el 4 de diciembre.  
+   Leemos este cuento primero entre el 2 y el 4 de diciembre.
 * Segundo Cuento: _"Tramontana"_ (encuentralo [aqui](https://www.literatura.us/garciamarquez/tramonta.html))  
-  Leemos este cuento durante el fin de semana de 6-7 de diciembre.  
+   Leemos este cuento durante el fin de semana de 6-7 de diciembre.
+* Tercer Cuento: _"Solo vine a hablar por teléfono"_ (encuentralo [aqui](https://ciudadseva.com/texto/solo-vine-a-hablar-por-telefono/)
 
 ---
 

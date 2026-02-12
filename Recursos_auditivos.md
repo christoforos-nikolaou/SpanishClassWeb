@@ -87,3 +87,8 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 ### 5 de febrero
 
 * :headphones: Claves C1. [Las Claves de Tarea 3, p. 87](https://www.dropbox.com/scl/fi/ud8c7zxw6sy7ew7jaid0g/claves_c1_pista_21.mp3?rlkey=tb2xrkjt8xwc8n16h91q8j4o9&st=igp1oydk&dl=0)
+
+### 10 de febrero
+
+* :headphones: Claves C1. [Las Claves de Tarea 3, p. 90](https://www.dropbox.com/scl/fi/jtt7ldb7ltiu6bax2mo2r/claves_c1_pista_22.mp3?rlkey=i3l9qbukln3259h90ut47jqng&dl=0)
+

@@ -225,9 +225,9 @@
 
 - **jueves, 29 de enero**: Practica oral, Test de vocabulario
 
-   - :pencil: _Hicimos un test de vocabulario de alta dificultad (porque asi se debe)_  
-   - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 1. p 46-47._  
-   - _Busca mas informacion y notas sobre las pruebas orales [aqui]()_  
+   - :pencil: _Hicimos un test de vocabulario de alta dificultad (porque asi se debe)_
+   - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 1. p 46-47._
+   - _Busca mas informacion y notas sobre las pruebas orales [aqui]()_
 
 ---
 
@@ -235,12 +235,21 @@
 
 ---
 
-- **martes, 3 de febrero**: A enforzar el vocabulario y la practica oral. 
-
+- **martes, 3 de febrero**: A enforzar el vocabulario y la practica oral.
    - :notebook: _Lecturas y vocabulario. Claves C1. p 83-86_
    - :pencil2: _Tareas: Un ensayo sobre el texto de p. 86. El acustico de p. 87 que puedes encontrar [aqui](https://www.dropbox.com/scl/fi/ud8c7zxw6sy7ew7jaid0g/claves_c1_pista_21.mp3?rlkey=tb2xrkjt8xwc8n16h91q8j4o9&st=igp1oydk&dl=0)._
-  
-   
-- **jueves, 5 de febrero**: A enforzar el vocabulario y la practica oral. 
-  
+
+- **jueves, 5 de febrero**: A enforzar el vocabulario y la practica oral.
    - :🗣️: _Practica Oral. C1. Examen 2. Prueba 4. Tarea 3. p 49_
+   - :books: _Leimos el inicio del cuento ["Solo vine a hablar por telefono"](https://ciudadseva.com/texto/solo-vine-a-hablar-por-telefono/) de Gabriel Garcia Marquez._  
+   - :🗣️: _Encuentra aqui mas informacion sobre las pruebas orales: [Pruebas Orales]()  
+
+- **martes, 10 de febrero**: Ejercicios auditivas. Arranque de Unidad 4 (Claves de C1) 
+   - :headphones: _Practica Oral. Claves C1. p 90 [Audio](https://www.dropbox.com/scl/fi/jtt7ldb7ltiu6bax2mo2r/claves_c1_pista_22.mp3?rlkey=i3l9qbukln3259h90ut47jqng&dl=0)_
+   - :books: _Claves C1. Unidad 4. Paginas 97-98. Vocabulario de educacion._
+  
+- **miercoles, 11 de febrero**: Claves C1. Unidad 4. La vida educativa. 
+   - :books: _Claves C1. Unidad 4. Paginas 99-101._
+   - :headphones: _Audición: [Claves C1, p. 101](https://www.dropbox.com/scl/fi/krx63onru1nae52lna16f/claves_c1_pista_25.mp3?rlkey=8oh1z0gpowvtbjtg978offvs2&dl=0)_
+   - :pencil2: _Gramatica: Oraciones Condicionales.  
+   - 

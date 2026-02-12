@@ -46,9 +46,7 @@ Las oraciones de consecuencia o resultado son aquellas que expresan el efecto o 
 Ten en cuenta las siguientes reglas para el uso de oraciones consecutivas:
 
 * Las expresiones consecutivas habituales llevan indicativo porque expresan una consecuencia real o segura.
-
 * La expresión "de ahí que" es particular y siempre va con subjuntivo, indicando consecuencia percibida con cierto grado de subjetividad o formalidad.
-
 * Las expresiones con "tan", "tanto" enfatizan cantidades o cualidades que implican la consecuencia expresada
 
 | Expresión                                    | Modo         | Ejemplo de uso                                                         |
@@ -66,4 +64,25 @@ Ten en cuenta las siguientes reglas para el uso de oraciones consecutivas:
 | de ahí que                                   | + subjuntivo | El coche se ha roto, de ahí que tenga que ir en autobús.               |
 
 Encontraras mas informacion sobre las oraciones consecutivas y ejercicios en la [Guía de gramática - Oraciones consecutivas](https://www.dropbox.com/scl/fi/w5r6i2hgf9k7z9d6hmtl3/Gramatica_Oraciones_Consecutivas.pdf?rlkey=gsaaw5dx011bm96cjtbbvix3p&dl=0)
+
+### Oraciones condicionales
+
+Las oraciones condicionales son aquellas que expresan una condición y su consecuencia. Están formadas por:
+a. una **oración principal** que expresa la condición. Esta se introduce con conjunciones como **si, a menos que, siempre que**, entre otras.   
+b. una **oración subordinada** que expresa la consecuencia.    
+  
+* En general hay tres tipos de oraciones condicionales, cada una con su propia estructura y uso:  
+    
+    1. **Condicionales reales o posibles**: Expresan situaciones que son reales o posibles en el presente o futuro. La estructura típica es: 
+        - **Si + presente de indicativo (salgo, vengo etc), presente de indicativo / futuro / imperativo (llevo, hare, toma etc).**  
+        - Ejemplo: Si llueve, no salgo. / Si estudias, aprobarás. / Si necesitas ayuda, llámame.    
+
+    2. **Condicionales hipotéticos o improbables**: Expresan situaciones que son improbables o hipotéticas en el presente o futuro. La estructura típica es:  
+        - **Si + imperfecto de subjuntivo (tuviera, fuera etc), condicional simple (haría, aprendería etc).**  
+        - Ejemplo: Si tuviera dinero, viajaría por el mundo. / Si fuera más joven, aprendería a tocar un instrumento.    
+
+    3. **Condicionales irreales o imposibles**: Expresan situaciones que son imposibles en el pasado. La estructura típica es:  
+        - **Si + pluscuamperfecto de subjuntivo (hubiera + participio), condicional compuesto (habría + participio).**  
+        - Ejemplo: Si hubiera estudiado más, habría aprobado el examen. / Si me hubieras avisado, habría llegado a tiempo.   
+
 
