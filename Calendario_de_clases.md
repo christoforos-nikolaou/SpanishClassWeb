@@ -251,5 +251,4 @@
 - **miercoles, 11 de febrero**: Claves C1. Unidad 4. La vida educativa. 
    - :books: _Claves C1. Unidad 4. Paginas 99-101._
    - :headphones: _Audición: [Claves C1, p. 101](https://www.dropbox.com/scl/fi/krx63onru1nae52lna16f/claves_c1_pista_25.mp3?rlkey=8oh1z0gpowvtbjtg978offvs2&dl=0)_
-   - :pencil2: _Gramatica: Oraciones Condicionales.  
-   - 
+   - :pencil2: _Gramatica: Oraciones Condicionales (Claves C1, p 106). Encuentra un repaso de estas oraciones [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md#oraciones-condicionales)._ 
