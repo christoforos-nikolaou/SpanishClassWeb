@@ -76,39 +76,43 @@ Encontraras mas informacion sobre las oraciones consecutivas y ejercicios en la 
 ### Oraciones condicionales
 
 Las oraciones condicionales son aquellas que expresan una condición y su consecuencia. Están formadas por:
-a. una **oración principal** que expresa la condición. Esta se introduce con conjunciones como **si, a menos que, siempre que**, entre otras.   
-b. una **oración subordinada** que expresa la consecuencia.    
+a. una **oración principal** que expresa la condición. Esta se introduce con conjunciones como **si, a menos que, siempre que**, entre otras.  
+b. una **oración subordinada** que expresa la consecuencia.
+
+* En general hay tres tipos de oraciones condicionales, cada una con su propia estructura y uso:
+
+   1. **Condicionales reales o posibles**: Expresan situaciones que son reales o posibles en el presente o futuro. La estructura típica es:
+
+      - **Si + presente de indicativo (salgo, vengo etc), presente de indicativo / futuro / imperativo (llevo, hare, toma etc).**
+      - Ejemplo: Si llueve, no salgo. / Si estudias, aprobarás. / Si necesitas ayuda, llámame.
+
+   2. **Condicionales hipotéticos o improbables**: Expresan situaciones que son improbables o hipotéticas en el presente o futuro. La estructura típica es:
+
+      - **Si + imperfecto de subjuntivo (tuviera, fuera etc), condicional simple (haría, aprendería etc).**
+      - Ejemplo: Si tuviera dinero, viajaría por el mundo. / Si fuera más joven, aprendería a tocar un instrumento.
+
+   3. **Condicionales irreales o imposibles**: Expresan situaciones que son imposibles en el pasado. La estructura típica es:
+
+      - **Si + pluscuamperfecto de subjuntivo (hubiera + participio), condicional compuesto (habría + participio).**
+      - Ejemplo: Si hubiera estudiado más, habría aprobado el examen. / Si me hubieras avisado, habría llegado a tiempo.
   
-* En general hay tres tipos de oraciones condicionales, cada una con su propia estructura y uso:  
-    
-    1. **Condicionales reales o posibles**: Expresan situaciones que son reales o posibles en el presente o futuro. La estructura típica es: 
-        - **Si + presente de indicativo (salgo, vengo etc), presente de indicativo / futuro / imperativo (llevo, hare, toma etc).**  
-        - Ejemplo: Si llueve, no salgo. / Si estudias, aprobarás. / Si necesitas ayuda, llámame.    
-
-    2. **Condicionales hipotéticos o improbables**: Expresan situaciones que son improbables o hipotéticas en el presente o futuro. La estructura típica es:  
-        - **Si + imperfecto de subjuntivo (tuviera, fuera etc), condicional simple (haría, aprendería etc).**  
-        - Ejemplo: Si tuviera dinero, viajaría por el mundo. / Si fuera más joven, aprendería a tocar un instrumento.    
-
-    3. **Condicionales irreales o imposibles**: Expresan situaciones que son imposibles en el pasado. La estructura típica es:  
-        - **Si + pluscuamperfecto de subjuntivo (hubiera + participio), condicional compuesto (habría + participio).**  
-        - Ejemplo: Si hubiera estudiado más, habría aprobado el examen. / Si me hubieras avisado, habría llegado a tiempo.   
+<p align="center"> <img src="./Figures/Subjuntivo1.png" alt="" style="width: 60%; height: 60%"/></p>
 
 * Además de estas estructuras básicas, existen otras formas de expresar condiciones, como el uso de "a menos que" (que introduce una condición negativa), "siempre que" (que introduce una condición necesaria), entre otras.
+* Cosas que tienes que tener en cuenta:
 
-* Cosas que tienes que tener en cuenta:  
-    - En las oraciones condicionales, el orden de las cláusulas puede variar. La cláusula condicional (la que empieza con "si") puede ir al principio o al final de la oración. Por ejemplo: "Si llueve, no salgo" es equivalente a "No salgo si llueve".  
-          **OJO! nunca pongas condicional simple o compuesto en la cláusula condicional.**
-          
-    - En algunos casos, especialmente en el lenguaje coloquial, se pueden omitir ciertas partes de la oración condicional, como el verbo en la cláusula principal o el sujeto en la cláusula condicional. Por ejemplo: "Si llueve, no salgo" puede convertirse en "Si llueve, no salgo" o incluso "Si llueve, no salgo".  
-    - Es importante usar correctamente los tiempos verbales en las oraciones condicionales para expresar claramente la relación entre la condición y su consecuencia. Por ejemplo, usar el presente de indicativo para condiciones reales y el imperfecto de subjuntivo para condiciones hipotéticas.
+   - En las oraciones condicionales, el orden de las cláusulas puede variar. La cláusula condicional (la que empieza con "si") puede ir al principio o al final de la oración. Por ejemplo: "Si llueve, no salgo" es equivalente a "No salgo si llueve".  
+      **OJO! nunca pongas condicional simple o compuesto en la cláusula condicional.**
+   - En algunos casos, especialmente en el lenguaje coloquial, se pueden omitir ciertas partes de la oración condicional, como el verbo en la cláusula principal o el sujeto en la cláusula condicional. Por ejemplo: "Si llueve, no salgo" puede convertirse en "Si llueve, no salgo" o incluso "Si llueve, no salgo".
+   - Es importante usar correctamente los tiempos verbales en las oraciones condicionales para expresar claramente la relación entre la condición y su consecuencia. Por ejemplo, usar el presente de indicativo para condiciones reales y el imperfecto de subjuntivo para condiciones hipotéticas.
 
 ---
 
 ### Notas de tener en cuenta en las **Pruebas Orales**
 
-1. Presenta el texto que acabas de leer. Da la **identidad del text** sin hablar de las ideas que ello presenta. De donde viene, quien lo ha escrito, que tipo de texto es, etc.   
-2. Haz un resumen del texto. De que trata? Pon el enfoque en **la idea principal y el objetivo**.  
-3. Presenta los puntos principales del texto. Que ideas se desarrollan? Cuales son los argumentos que se presentan? No des mas que 3 puntos principales.  
-4. Da **tu opinión personal sobre el texto**. Que te ha parecido? Estas de acuerdo con lo que se dice? Por que? Que te ha gustado o no te ha gustado del texto? Expresa tu opinión de forma clara y argumentada.  
-5. Si se puede, presenta una experiencia personal relacionada con el tema del texto. Esto puede ayudar a conectar el texto con tu vida y a mostrar tu capacidad para relacionar ideas.  
+1. Presenta el texto que acabas de leer. Da la **identidad del text** sin hablar de las ideas que ello presenta. De donde viene, quien lo ha escrito, que tipo de texto es, etc.
+2. Haz un resumen del texto. De que trata? Pon el enfoque en **la idea principal y el objetivo**.
+3. Presenta los puntos principales del texto. Que ideas se desarrollan? Cuales son los argumentos que se presentan? No des mas que 3 puntos principales.
+4. Da **tu opinión personal sobre el texto**. Que te ha parecido? Estas de acuerdo con lo que se dice? Por que? Que te ha gustado o no te ha gustado del texto? Expresa tu opinión de forma clara y argumentada.
+5. Si se puede, presenta una experiencia personal relacionada con el tema del texto. Esto puede ayudar a conectar el texto con tu vida y a mostrar tu capacidad para relacionar ideas.
 
