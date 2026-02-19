@@ -256,11 +256,17 @@
    - :books: _Claves C1. Unidad 4. Paginas 99-101._
    - :headphones: _Audición: [Claves C1, p. 101](https://www.dropbox.com/scl/fi/krx63onru1nae52lna16f/claves_c1_pista_25.mp3?rlkey=8oh1z0gpowvtbjtg978offvs2&dl=0)_
    - :pencil2: _Gramatica: Oraciones Condicionales (Claves C1, p 106). Encuentra un repaso de estas oraciones [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md#oraciones-condicionales)._
-  
+
 - **martes, 17 de febrero**: Gramatica: Oraciones Condicionales, Claves C1. Unidad 4. La vida educativa.
 
+   - :headphones: _Audición: [Claves C1, p. 104](https://www.dropbox.com/scl/fi/mhivvceqfi8omgqxvdiaf/claves_c1_pista_26.mp3?rlkey=3syx55oyyohl4u1rh92mj6nau&dl=0)_
    - :pencil2: _Gramatica. Oraciones Condicionales. Libro B2:p.94-101_
    - :books: _Claves C1. Unidad 4. Paginas 102, 104-107_
-   - :headphones: _Audición: [Claves C1, p. 104](https://www.dropbox.com/scl/fi/mhivvceqfi8omgqxvdiaf/claves_c1_pista_26.mp3?rlkey=3syx55oyyohl4u1rh92mj6nau&dl=0)_
-   - :pencil2: _Tareas: Claves C1, Unidad 4.12 p. 109-110_
+   - :pencil2: _Tareas: Claves C1, Unidad 4.9 p.107, 4.12 p. 109-110_
+
+- **jueves, 19 de febrero**: La Geografia espanola.
+   - :books: _Claves C1. Unidades 4.4 Paginas _
+   - :books: _Claves C1. Unidad 4.5 Vocabulario de Geografia. Pagina 103_
+   - :trophy: Jugamos con la geografia de Espana. [Encuentra las comunidades en el mapa](https://wordwall.net/es/resource/12289749/comunidades-aut%C3%B3nomas), [Encuentra las capitales](https://wordwall.net/es/resource/28850102/espa%C3%B1ol-lengua-extranjera/capitales-de-comunidades)
    - :pencil2: _Tareas: Gramatica C1. Unidades 94,95_
+   - :pencil2: _Tareas: Claves C1, Unidad 4.6. Escrito: "Un pais ideal"_
