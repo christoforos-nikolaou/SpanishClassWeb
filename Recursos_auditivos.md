@@ -95,7 +95,7 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 
 ### 25 de febrero
 
-* :headphones: Libro C1. Examen 6 [Pista 26, pagina 128](https://www.dropbox.com/scl/fi/28sfnt786x1kn7zo6gj27/pista26.mp3?rlkey=hhbptvdsb9jp2irdnxkkmg1n6&dl=0)
-* :headphones: Libro C1. Examen 6 [Pista 27, pagina 129](https://www.dropbox.com/scl/fi/9hq46qrckhndfbcwryc0w/pista27.mp3?rlkey=kpihqrmreacvoy64layg653sv&dl=0)
-* :headphones: Libro C1. Examen 6 [Pista 28, pagina 130](https://www.dropbox.com/scl/fi/ax15t7bdrd5ce1mfclhu6/pista28.mp3?rlkey=jpj2phig700f75e5wj7o3m3hr&dl=0)
-* :headphones: Libro C1. Examen 6 [Pista 29, pagina 131](https://www.dropbox.com/scl/fi/n9xnu2fcs9rk4tga30kiw/pista29.mp3?rlkey=2aai6wab14z605m7dsw1gzpl6&dl=0)
+* :headphones: DELE C1. Examen 6 [Pista 26, pagina 128](https://www.dropbox.com/scl/fi/28sfnt786x1kn7zo6gj27/pista26.mp3?rlkey=hhbptvdsb9jp2irdnxkkmg1n6&dl=0)
+* :headphones: DELE C1. Examen 6 [Pista 27, pagina 129](https://www.dropbox.com/scl/fi/9hq46qrckhndfbcwryc0w/pista27.mp3?rlkey=kpihqrmreacvoy64layg653sv&dl=0)
+* :headphones: DELE C1. Examen 6 [Pista 28, pagina 130](https://www.dropbox.com/scl/fi/ax15t7bdrd5ce1mfclhu6/pista28.mp3?rlkey=jpj2phig700f75e5wj7o3m3hr&dl=0)
+* :headphones: DELE C1. Examen 6 [Pista 29, pagina 131](https://www.dropbox.com/scl/fi/n9xnu2fcs9rk4tga30kiw/pista29.mp3?rlkey=2aai6wab14z605m7dsw1gzpl6&dl=0)
