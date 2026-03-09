@@ -265,6 +265,7 @@
    - :pencil2: _Tareas: Claves C1, Unidad 4.9 p.107, 4.12 p. 109-110_
 
 - **jueves, 19 de febrero**: La Geografia espanola.
+
    - :books: _Claves C1. Unidades 4.4 Pagina 102_
    - :books: _Claves C1. Unidad 4.5 Vocabulario de Geografia. Pagina 103_
    - :trophy: Jugamos con la geografia de Espana. [Encuentra las comunidades en el mapa](https://wordwall.net/es/resource/12289749/comunidades-aut%C3%B3nomas), [Encuentra las capitales](https://wordwall.net/es/resource/28850102/espa%C3%B1ol-lengua-extranjera/capitales-de-comunidades)
@@ -272,12 +273,28 @@
    - :pencil2: _Tareas: Claves C1, Unidad 4.6. Escrito: "Un pais ideal"_
 
 - **martes, 24 de febrero**: Claves C1. Unidad 4. La vida educativa y la geografia espanola.
+
    - :books: _Claves C1. Unidades 4.7 Pagina 105_
    - :books: _Claves C1. Unidad 4.13 Paginas 111-112_
    - :books: _Claves C1. Las Claves del Examen. Lectura, Paginas 113-115_
 
 - **miercoles, 25 de febrero**: Claves C1. Unidad 4. La vida educativa y la geografia espanola.
+
    - :books: _Claves C1. Las Claves del Examen. Lectura, Paginas 113-117. Vocabulario._
    - :books: _Claves C1. Las Claves del Examen. Auditivo, Paginas 118-119. Encuentra las pistas de audio aqui. [Pista 29](https://www.dropbox.com/scl/fi/0e37s1yhli0z34klvkj0e/claves_c1_pista_29.mp3?rlkey=mmaiupcrjnulymmfhbwv1tr3u&dl=0) y [Pista 30](https://www.dropbox.com/scl/fi/ileu5fz42xbns318zansf/claves_c1_pista_30.mp3?rlkey=dz8ai77vqew6dvp881qyqxta5&dl=0)_
    - :pencil2: _Tareas: Para la proxima vez (que sera el 6 de marzo). Libro C1 (verde): Examen 6. Pruebas 1, 2 y 3. Paginas 118-133. Encuentra los audio de la Prueba 2 [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#25-de-febrero)_
- 
+
+#### marzo 2026
+
+---
+
+- **viernes, 6 de marzo**: Practica de Examenes y Gramatica (Oraciones Condicionales)
+
+   - :notebook: _Corregimos el examen: Libro C1: Examen 6. Pruebas 1, 2 y 3. Paginas 118-133_
+   - :pencil2: _Tareas: Oraciones Condicionales. Gramatica, Unidades 94-98._
+   - :books: _Notas de Gramatica: Consulta la teoria sobre el uso del modo condicional que vas a encontrar [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md#oraciones-condicionales)._
+
+- **martes, 10 de marzo**: Gramatica: Oraciones Condicionales
+
+   - :pencil2: _Tareas: Oraciones Condicionales. Gramatica, Unidades 94-98._
+   - :books: _Un texto interesante y oportuno: ["Persepolis" de Marjane Satrapi](https://www.dropbox.com/scl/fi/fpfk2q2oog5vtvb1y07o1/Persepolis_Marjane_Satrapi_Spanish.pdf?rlkey=931vdphrhc1lgak2z48pirybg&st=znjhjbwg&dl=0)._
