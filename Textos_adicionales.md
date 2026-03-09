@@ -259,6 +259,19 @@ Siempre te quiere, tu soldado Adrián
 
 ---
 
+#### Persepolis, por Marjane Satrapi [novela grafica](https://www.dropbox.com/scl/fi/fpfk2q2oog5vtvb1y07o1/Persepolis_Marjane_Satrapi_Spanish.pdf?rlkey=931vdphrhc1lgak2z48pirybg&st=o9x3dabs&dl=0)
+
+**Persepolis(2000-2003)** es una novela gráfica autobiográfica de Marjane Satrapi que relata su infancia y juventud en Irán durante la Revolución Islámica de 1979 y la guerra Irán-Irak. Publicada entre 2000 y 2003 en cuatro volúmenes, combina humor negro, crítica social y un estilo de dibujo en blanco y negro simple pero impactante para mostrar la vida cotidiana bajo un régimen teocrático.
+
+**Resumen de la trama**
+La historia sigue a Marjane, una niña curiosa y rebelde educada en un hogar laico de clase media, desde los 10 años hasta la adultez. Cubre protestas contra el Shah, el triunfo de los ayatolás, la imposición del velo, bombardeos, represión de libertades (como la música punk o las fiestas mixtas), su educación en Viena durante la guerra y su regreso a un Irán transformado, marcado por el fundamentalismo y pérdidas familiares. Termina con su exilio definitivo a Occidente, reflexionando sobre identidad cultural y choque entre Oriente y Occidente.
+
+**Historia y contexto de creación**
+Marjane Satrapi (nacida en 1969 en Rasht, Irán) escribió Persepolis en Francia, donde se exilió a los 19 años tras estudiar arte. Inicialmente pensada como un relato personal para amigos, L'Association la publicó en 2000; su éxito global (traducida a decenas de idiomas, premios como el Festival de Angoulême) la convirtió en un hito del cómic, comparable a Maus por su testimonio histórico. Surge de su necesidad de humanizar Irán más allá de estereotipos, mostrando tanto horrores políticos como detalles íntimos como el mercado negro de casetes de Kim Wilde.
+
+**Obras posteriores de Satrapi**
+Después de Persepolis, Satrapi exploró temas iraníes en cómics como Bordados (2003, sobre mujeres y secretos íntimos) y Pollo con ciruelas (2004, ficción sobre un músico suicida, adaptada al cine). Dirigió la aclamada adaptación animada de Persepolis (2007, Cannes y Oscar-nominada), películas como La banda de las Jotas (2012), The Voices (2014) y Radioactive (2019, sobre Marie Curie). En 2023 coordinó Mujer. Vida. Libertad, antología solidaria por las protestas tras la muerte de Mahsa Amini. Recibió el Princesa de Asturias en 2024.
+
 ### Varios Textos
 
 ---
