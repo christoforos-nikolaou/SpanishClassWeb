@@ -79,7 +79,7 @@ Las oraciones condicionales son aquellas que expresan una condición y su consec
 a. una **oración principal** que expresa la condición. Esta se introduce con conjunciones como **si, a menos que, siempre que**, entre otras.  
 b. una **oración subordinada** que expresa la consecuencia.
 
-* En general hay tres tipos de oraciones condicionales, cada una con su propia estructura y uso:
+* 1. Tipos Clasicos: En general hay tres tipos de oraciones condicionales, cada una con su propia estructura y uso:
 
    1. **Condicionales reales o posibles**: Expresan situaciones que son reales o posibles en el presente o futuro. La estructura típica es:
 
@@ -95,7 +95,7 @@ b. una **oración subordinada** que expresa la consecuencia.
 
       - **Si + pluscuamperfecto de subjuntivo (hubiera + participio), condicional compuesto (habría + participio).**
       - Ejemplo: Si hubiera estudiado más, habría aprobado el examen. / Si me hubieras avisado, habría llegado a tiempo.
-  
+
 <p align="center"> <img src="./Figures/Subjuntivo1.png" alt="" style="width: 60%; height: 60%"/></p>
 
 * Además de estas estructuras básicas, existen otras formas de expresar condiciones, como el uso de "a menos que" (que introduce una condición negativa), "siempre que" (que introduce una condición necesaria), entre otras.
@@ -105,6 +105,12 @@ b. una **oración subordinada** que expresa la consecuencia.
       **OJO! nunca pongas condicional simple o compuesto en la cláusula condicional.**
    - En algunos casos, especialmente en el lenguaje coloquial, se pueden omitir ciertas partes de la oración condicional, como el verbo en la cláusula principal o el sujeto en la cláusula condicional. Por ejemplo: "Si llueve, no salgo" puede convertirse en "Si llueve, no salgo" o incluso "Si llueve, no salgo".
    - Es importante usar correctamente los tiempos verbales en las oraciones condicionales para expresar claramente la relación entre la condición y su consecuencia. Por ejemplo, usar el presente de indicativo para condiciones reales y el imperfecto de subjuntivo para condiciones hipotéticas.
+
+* 2. Tipos menos Frecuentes: Aparte de los 3 tipos clasicos de oraciones condicionales, existen otras formas que pueden expresar condiciones, aunque son menos comunes. Estos se forman en casos distintos, basados en las siguientes combinaciones de condicion y consecuencia:  
+
+   - **Si + preterito pluscuamperfecto de subjuntivo --> condicional simple**: Esta estructura se utiliza para expresar una condicion no cumplida en el pasado que **tiene una consecuencia en el presente o futuro**. Se puede identificar este tipo de condicional por la presencia de palabras claves de tiempo como "hoy", "ahora", "manana", "en el futuro", entre otras. Ejemplo: Si hubiera estudiado más, ahora tendría un mejor trabajo. / Si me hubieras avisado, hoy no estaría tan cansado.  
+   - **Si + preterito imperfecto de subjuntivo --> imperativo/presente de indicativo**: Esta estructura se forma cuando **una condicion dudosa se combina con una consecuencia casi segura en el presente o futuro**. Esto es, algo que no es muy probable que ocurra, pero si ocurriera, la consecuencia sería casi segura. Ejemplo: Si me llamaras, te ayudo. / Si lloviera mañana, anulamos el picnic.  
+   - **Si + preterito imperfecto de subjuntivo --> preterito imperfecto de indicativo**: Esta estructura es muy parecida de la de arriba, pero en este caso hablamos de **una condicion dudosa que se combina con una consecuencia casi segura en el pasado**. Ejemplo: "Si me ofrecieran el puesto, lo aceptaba". 
 
 ---
 

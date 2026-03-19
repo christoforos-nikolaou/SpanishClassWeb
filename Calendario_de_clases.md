@@ -298,3 +298,19 @@
 
    - :pencil2: _Tareas: Oraciones Condicionales. Gramatica, Unidades 94-98._
    - :books: _Un texto interesante y oportuno: ["Persepolis" de Marjane Satrapi](https://www.dropbox.com/scl/fi/fpfk2q2oog5vtvb1y07o1/Persepolis_Marjane_Satrapi_Spanish.pdf?rlkey=931vdphrhc1lgak2z48pirybg&st=znjhjbwg&dl=0)._
+
+- **jueves, 12 de marzo**: Vocabulario y Expresion Escrita
+   
+   - :pencil2: _Hicimos un test de vocabulario de alta dificultad (muy bien!)_
+   - :pencil2: _Tareas: Dos escritos del libro de C1 Examenes: Examen 4, Tarea 2, ambas opciones_
+  
+- **miercoles, 18 de marzo**: Expresion Oral
+
+   - :coffee: _Hablamos de distintos temas porque algunas veces hay que descansar y desconectar un poco del estudio._
+  
+- **jueves, 19 de marzo**: Test de Expresion Oral, Gramatica: Oraciones Condicionales
+  
+   - :pencil2: _Corregimos los Ejercicios de Oraciones Condicionales. Gramatica, Unidades 94-98. Recuerda dar un repaso a las reglas generales de Condicional [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md#oraciones-condicionales)._
+   - :coffee: _Test de Expresion Oral. Claves C1. Paginas 123-124._
+   - :books: _Claves C1. Unidad 5.1-5.3 Paginas 125-129_
+   - :headphones: _Auditivos de 5.1 y 5.3 [aqui]()_

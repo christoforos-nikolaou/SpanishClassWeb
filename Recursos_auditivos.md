@@ -99,3 +99,11 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
 * :headphones: DELE C1. Examen 6 [Pista 27, pagina 129](https://www.dropbox.com/scl/fi/9hq46qrckhndfbcwryc0w/pista27.mp3?rlkey=kpihqrmreacvoy64layg653sv&dl=0)
 * :headphones: DELE C1. Examen 6 [Pista 28, pagina 130](https://www.dropbox.com/scl/fi/ax15t7bdrd5ce1mfclhu6/pista28.mp3?rlkey=jpj2phig700f75e5wj7o3m3hr&dl=0)
 * :headphones: DELE C1. Examen 6 [Pista 29, pagina 131](https://www.dropbox.com/scl/fi/n9xnu2fcs9rk4tga30kiw/pista29.mp3?rlkey=2aai6wab14z605m7dsw1gzpl6&dl=0)
+
+
+### 19 de marzo
+
+* :headphones: Claves C1. Unidad 5.1 [Pista 32, pagina 126](https://www.dropbox.com/scl/fi/x9p72nfbdryvgg5h03olo/claves_c1_pista_32.mp3?rlkey=3e33005w9bhbs7xx242208piu&st=oyi60j4l&dl=0)  
+* :headphones: Claves C1. Unidad 5.3 [Pista 33, pagina 129](https://www.dropbox.com/scl/fi/82t1er4yr74qyot5wb8a4/claves_c1_pista_33.mp3?rlkey=vabbwphz7n9tc05zvjghwgao5&st=uond2oyz&dl=0)  
+
+  
