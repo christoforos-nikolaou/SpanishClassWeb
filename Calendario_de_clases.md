@@ -313,5 +313,19 @@
    - :pencil2: _Corregimos los Ejercicios de Oraciones Condicionales. Gramatica, Unidades 94-98. Recuerda dar un repaso a las reglas generales de Condicional [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Notas_de_gramatica.md#oraciones-condicionales)._
    - :coffee: _Test de Expresion Oral. Claves C1. Paginas 123-124._
    - :books: _Claves C1. Unidad 5.1-5.3 Paginas 125-129_
-   - :headphones: _Auditivos de 5.1 y 5.3 [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#19-de-marzo)_.
-   - :pencil2: _Tareas: Repasamos ejemplos de Tarea 5 de comprensión de lectura y uso de la lengua. Encuentra ejemplos con los que puedes trabajar [aqui](https://www.profedeele.es/actividad/comprension-lectura-modelo-examen-1/) y [aqui](https://www.dropbox.com/scl/fi/elj63o6yphxjaiy6z9sey/Exercise_Marzo2026.pdf?rlkey=i82dba8cp33l5sv3siwlhi3io&st=w2x4l620&dl=0)_
+
+
+- **martes, 24 de marzo**: Claves C1. Unidad 5
+
+   - :books: _Claves C1. Unidad 5.1-5.3 Paginas 125-129_
+   - :headphones: _Auditivo de 5.1 [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#19-de-marzo)_.
+   - :pencil2: _Tareas: Vamos a repasar ejemplos de Tarea 5 de comprensión de lectura y uso de la lengua. Encuentra ejemplos con los que puedes trabajar [aqui](https://www.profedeele.es/actividad/comprension-lectura-modelo-examen-1/) y [aqui](https://www.dropbox.com/scl/fi/elj63o6yphxjaiy6z9sey/Exercise_Marzo2026.pdf?rlkey=i82dba8cp33l5sv3siwlhi3io&st=w2x4l620&dl=0)_
+
+- **jueves, 26 de marzo**: Claves C1. Unidad 5
+
+   - :books: _Claves C1. Unidad 5.3 Pagina 128: Test de expresion escrita en clase_
+   - :headphones: _Auditivos de 5.3 [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#19-de-marzo)_.
+   - :pencil2: _Claves C1. Unidad 5.4: Ejercicios de vocabulario/comprension de lectura_
+   - :books: _Gramatica: Oraciones Relativas_
+   - :pencil2: _Repasamos ejemplos de Tarea 5 de comprensión de lectura y uso de la lengua. Encuentra ejemplos con los que puedes trabajar [aqui](https://www.profedeele.es/actividad/comprension-lectura-modelo-examen-1/) y [aqui](https://www.dropbox.com/scl/fi/elj63o6yphxjaiy6z9sey/Exercise_Marzo2026.pdf?rlkey=i82dba8cp33l5sv3siwlhi3io&st=w2x4l620&dl=0)_
+   - :pencil2: _Tareas: 
