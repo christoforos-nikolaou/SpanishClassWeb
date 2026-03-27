@@ -314,7 +314,6 @@
    - :coffee: _Test de Expresion Oral. Claves C1. Paginas 123-124._
    - :books: _Claves C1. Unidad 5.1-5.3 Paginas 125-129_
 
-
 - **martes, 24 de marzo**: Claves C1. Unidad 5
 
    - :books: _Claves C1. Unidad 5.1-5.3 Paginas 125-129_
@@ -328,4 +327,4 @@
    - :pencil2: _Claves C1. Unidad 5.4: Ejercicios de vocabulario/comprension de lectura_
    - :books: _Gramatica: Oraciones Relativas_
    - :pencil2: _Repasamos ejemplos de Tarea 5 de comprensión de lectura y uso de la lengua. Encuentra ejemplos con los que puedes trabajar [aqui](https://www.profedeele.es/actividad/comprension-lectura-modelo-examen-1/) y [aqui](https://www.dropbox.com/scl/fi/elj63o6yphxjaiy6z9sey/Exercise_Marzo2026.pdf?rlkey=i82dba8cp33l5sv3siwlhi3io&st=w2x4l620&dl=0)_
-   - :pencil2: _Tareas: 
+   - :pencil2: _Tareas: C1 Examen 5. Prueba 2, Comprension auditiva: Tareas 1-4 (paginas 106-109). Encuentra las pistas auditivas [aqui]()._
