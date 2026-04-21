@@ -345,4 +345,4 @@
 - **jueves, 02 de abril**: Claves C1. Unidad 5
 
    - :books: _Claves C1. Unidad 5.5. Conversamos sobre Frida Kahlo Paginas 132-133_
-   - :books: _Textos Adicionales. Leimos [lo que escribe sobre Frida Kahlo](), el autor uruguayo Eduardo Galeano en su libro "Memoria del Fuego"._
+   - :books: _Textos Adicionales. Leimos [lo que escribe sobre Frida Kahlo](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md#frida-tomado-de-memoria-del-fuego-iii-siglo-del-viento-eduardo-galeano), el autor uruguayo Eduardo Galeano en su libro "Memoria del Fuego"._
