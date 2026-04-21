@@ -328,3 +328,21 @@
    - :books: _Gramatica: Oraciones Relativas_
    - :pencil2: _Repasamos ejemplos de Tarea 5 de comprensión de lectura y uso de la lengua. Encuentra ejemplos con los que puedes trabajar [aqui](https://www.profedeele.es/actividad/comprension-lectura-modelo-examen-1/) y [aqui](https://www.dropbox.com/scl/fi/elj63o6yphxjaiy6z9sey/Exercise_Marzo2026.pdf?rlkey=i82dba8cp33l5sv3siwlhi3io&st=w2x4l620&dl=0)_
    - :pencil2: _Tareas: C1 Examen 5. Prueba 2, Comprension auditiva: Tareas 1-4 (paginas 106-109). Encuentra las pistas auditivas [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#31-de-marzo)._
+
+- **martes, 31 de marzo**: Claves C1. Unidad 5
+
+   - :books: _Claves C1. Unidad 5.4. 
+   - :pencil2: _Corregimos los ejercicios de gramatica sobre Oraciones Relativas._
+
+---
+
+#### abril 2026
+
+---
+
+
+
+- **jueves, 02 de abril**: Claves C1. Unidad 5
+
+   - :books: _Claves C1. Unidad 5.5. Conversamos sobre Frida Kahlo Paginas 132-133_
+   - :books: _Textos Adicionales. Leimos [lo que escribe sobre Frida Kahlo](), el autor uruguayo Eduardo Galeano en su libro "Memoria del Fuego"._

@@ -1,5 +1,27 @@
 ### Textos de literatura
 
+### "Frida", tomado de "Memoria del Fuego III: Siglo del Viento", Eduardo Galeano
+
+**1929  
+Ciudad de México  
+Frida**  
+  
+Tina Modotti no está sola frente a sus inquisidores. La acompañan, de un brazo y del otro, sus
+camaradas Diego Rivera y Frida Kahlo: el inmenso buda pintor y su pequeña Frida, pintora
+también, la mejor amiga de Tina, que parece una. misteriosa princesa de Oriente pero dice
+más palabrotas y bebe más tequila que un mariachi de Jalisco.
+Frida ríe a carcajadas y pinta espléndidas telas al óleo desde el día en que fue condenada al
+dolor incesante.
+  
+El primer dolor ocurrió allá lejos, en la infancia, cuando sus padres la disfrazaron de ángel y
+ella quiso volar con alas de paja; pero el dolor de nunca acabar llegó por un accidente en la
+calle, cuando un fierro de tranvía se le clavó en el cuerpo de lado a lado, como una lanza, y le
+trituró los huesos. Desde entonces ella es un dolor que sobrevive. La han operado, en vano,
+muchas veces; y en la cama del hospital empezó a pintar sus autorretratos, que son
+desesperados homenajes a la vida que le queda.
+
+encuentra el texto [aqui](https://eva.interior.udelar.edu.uy/pluginfile.php/351962/mod_resource/content/1/Texto%20original.pdf)
+
 ---
 
 ### "Doce Cuentos Peregrinos", Gabriel García Márquez
