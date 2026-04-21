@@ -346,3 +346,10 @@
 
    - :books: _Claves C1. Unidad 5.5. Conversamos sobre Frida Kahlo Paginas 132-133_
    - :books: _Textos Adicionales. Leimos [lo que escribe sobre Frida Kahlo](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md#frida-tomado-de-memoria-del-fuego-iii-siglo-del-viento-eduardo-galeano), el autor uruguayo Eduardo Galeano en su libro "Memoria del Fuego"._
+
+
+- **martes, 21 de abril**: Claves C1. Unidad 5
+
+   - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._  
+   - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._  
+   - :headphones: _Claves C1. Unidad 5.8. Acustico [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._  
