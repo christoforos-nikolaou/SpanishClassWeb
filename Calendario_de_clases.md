@@ -352,4 +352,4 @@
 
    - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._  
    - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._  
-   - :headphones: _Claves C1. Unidad 5.8. Acustico [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._  
+   - :headphones: _Claves C1. Unidad 5.8. Auditivo [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._  
