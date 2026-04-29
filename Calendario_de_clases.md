@@ -340,23 +340,28 @@
 
 ---
 
-- **jueves, 02 de abril**: Claves C1. Unidad 5
-
+**jueves, 02 de abril**: Claves C1. Unidad 5
    - :books: _Claves C1. Unidad 5.5. Conversamos sobre Frida Kahlo Paginas 132-133_
    - :books: _Textos Adicionales. Leimos [lo que escribe sobre Frida Kahlo](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Textos_adicionales.md#frida-tomado-de-memoria-del-fuego-iii-siglo-del-viento-eduardo-galeano), el autor uruguayo Eduardo Galeano en su libro "Memoria del Fuego"._
 
-- **martes, 21 de abril**: Claves C1. Unidad 5
-
-<<<<<<< HEAD
+**martes, 21 de abril**: Claves C1. Unidad 5
+  - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._
+  - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._
+  - :headphones: _Claves C1. Unidad 5.8. Acustico [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._
+  - :pencil2: _Tareas: _Claves C1. Unidad 5.9_
+  
+**jueves, 23 de abril**: Claves C1. Las Claves del Examen
+   - :books: _Claves C1.
    - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._
    - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._
-   - :headphones: _Claves C1. Unidad 5.8. Acustico [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._
-   - :pencil2: _Tareas: _Claves C1. Unidad 5.9_
+   - :headphones: _Claves C1. Unidad 5.8. Auditivo [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._
 
-- **jueves, 23 de abril**: Claves C1. Las Claves del Examen
-   - :books: _Claves C1.
-=======
-   - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._  
-   - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._  
-   - :headphones: _Claves C1. Unidad 5.8. Auditivo [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._  
->>>>>>> 9b6b4a1b2fb1494de83f4ff9dcf232c93901d108
+**martes, 28 de abril**: Claves C1. Las Claves del Examen
+   - :books: _Claves C1. Las Claves del Examen. Las Claves de la Tarea 5. "La Fuerza del Arte Callejero". Paginas 139-141._  
+   - :books: _Claves C1. Las Claves del Examen. Las Claves de la Tarea 5. "Programado para caducar". Paginas 141-142._  
+   - :headphones: _Claves C1. Las Claves del Examen. Las Claves de la Tarea 3. Auditivo [pista 35](/home/christoforos/Dropbox/Spanish_Classes/Claves-del-Nuevo-DELE-C1-Libro/Audios/Audios claves_c1_ea_mp3/claves_c1_pista_35.mp3). Paginas 143-144._  
+
+**miercoles, 29 de abril**: Practica Oral y Vocabulario
+   - :books: _C1 Examenes: Examen 3. Expresion, Mediacion e Interaccion Oral. Tarea 3. Pagina 71._  
+   - :pencil2: _Vocabulario: Cocineria y Pasteleria._  
+   - :pencil2: _Tareas: Claves C1. Modelos de Examen. Modelo 1. Prueba 1. Paginas 152-158_

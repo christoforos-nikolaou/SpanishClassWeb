@@ -1,4 +1,13 @@
 ### Recursos auditivos y visuales
+---
+
+### Todos los auditivos de Claves C1
+
+Puedes encontrar todos los auditivos de Claves C1 en esta carpeta de Dropbox: [Claves C1 Audios](https://www.dropbox.com/scl/fo/cic4tq80mifugzpzy41ii/ABwgL-KEN4R1nXBf6XwZH2s?rlkey=4ktxf0p59x6zsf4wlg01kwl4g&dl=0).
+
+### Todos los auditivos de DELE C1
+
+Puedes encontrar todos los auditivos de DELE C1 en esta carpeta de Dropbox: [DELE C1 Audios](https://www.dropbox.com/scl/fo/yee6ln6d32eikcnvdsg8h/AGBRTnKuwYT-5B-nu1dNcBI?rlkey=h9mqjvvimb3shev9sg8evrgc2&dl=0).
 
 ---
 
