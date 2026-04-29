@@ -347,6 +347,7 @@
 
 - **martes, 21 de abril**: Claves C1. Unidad 5
 
+<<<<<<< HEAD
    - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._
    - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._
    - :headphones: _Claves C1. Unidad 5.8. Acustico [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._
@@ -354,3 +355,8 @@
 
 - **jueves, 23 de abril**: Claves C1. Las Claves del Examen
    - :books: _Claves C1.
+=======
+   - :books: _Claves C1. Unidad 5.6. Oraciones Relacionales. Paginas 133-134._  
+   - :books: _Claves C1. Unidad 5.7. Practica: Oraciones Relacionales. Ejercicios de Vocabulario. Pagina 135._  
+   - :headphones: _Claves C1. Unidad 5.8. Auditivo [pista 34](https://www.dropbox.com/scl/fi/jk80xc6rqtm2r2vfs2hbb/claves_c1_pista_34.mp3?rlkey=8omag1araxp642samurw66lx8&dl=0). Pagina 136._  
+>>>>>>> 9b6b4a1b2fb1494de83f4ff9dcf232c93901d108
