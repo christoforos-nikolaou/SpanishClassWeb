@@ -8,7 +8,7 @@
 
 * martes, 5 de mayo: Claves C1. Modelos de Examen
    - :books: _Claves C1. Examen 1. Modelo 1, Prueba 1. Comprension de lectura y uso de la lengua. Paginas 152-158._
-   - :pencil2: _Tareas: Claves C1. Modelos de Examen. Modelo 1. Prueba 2. Paginas 159-162. Encuentra los audios [aqui]()_
+   - :pencil2: _Tareas: Claves C1. Modelos de Examen. Modelo 1. Prueba 2. Paginas 159-162. Encuentra los audios [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#7-de-mayo)_
 
 ---
 
