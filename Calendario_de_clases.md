@@ -6,14 +6,20 @@
 
 ---
 
+* martes, 12 de mayo: Practica de Expresion Oral
+   - :🗣️: _Expresion Oral. DELE C1, Examen 4, "Cambio Climatico", Paginas 90-91_
+   - :🗣️: _Expresion Oral. DELE C1, Examen 5, "Educacion Artistica en edades tempranas", Paginas 112-114_
+   - :books: _Vocabulario de locuciones verbales. Puedes encontrar una lista extensiva para estudiar [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Locuciones_Verbales.md)_
+   - :pencil2: _Tareas: Ejercicios de Uso de Lengua. [1. Las Vanguardias Artisticas](https://deleahora.com/actividades/comprension-de-lectura/uso-de-la-lengua-las-vanguardias-artisticas), [2. Festival de Patios Cordobeses](https://deleahora.com/actividades/comprension-de-lectura/uso-de-la-lengua-festival-de-los-patios-cordobeses) y [3. Alfonso X y la Consolidacion del castellano](https://deleahora.com/actividades/comprension-de-lectura/alfonso-x-y-la-consolidacion-del-castellano-fragmentos)_
+
 * jueves, 7 de mayo: Practica de Comprension Auditiva
    - :headphones: _Claves C1. Modelos de Examen. Modelo 1. Prueba 2. Paginas 159-162. Encuentra los audios [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#7-de-mayo)_
    - :books: _Vocabulario de Primavera/Fiestas_
-   - :pencil2: _Tareas: ???_
- - 
+   - :pencil2: _Tareas: Un ensayo de analysis de la lectura de "El Amor en los Tiempos del Colera"_
+
 * martes, 5 de mayo: Claves C1. Modelos de Examen
    - :books: _Claves C1. Examen 1. Modelo 1, Prueba 1. Comprension de lectura y uso de la lengua. Paginas 152-158._
-   - :pencil2: _Tareas: Claves C1. Modelos de Examen. Modelo 1. Prueba 3. Paginas 163-164. 
+   - :pencil2: _Tareas: Claves C1. Modelos de Examen. Modelo 1. Prueba 3. Paginas 163-164.
 
 ---
 
