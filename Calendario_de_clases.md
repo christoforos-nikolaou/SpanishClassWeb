@@ -6,6 +6,19 @@
 
 ---
 
+* jueves, 21 de mayo: Practica de Lectura. Test de vocabulario
+   - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_ 
+   - :🗣️: _Expresion Oral. Conversacion sobre el video de "En pocas palabras" sobre ["La Soledad"](https://www.youtube.com/watch?v=yT01CAWDtGM)_
+   - :headphones: _Tareas: Claves C1, Examen 2, Prueba 2, Paginas 175-177. Encuentra los audios [aqui]()_
+
+* martes, 19 de mayo: Practica de Lectura
+   - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_ 
+
+* jueves, 14 de mayo: Practica de comprension de lectura y uso de lengua
+   - pencil2: _Corregimos las Tareas en linea_
+   - :🗣️: _Expresion Oral. Conversacion casual_
+
+
 * martes, 12 de mayo: Practica de Expresion Oral
    - :🗣️: _Expresion Oral. DELE C1, Examen 4, "Cambio Climatico", Paginas 90-91_
    - :🗣️: _Expresion Oral. DELE C1, Examen 5, "Educacion Artistica en edades tempranas", Paginas 112-114_
@@ -13,11 +26,13 @@
    - :pencil2: _Tareas: Ejercicios de Uso de Lengua. [1. Las Vanguardias Artisticas](https://deleahora.com/actividades/comprension-de-lectura/uso-de-la-lengua-las-vanguardias-artisticas), [2. Festival de Patios Cordobeses](https://deleahora.com/actividades/comprension-de-lectura/uso-de-la-lengua-festival-de-los-patios-cordobeses) y [3. Alfonso X y la Consolidacion del castellano](https://deleahora.com/actividades/comprension-de-lectura/alfonso-x-y-la-consolidacion-del-castellano-fragmentos)_
 
 * jueves, 7 de mayo: Practica de Comprension Auditiva
+
    - :headphones: _Claves C1. Modelos de Examen. Modelo 1. Prueba 2. Paginas 159-162. Encuentra los audios [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#7-de-mayo)_
    - :books: _Vocabulario de Primavera/Fiestas_
    - :pencil2: _Tareas: Un ensayo de analysis de la lectura de "El Amor en los Tiempos del Colera"_
 
 * martes, 5 de mayo: Claves C1. Modelos de Examen
+
    - :books: _Claves C1. Examen 1. Modelo 1, Prueba 1. Comprension de lectura y uso de la lengua. Paginas 152-158._
    - :pencil2: _Tareas: Claves C1. Modelos de Examen. Modelo 1. Prueba 3. Paginas 163-164.
 

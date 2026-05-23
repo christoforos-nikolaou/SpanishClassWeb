@@ -128,3 +128,12 @@ Examenes C1. Prueba 2. Comprension auditiva: Tareas 1-4
    * :headphones: [Tarea 2, Pista 38](https://www.dropbox.com/scl/fi/hvevqru5vmvgom147byh9/claves_c1_pista_38.mp3?rlkey=df2geqk6409q23w9kx7dx5xn4&dl=0)
    * :headphones: [Tarea 3, Pista 39](https://www.dropbox.com/scl/fi/00m8im9bc2t1e6gyltl76/claves_c1_pista_39.mp3?rlkey=8ebsaqbjnvwi5icem3m4d0z80&dl=0)
    * :headphones: [Tarea 4, Pista 40](https://www.dropbox.com/scl/fi/ss96q36xhgygg5b408d8n/claves_c1_pista_40.mp3?rlkey=18xi044od29rvul0x4m1b4gtu&dl=0)
+
+
+### 21 de mayo
+
+* Claves C1: Modelos de Examen. Modelo 2. Prueba 2: Tareas 1-4 (paginas 175-177)
+   * :headphones: [Tarea 1, Pista 42](https://www.dropbox.com/scl/fi/xyj34cksisbih5x0azon6/claves_c1_pista_42.mp3?rlkey=q0o82u2cvoxuvg0kdotdqhknb&st=7n24j88k&dl=0)
+   * :headphones: [Tarea 2, Pista 43](https://www.dropbox.com/scl/fi/rdx9c4hu70oxt9ljqxcba/claves_c1_pista_43.mp3?rlkey=fyfv0zue83al2uizix9x8hnm9&st=zq3pybr1&dl=0)
+   * :headphones: [Tarea 3, Pista 44](https://www.dropbox.com/scl/fi/6mb2uk4nqvk0isekf511u/claves_c1_pista_44.mp3?rlkey=1k0sysy5jaymivdt1f7cn98ed&st=cpxtw3vb&dl=0)
+   * :headphones: [Tarea 4, Pista 45](https://www.dropbox.com/scl/fi/wujzxnenordbc57p1w5oj/claves_c1_pista_45.mp3?rlkey=zfxjva67c05d6apw63to0qfuv&st=b6jev0qk&dl=0)
