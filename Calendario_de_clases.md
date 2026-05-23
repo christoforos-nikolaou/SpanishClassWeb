@@ -9,7 +9,7 @@
 * jueves, 21 de mayo: Practica de Lectura. Test de vocabulario
    - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_ 
    - :🗣️: _Expresion Oral. Conversacion sobre el video de "En pocas palabras" sobre ["La Soledad"](https://www.youtube.com/watch?v=yT01CAWDtGM)_
-   - :headphones: _Tareas: Claves C1, Examen 2, Prueba 2, Paginas 175-177. Encuentra los audios [aqui]()_
+   - :headphones: _Tareas: Claves C1, Examen 2, Prueba 2, Paginas 175-177. Encuentra los audios [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#21-de-mayo)_
 
 * martes, 19 de mayo: Practica de Lectura
    - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_ 
