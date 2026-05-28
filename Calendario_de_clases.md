@@ -7,9 +7,9 @@
 ---
 
 * martes, 26 de mayo: Repaso de Gramatica
-  * :pencil2: _Empezamos un Test de repaso de gramatica que se puede encontrar [aqui](https://deleahora.com/actividades/examenes/test-de-gramatica-nivel-c1)_
-  * :penicil2: _De mismo formato, trabajaremos con un [Test de vocabulario](https://deleahora.com/actividades/examenes/test-de-vocabulario-nivel-c1) y un [Test de Repaso General, C1](https://deleahora.com/actividades/examenes/test-de-repaso-nivel-c1)
 
+   * :pencil2: _Empezamos un Test de repaso de gramatica que se puede encontrar [aqui](https://deleahora.com/actividades/examenes/test-de-gramatica-nivel-c1)_
+   * :pencil2: _De mismo formato, trabajaremos con un [Test de vocabulario](https://deleahora.com/actividades/examenes/test-de-vocabulario-nivel-c1) y un [Test de Repaso General, C1](https://deleahora.com/actividades/examenes/test-de-repaso-nivel-c1)
 
 * jueves, 21 de mayo: Practica de Lectura. Test de vocabulario
 
