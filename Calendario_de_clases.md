@@ -6,20 +6,28 @@
 
 ---
 
+* martes, 26 de mayo: Repaso de Gramatica
+  * :pencil2: _Empezamos un Test de repaso de gramatica que se puede encontrar [aqui](https://deleahora.com/actividades/examenes/test-de-gramatica-nivel-c1)_
+  * :penicil2: _De mismo formato, trabajaremos con un [Test de vocabulario](https://deleahora.com/actividades/examenes/test-de-vocabulario-nivel-c1) y un [Test de Repaso General, C1](https://deleahora.com/actividades/examenes/test-de-repaso-nivel-c1)
+
+
 * jueves, 21 de mayo: Practica de Lectura. Test de vocabulario
-   - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_ 
+
+   - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_
    - :🗣️: _Expresion Oral. Conversacion sobre el video de "En pocas palabras" sobre ["La Soledad"](https://www.youtube.com/watch?v=yT01CAWDtGM)_
    - :headphones: _Tareas: Claves C1, Examen 2, Prueba 2, Paginas 175-177. Encuentra los audios [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Recursos_auditivos.md#21-de-mayo)_
 
 * martes, 19 de mayo: Practica de Lectura
-   - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_ 
+
+   - :books: _Comprension de lectura: Claves C1, Examen 2, Prueba 1, Paginas 168-174_
 
 * jueves, 14 de mayo: Practica de comprension de lectura y uso de lengua
+
    - pencil2: _Corregimos las Tareas en linea_
    - :🗣️: _Expresion Oral. Conversacion casual_
 
-
 * martes, 12 de mayo: Practica de Expresion Oral
+
    - :🗣️: _Expresion Oral. DELE C1, Examen 4, "Cambio Climatico", Paginas 90-91_
    - :🗣️: _Expresion Oral. DELE C1, Examen 5, "Educacion Artistica en edades tempranas", Paginas 112-114_
    - :books: _Vocabulario de locuciones verbales. Puedes encontrar una lista extensiva para estudiar [aqui](https://github.com/christoforos-nikolaou/SpanishClassWeb/blob/main/Locuciones_Verbales.md)_
