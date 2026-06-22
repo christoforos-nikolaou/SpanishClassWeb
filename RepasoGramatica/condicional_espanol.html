@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Condicional en Español — C1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink:      #1a1a2e;
+    --paper:    #f7f5f0;
+    --accent:   #c0392b;
+    --gold:     #b8860b;
+    --slate:    #4a5568;
+    --mist:     #e8e4dc;
+    --teal:     #2c7a7b;
+    --purple:   #553c9a;
+    --green:    #276749;
+    --border:   #d4cec4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px; right: -40px; bottom: -40px;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 28px,
+      rgba(255,255,255,0.025) 28px, rgba(255,255,255,0.025) 30px
+    );
+  }
+  .header-inner { position: relative; z-index: 1; }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    color: rgba(247,245,240,0.6);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Nav ── */
+  nav {
+    background: var(--ink);
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    background: none;
+    border: none;
+    color: rgba(247,245,240,0.45);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.2rem;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .tab-btn:hover { color: rgba(247,245,240,0.8); }
+  .tab-btn.active { color: var(--paper); border-bottom-color: var(--accent); }
+
+  /* ── Content ── */
+  main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .lead {
+    font-size: 1rem;
+    color: var(--slate);
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 1rem;
+  }
+  p { margin-bottom: 0.9rem; color: var(--slate); font-size: 0.95rem; }
+
+  /* ── Cards ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.2rem 0;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .card.red::before    { background: var(--accent); }
+  .card.gold::before   { background: var(--gold); }
+  .card.teal::before   { background: var(--teal); }
+  .card.purple::before { background: var(--purple); }
+  .card.green::before  { background: var(--green); }
+  .card.slate::before  { background: var(--slate); }
+
+  .card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: var(--ink);
+  }
+  .card p { font-size: 0.85rem; margin-bottom: 0.35rem; }
+  .card .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.63rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+  }
+  .tag.red    { background: #fdecea; color: var(--accent); }
+  .tag.gold   { background: #fdf6e3; color: var(--gold); }
+  .tag.teal   { background: #e6f4f4; color: var(--teal); }
+  .tag.purple { background: #f0edf8; color: var(--purple); }
+  .tag.green  { background: #e8f4ee; color: var(--green); }
+  .tag.slate  { background: #eef0f3; color: var(--slate); }
+
+  /* ── Example blocks ── */
+  .example-block {
+    background: var(--ink);
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    margin: 0.8rem 0 1.4rem;
+  }
+  .example-block .ex {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--paper);
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+  }
+  .example-block .gloss {
+    font-size: 0.77rem;
+    color: rgba(247,245,240,0.45);
+    letter-spacing: 0.03em;
+    margin-bottom: 0.15rem;
+  }
+  .verb-highlight { color: var(--gold); font-style: normal; font-weight: 700; }
+  .form-highlight { color: #7dd3d4; font-style: normal; font-weight: 600; }
+
+  /* ── Tables ── */
+  .contrast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.2rem 0 1.8rem;
+    font-size: 0.875rem;
+  }
+  .contrast-table th {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.65rem 1rem;
+    text-align: left;
+  }
+  .contrast-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--slate);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .contrast-table tr:last-child td { border-bottom: none; }
+  .contrast-table tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+  .contrast-table .mono {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ink);
+    font-size: 0.8rem;
+  }
+
+  /* ── Callouts ── */
+  .callout {
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .callout.warning { background: #fdf6e3; border-left: 3px solid var(--gold); color: #7a5c00; }
+  .callout.info    { background: #e6f4f4; border-left: 3px solid var(--teal); color: #1a5050; }
+  .callout.danger  { background: #fdecea; border-left: 3px solid var(--accent); color: #8b1c1c; }
+  .callout.purple  { background: #f0edf8; border-left: 3px solid var(--purple); color: #3b2570; }
+  .callout strong  { font-weight: 600; }
+
+  /* ── Formula boxes ── */
+  .formula {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+  .formula-part {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+  }
+  .formula-part.cond { background: #fdecea; color: var(--accent); }
+  .formula-part.prot { background: #e6f4f4; color: var(--teal); }
+  .formula-part.apo  { background: #fdf6e3; color: var(--gold); }
+  .formula-part.subj { background: #f0edf8; color: var(--purple); }
+  .formula-part.ind  { background: #e8f4ee; color: var(--green); }
+  .formula-arrow {
+    font-size: 1rem;
+    color: var(--slate);
+    font-weight: 300;
+  }
+  .formula-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate);
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+
+  /* ── Big comparison block ── */
+  .compare-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 1.2rem 0 1.8rem;
+  }
+  .compare-col { padding: 1.1rem 1.3rem; }
+  .compare-col:first-child { border-right: 1px solid var(--border); }
+  .compare-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid;
+  }
+  .compare-col.simple h4 { color: var(--teal); border-color: var(--teal); }
+  .compare-col.compuesto h4 { color: var(--purple); border-color: var(--purple); }
+  .compare-col ul { list-style: none; padding: 0; }
+  .compare-col li {
+    font-size: 0.85rem;
+    color: var(--slate);
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--mist);
+    line-height: 1.5;
+  }
+  .compare-col li:last-child { border-bottom: none; }
+  .compare-col li em { color: var(--ink); font-style: italic; }
+
+  /* ── Connector list ── */
+  .connector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+    margin: 1.2rem 0;
+  }
+  .connector-item {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 0.9rem 1.1rem;
+  }
+  .connector-item .conn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--purple);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .connector-item p { font-size: 0.8rem; margin: 0; }
+
+  /* ── Quiz ── */
+  #score-bar {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  #score-display {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .quiz-question {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    margin: 1rem 0;
+  }
+  .quiz-question p { color: var(--ink); font-weight: 500; margin-bottom: 0.8rem; font-size: 0.93rem; }
+  .quiz-options { display: flex; flex-direction: column; gap: 0.4rem; }
+  .quiz-btn {
+    background: var(--mist);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0.9rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    color: var(--ink);
+  }
+  .quiz-btn:hover { background: var(--border); }
+  .quiz-btn.correct   { background: #e8f4ee; border-color: var(--green); color: var(--green); }
+  .quiz-btn.incorrect { background: #fdecea; border-color: var(--accent); color: var(--accent); }
+  .quiz-btn.reveal    { background: #e8f4ee; border-color: var(--green); color: var(--green); opacity: 0.6; }
+  .quiz-feedback {
+    margin-top: 0.7rem;
+    font-size: 0.82rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    display: none;
+  }
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.ok  { background: #e8f4ee; color: var(--green); }
+  .quiz-feedback.bad { background: #fdecea; color: var(--accent); }
+  .cat-header {
+    margin: 2rem 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    background: white;
+    border-left: 3px solid;
+  }
+  .cat-header span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+
+  /* ── Progress ── */
+  #progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: var(--accent);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.1s;
+  }
+
+  @media (max-width: 600px) {
+    main { padding: 1.5rem 1rem 3rem; }
+    h2 { font-size: 1.5rem; }
+    .card-grid { grid-template-columns: 1fr; }
+    .compare-block { grid-template-columns: 1fr; }
+    .compare-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header>
+  <div class="header-inner">
+    <div class="kicker">Gramática Española · Nivel C1</div>
+    <h1>El Condicional<br>en Español</h1>
+    <p>Usos del condicional simple y compuesto · Oraciones condicionales · Modos especiales  · Christoforos Nikolaou  · junio 2026</p>
+  </div>
+</header>
+
+<nav id="nav">
+  <button class="tab-btn active" data-tab="simple-compuesto">Simple vs. Compuesto</button>
+  <button class="tab-btn" data-tab="posibles">Cond. Posibles</button>
+  <button class="tab-btn" data-tab="hipoteticas">Cond. Hipotéticas</button>
+  <button class="tab-btn" data-tab="pasadas">Cond. Pasadas</button>
+  <button class="tab-btn" data-tab="especiales">Modos Especiales</button>
+  <button class="tab-btn" data-tab="practica">Práctica</button>
+</nav>
+
+<main>
+
+<!-- ═══════════════════ A: SIMPLE vs COMPUESTO ═══════════════════ -->
+<div class="tab-panel active" id="tab-simple-compuesto">
+  <div class="section-label">Sección (a) · U45</div>
+  <h2>Condicional Simple vs. Compuesto</h2>
+  <p class="lead">El condicional simple se orienta al presente o futuro; el compuesto al pasado. Ambos comparten valores de hipótesis y probabilidad, pero en planos temporales opuestos.</p>
+
+  <h3>Visión de conjunto</h3>
+  <div class="compare-block">
+    <div class="compare-col simple">
+      <h4>Condicional Simple</h4>
+      <ul>
+        <li>Situaciones <em>no reales en el presente</em></li>
+        <li>Deseos con proyección <em>al futuro</em></li>
+        <li>Consejos útiles <em>para el presente o futuro</em></li>
+        <li>Expresar <em>duda sobre una noticia</em> presente</li>
+        <li>Expresar probabilidad sobre algo en <em>el pasado</em></li>
+      </ul>
+    </div>
+    <div class="compare-col compuesto">
+      <h4>Condicional Compuesto</h4>
+      <ul>
+        <li>Situaciones <em>no reales en el pasado</em></li>
+        <li>Deseos <em>no cumplidos</em> en el pasado</li>
+        <li>Consejos tardíos sobre algo <em>del pasado</em> que ya no se puede cambiar</li>
+        <li>Duda sobre <em>un acontecimiento ya pasado</em></li>
+        <li>Expresar probabilidad sobre algo en el <em>pasado anterior</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Formación</h3>
+  <div class="formula">
+    <span class="formula-part cond">Infinitivo</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part cond">-ía / -ías / -ía / -íamos / -íais / -ían</span>
+    <span class="formula-label">Condicional simple → hablaría, comería, viviría</span>
+  </div>
+  <div class="formula">
+    <span class="formula-part subj">habría / habrías / habría…</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part subj">participio</span>
+    <span class="formula-label">Condicional compuesto → habría hablado, habría comido</span>
+  </div>
+
+  <h3>Usos del condicional simple en detalle</h3>
+  <div class="card-grid">
+    <div class="card teal">
+      <div class="tag teal">Situación no real</div>
+      <h4>Hipótesis sobre el presente</h4>
+      <p>Algo que no ocurre (o probablemente no) en este momento.</p>
+      <p><em>«Yo en tu lugar, no <strong>haría</strong> eso.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Deseo con proyección</div>
+      <h4>Deseo orientado al futuro</h4>
+      <p>Lo que se desearía que ocurriera pero que no es todavía real.</p>
+      <p><em>«Me <strong>gustaría</strong> vivir en el extranjero.»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Consejo útil</div>
+      <h4>Recomendación para el presente/futuro</h4>
+      <p>Todavía se puede aplicar; hay margen de actuación.</p>
+      <p><em>«Yo <strong>estudiaría</strong> un poco más antes del examen.»</em></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Duda sobre noticia</div>
+      <h4>Distanciamiento epistemico presente</h4>
+      <p>Se atribuye información a una fuente sin confirmarla.</p>
+      <p><em>«El ministro <strong>dimitiría</strong> esta tarde.»</em></p>
+    </div>
+    <div class="card slate">
+      <div class="tag slate">Probabilidad en el pasado</div>
+      <h4>Conjetura sobre el pasado reciente</h4>
+      <p>Equivale al futuro de probabilidad, pero referido al pasado.</p>
+      <p><em>«—¿Por qué no vino? —<strong>Estaría</strong> cansado.»</em></p>
+    </div>
+    <div class="card green">
+      <div class="tag green">Cortesía</div>
+      <h4>Atenuación y petición educada</h4>
+      <p>Suaviza mandatos o peticiones directas.</p>
+      <p><em>«¿<strong>Podría</strong> ayudarme un momento?»</em></p>
+    </div>
+  </div>
+
+  <h3>Usos del condicional compuesto en detalle</h3>
+  <div class="card-grid">
+    <div class="card purple">
+      <div class="tag purple">Deseo no cumplido</div>
+      <h4>Lo que habría ocurrido (pero no ocurrió)</h4>
+      <p><em>«Me <strong>habría gustado</strong> conocerle.»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Consejo tardío</div>
+      <h4>Ya no se puede cambiar</h4>
+      <p><em>«Yo en tu lugar <strong>habría estudiado</strong> más.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Duda / acontecimiento pasado</div>
+      <h4>Distanciamiento sobre hecho pasado</h4>
+      <p><em>«Según los testigos, <strong>habría llegado</strong> de madrugada.»</em></p>
+    </div>
+    <div class="card slate">
+      <div class="tag slate">Probabilidad sobre pasado anterior</div>
+      <h4>Conjetura sobre algo ya completado</h4>
+      <p><em>«Para cuando llegamos, ya <strong>habrían salido</strong>.»</em></p>
+    </div>
+  </div>
+
+  <h3>Comparación directa: mismo contexto, distinto tiempo</h3>
+  <table class="contrast-table">
+    <tr><th>Condicional simple</th><th>Condicional compuesto</th><th>Diferencia</th></tr>
+    <tr>
+      <td><em>Yo en tu lugar <span style="color:var(--teal)">estudiaría</span> más.</em></td>
+      <td><em>Yo en tu lugar <span style="color:var(--purple)">habría estudiado</span> más.</em></td>
+      <td>Simple → todavía puedes hacerlo. Compuesto → ya no es posible.</td>
+    </tr>
+    <tr>
+      <td><em>¿Por qué no vino? <span style="color:var(--teal)">Estaría</span> cansado.</em></td>
+      <td><em>¿Por qué no había venido? <span style="color:var(--purple)">Habría estado</span> cansado.</em></td>
+      <td>Simple → probabilidad pasada reciente. Compuesto → probabilidad en un pasado anterior.</td>
+    </tr>
+    <tr>
+      <td><em>Me <span style="color:var(--teal)">gustaría</span> conocerle (aún vive).</em></td>
+      <td><em>Me <span style="color:var(--purple)">habría gustado</span> conocerle (ya murió).</em></td>
+      <td>Simple → deseo realizable en principio. Compuesto → deseo imposible por ser pasado irrecuperable.</td>
+    </tr>
+  </table>
+
+  <div class="callout warning">
+    <strong>⚠ El condicional periodístico:</strong> Tanto el simple como el compuesto se usan en prensa para atribuir información sin verificarla. <em>«El acusado <strong>habría falsificado</strong> documentos»</em> (compuesto, hecho pasado) / <em>«El ministro <strong>presentaría</strong> su dimisión mañana»</em> (simple, hecho futuro pendiente). Es un registro propio del C1 escrito.
+  </div>
+</div>
+
+<!-- ═══════════════════ B: CONDICIONALES POSIBLES ═══════════════════ -->
+<div class="tab-panel" id="tab-posibles">
+  <div class="section-label">Sección (b) · U94</div>
+  <h2>Oraciones Condicionales Posibles</h2>
+  <p class="lead">Las condicionales posibles presentan situaciones que el hablante considera realizables en el presente o el futuro. La condición es real o al menos plausible desde su perspectiva.</p>
+
+  <h3>Estructura general</h3>
+  <div class="formula">
+    <span class="formula-part prot">Si</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part ind">Presente (i) o Pretérito Imperfecto (ii) de indicativo</span>
+    <span class="formula-arrow">→</span>
+    <span class="formula-part apo">Consecuencia</span>
+    <span class="formula-label">Prótasis (condición) → Apódosis (resultado)</span>
+  </div>
+
+  <h3>Apódosis posibles según el matiz</h3>
+  <table class="contrast-table">
+    <tr><th>Tipo de apódosis</th><th>Forma verbal</th><th>Referencia</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>Futuro simple</strong></td>
+      <td class="mono">llamarás</td>
+      <td>i → v</td>
+      <td><em>Si <span style="color:var(--teal)">tienes</span> tiempo, me <span style="color:var(--gold)">llamarás</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Presente de indicativo</strong></td>
+      <td class="mono">llamas</td>
+      <td>i → iii</td>
+      <td><em>Si <span style="color:var(--teal)">tienes</span> frío, <span style="color:var(--gold)">te pones</span> el abrigo.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Imperativo</strong></td>
+      <td class="mono">llama</td>
+      <td>i → iv</td>
+      <td><em>Si <span style="color:var(--teal)">sabes</span> la respuesta, <span style="color:var(--gold)">levanta</span> la mano.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Condicional simple</strong></td>
+      <td class="mono">llamarías</td>
+      <td>i → v</td>
+      <td><em>Si <span style="color:var(--teal)">tienes</span> tiempo, me <span style="color:var(--gold)">llamarías</span>.</em> <small>(matiz más hipotético)</small></td>
+    </tr>
+  </table>
+
+  <h3>Usos de las condicionales posibles</h3>
+  <div class="card-grid">
+    <div class="card teal">
+      <div class="tag teal">Consecuencias</div>
+      <h4>Resultado natural de la condición</h4>
+      <p>La condición es factible y el resultado se sigue lógicamente.</p>
+      <p><em>«Si <strong>llueve</strong>, <strong>cogemos</strong> el paraguas.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Consejos</div>
+      <h4>Recomendación aplicable ahora</h4>
+      <p>Se puede actuar todavía sobre la situación.</p>
+      <p><em>«Si <strong>tienes</strong> ese problema, <strong>habla</strong> con el médico.»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Decisiones ya tomadas</div>
+      <h4>Consecuencias seguras</h4>
+      <p>El resultado es casi inevitable dada la condición.</p>
+      <p><em>«Si <strong>suspende</strong>, <strong>tendrá</strong> que repetir.»</em></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Verdades universales</div>
+      <h4>Principios generales</h4>
+      <p>Hechos que siempre se cumplen.</p>
+      <p><em>«Si <strong>pones</strong> agua al fuego, <strong>hierve</strong>.»</em></p>
+    </div>
+    <div class="card green">
+      <div class="tag green">Recomendaciones</div>
+      <h4>Sugerencias con base real</h4>
+      <p><em>«Si <strong>quieres</strong> mejorar, <strong>practica</strong> todos los días.»</em></p>
+    </div>
+    <div class="card slate">
+      <div class="tag slate">Deducciones (pasado)</div>
+      <h4>Conclusión sobre el pasado</h4>
+      <p>La prótasis en imperfecto sitúa la condición en el pasado.</p>
+      <p><em>«Si <strong>estudiaba</strong>, <strong>aprobaba</strong>.»</em></p>
+    </div>
+  </div>
+
+  <h3>Condiciones pasadas con resultado presente</h3>
+  <p>Cuando la condición se sitúa en el pasado pero tiene efecto presente, se usa imperfecto de indicativo en la prótasis:</p>
+  <div class="example-block">
+    <div class="ex">Si <span class="form-highlight">dormía</span> mal, <span class="verb-highlight">estaba</span> cansado todo el día.</div>
+    <div class="gloss">Condición habitual del pasado → consecuencia habitual del pasado (ambas imperfecto)</div>
+    <div class="ex">Si <span class="form-highlight">tiene</span> fiebre, <span class="verb-highlight">lleva</span>lo al médico.</div>
+    <div class="gloss">Condición real presente → imperativo (instrucción directa)</div>
+    <div class="ex">Si <span class="form-highlight">sales</span> antes, <span class="verb-highlight">llegarás</span> a tiempo.</div>
+    <div class="gloss">Condición real presente → futuro simple (consecuencia probable)</div>
+  </div>
+
+  <div class="callout info">
+    <strong>Recuerda:</strong> En las condicionales posibles, el verbo de la prótasis <em>nunca</em> va en futuro ni en condicional: <em>«Si *tendrás tiempo»</em> es siempre incorrecto. La regla es: <strong>Si + presente/imperfecto de indicativo</strong>.
+  </div>
+</div>
+
+<!-- ═══════════════════ C: CONDICIONALES HIPOTÉTICAS ═══════════════════ -->
+<div class="tab-panel" id="tab-hipoteticas">
+  <div class="section-label">Sección (c) · U96</div>
+  <h2>Oraciones Condicionales Hipotéticas e Imaginarias</h2>
+  <p class="lead">Las condicionales hipotéticas presentan situaciones <strong>poco probables, imaginarias o contrarias a la realidad presente</strong>. La condición no se cumple (o probablemente no se cumplirá).</p>
+
+  <h3>Estructura</h3>
+  <div class="formula">
+    <span class="formula-part prot">Si</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part subj">Pretérito imperfecto de subjuntivo</span>
+    <span class="formula-arrow">→</span>
+    <span class="formula-part apo">Condicional simple</span>
+    <span class="formula-label">Condición hipotética/imaginaria → Consecuencia imaginada</span>
+  </div>
+
+  <div class="example-block">
+    <div class="ex">Si <span class="form-highlight">tuviera</span> más tiempo, <span class="verb-highlight">estudiaría</span> chino.</div>
+    <div class="gloss">No tengo tiempo → es hipotético / imaginario</div>
+    <div class="ex">Si <span class="form-highlight">fuera</span> rico, <span class="verb-highlight">viajaría</span> por todo el mundo.</div>
+    <div class="gloss">No soy rico → condición contraria a la realidad presente</div>
+    <div class="ex">Si <span class="form-highlight">pudiera</span> elegir, <span class="verb-highlight">viviría</span> en Roma.</div>
+    <div class="gloss">Condición poco probable o imposible en la práctica</div>
+  </div>
+
+  <h3>Cuando se usan</h3>
+  <div class="card-grid">
+    <div class="card purple">
+      <div class="tag purple">Condiciones poco probables</div>
+      <h4>Escenario improbable pero posible en teoría</h4>
+      <p><em>«Si <strong>ganara</strong> la lotería, <strong>dejaría</strong> de trabajar.»</em></p>
+      <p><small>No se espera ganar, pero no es imposible.</small></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Condiciones hipotéticas</div>
+      <h4>Contrario a la realidad presente</h4>
+      <p><em>«Si <strong>fuera</strong> médico, <strong>trabajaría</strong> en África.»</em></p>
+      <p><small>No soy médico → claramente imaginario.</small></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Condiciones imaginarias</div>
+      <h4>Mundo alternativo / fantasía</h4>
+      <p><em>«Si <strong>existiera</strong> la máquina del tiempo, <strong>volvería</strong> al pasado.»</em></p>
+      <p><small>Situación claramente imposible.</small></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Consecuencias dudosas</div>
+      <h4>No dependen de nosotros</h4>
+      <p><em>«Si <strong>hiciera</strong> buen tiempo, <strong>saldríamos</strong> de excursión.»</em></p>
+      <p><small>No controlamos el tiempo → incertidumbre.</small></p>
+    </div>
+  </div>
+
+  <div class="callout warning">
+    <strong>⚠ Nota crucial:</strong> Cuando la condición es hipotética, <em>lo poco probable/seguro la consecuencia</em> hace que se use el pretérito imperfecto de subjuntivo. El condicional nunca va en la prótasis: <em>«Si *tendría»</em> es siempre incorrecto. En coloquial se oye «si tenía → venías» pero es incorrecto en C1 formal.
+  </div>
+
+  <h3>La clave: posible vs. hipotética</h3>
+  <table class="contrast-table">
+    <tr><th></th><th>Condicional posible (b)</th><th>Condicional hipotética (c)</th></tr>
+    <tr>
+      <td><strong>Prótasis</strong></td>
+      <td class="mono">Si + presente ind.</td>
+      <td class="mono">Si + imperfecto subj.</td>
+    </tr>
+    <tr>
+      <td><strong>Apódosis</strong></td>
+      <td class="mono">Presente / futuro / imperativo</td>
+      <td class="mono">Condicional simple</td>
+    </tr>
+    <tr>
+      <td><strong>Realidad</strong></td>
+      <td>La condición puede cumplirse</td>
+      <td>La condición no se cumple o es muy improbable</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><em>Si <span style="color:var(--green)">tienes</span> frío, <span style="color:var(--green)">ponte</span> el abrigo.</em></td>
+      <td><em>Si <span style="color:var(--purple)">tuvieras</span> frío, <span style="color:var(--purple)">te pondrías</span> el abrigo.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Perspectiva</strong></td>
+      <td>Hablo de algo real o probable</td>
+      <td>Hablo de algo que sé (o creo) que no es así</td>
+    </tr>
+  </table>
+
+  <div class="callout info">
+    <strong>Matiz interesante:</strong> A veces la misma frase puede ser posible o hipotética según la intención del hablante. <em>«Si <strong>gana</strong> el partido»</em> (creo que puede ganar) vs. <em>«Si <strong>ganara</strong> el partido»</em> (lo considero poco probable o imaginario). El modo cambia la expectativa del hablante.
+  </div>
+</div>
+
+<!-- ═══════════════════ D: CONDICIONALES PASADAS ═══════════════════ -->
+<div class="tab-panel" id="tab-pasadas">
+  <div class="section-label">Sección (d) · U97</div>
+  <h2>Oraciones Condicionales Pasadas No Cumplidas</h2>
+  <p class="lead">Las condicionales pasadas expresan condiciones situadas en el pasado que <strong>no se cumplieron</strong>. El resultado tampoco se realizó. Equivalen a «lamentar que algo no ocurriera».</p>
+
+  <h3>Estructura</h3>
+  <div class="formula">
+    <span class="formula-part prot">Si</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part subj">Pretérito pluscuamperfecto de subjuntivo</span>
+    <span class="formula-arrow">→</span>
+    <span class="formula-part apo">Condicional compuesto</span>
+    <span class="formula-label">Condición pasada no cumplida → Consecuencia también no cumplida</span>
+  </div>
+
+  <div class="example-block">
+    <div class="ex">Si <span class="form-highlight">hubiera estudiado</span> más, <span class="verb-highlight">habría aprobado</span>.</div>
+    <div class="gloss">No estudié → no aprobé. Ambos hechos son irreales en el pasado.</div>
+    <div class="ex">Si <span class="form-highlight">me hubieran avisado</span>, <span class="verb-highlight">habría llegado</span> a tiempo.</div>
+    <div class="gloss">No me avisaron → no llegué a tiempo.</div>
+    <div class="ex">Si <span class="form-highlight">hubiera hecho</span> buen tiempo, <span class="verb-highlight">habríamos salido</span> de excursión.</div>
+    <div class="gloss">No hizo buen tiempo → no salimos. Condición y consecuencia ambas irrealizadas.</div>
+  </div>
+
+  <h3>Usos</h3>
+  <div class="card-grid">
+    <div class="card red">
+      <div class="tag red">Condiciones pasadas no cumplidas</div>
+      <h4>Arrepentimiento / reproche</h4>
+      <p>La condición no se dio y el resultado tampoco.</p>
+      <p><em>«Si <strong>hubiera salido</strong> antes, no <strong>habría perdido</strong> el tren.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Deducciones del pasado</div>
+      <h4>Conclusión lógica sobre el pasado</h4>
+      <p>Si algo hubiera ocurrido, la consecuencia habría sido…</p>
+      <p><em>«Si <strong>hubiera llovido</strong>, el suelo <strong>habría estado</strong> mojado.»</em></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Recomendaciones pasadas</div>
+      <h4>Consejo tardío — ya imposible de aplicar</h4>
+      <p><em>«Yo en tu lugar <strong>habría esperado</strong> más.»</em></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Condiciones pasadas posibles</div>
+      <h4>Con referencia explícita a otra época</h4>
+      <p><em>«Hace 3 años, si <strong>hubiera sabido</strong> esto, <strong>habría actuado</strong> de otro modo.»</em></p>
+    </div>
+  </div>
+
+  <h3>Las condicionales mixtas — rasgo C1</h3>
+  <p>A veces la condición y la consecuencia están en planos temporales distintos:</p>
+  <table class="contrast-table">
+    <tr><th>Tipo mixta</th><th>Prótasis</th><th>Apódosis</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>Pasado → presente</strong></td>
+      <td class="mono">Si + pluscuamperf. subj.</td>
+      <td class="mono">Condicional simple</td>
+      <td><em>Si <span style="color:var(--purple)">hubiera estudiado</span> medicina, <span style="color:var(--teal)">sería</span> médico ahora.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Presente → pasado</strong></td>
+      <td class="mono">Si + imperfecto subj.</td>
+      <td class="mono">Condicional compuesto</td>
+      <td><em>Si <span style="color:var(--teal)">fuera</span> más valiente, <span style="color:var(--purple)">habría dicho</span> la verdad entonces.</em></td>
+    </tr>
+  </table>
+
+  <div class="callout purple">
+    <strong>Las condicionales mixtas</strong> combinan marcos temporales distintos en prótasis y apódosis. Son un rasgo característico del C1 y distinguen al hablante avanzado. La clave es identificar a qué plano temporal pertenecen la condición y el resultado respectivamente.
+  </div>
+
+  <h3>Cuadro sinóptico completo de los tres tipos</h3>
+  <table class="contrast-table">
+    <tr><th>Tipo</th><th>Si + …</th><th>→ Apódosis</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>(b) Posible</strong></td>
+      <td class="mono">presente ind.</td>
+      <td class="mono">futuro / presente / imperativo</td>
+      <td><em>Si <span style="color:var(--green)">tienes</span> tiempo, <span style="color:var(--green)">llámame</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>(c) Hipotética</strong></td>
+      <td class="mono">imperfecto subj.</td>
+      <td class="mono">condicional simple</td>
+      <td><em>Si <span style="color:var(--gold)">tuvieras</span> tiempo, <span style="color:var(--gold)">me llamarías</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>(d) Pasada</strong></td>
+      <td class="mono">pluscuamperf. subj.</td>
+      <td class="mono">condicional compuesto</td>
+      <td><em>Si <span style="color:var(--accent)">hubieras tenido</span> tiempo, <span style="color:var(--accent)">me habrías llamado</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Mixta (pasado→presente)</strong></td>
+      <td class="mono">pluscuamperf. subj.</td>
+      <td class="mono">condicional simple</td>
+      <td><em>Si <span style="color:var(--purple)">hubiera estudiado</span>, <span style="color:var(--purple)">sabría</span> más ahora.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Mixta (presente→pasado)</strong></td>
+      <td class="mono">imperfecto subj.</td>
+      <td class="mono">condicional compuesto</td>
+      <td><em>Si <span style="color:var(--teal)">fuera</span> más listo, lo <span style="color:var(--teal)">habría entendido</span> antes.</em></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════ E: MODOS ESPECIALES ═══════════════════ -->
+<div class="tab-panel" id="tab-especiales">
+  <div class="section-label">Sección (e) · U95 &amp; U98</div>
+  <h2>Modos Especiales de Condicional</h2>
+  <p class="lead">Además de «si», existen muchos nexos y estructuras que introducen condiciones con matices específicos. Dominarlos distingue el nivel C1 del B2.</p>
+
+  <h3>Conectores condicionales con subjuntivo</h3>
+  <div class="connector-grid">
+    <div class="connector-item">
+      <span class="conn">siempre que</span>
+      <p>Condición que se repite / necesaria: <em>«<strong>Siempre que</strong> estudies, apruebas.»</em></p>
+    </div>
+    <div class="connector-item">
+      <span class="conn">a condición de que</span>
+      <p>Condición impuesta, acuerdo: <em>«Iremos <strong>a condición de que</strong> vengas tú.»</em></p>
+    </div>
+    <div class="connector-item">
+      <span class="conn">a no ser que</span>
+      <p>Excepción / condición negativa: <em>«Saldré <strong>a no ser que</strong> llueva.»</em></p>
+    </div>
+    <div class="connector-item">
+      <span class="conn">a menos que</span>
+      <p>Excepción (similar a «a no ser que»): <em>«Iré <strong>a menos que</strong> me llames.»</em></p>
+    </div>
+    <div class="connector-item">
+      <span class="conn">sin que</span>
+      <p>Condición negativa implícita: <em>«No saldrá <strong>sin que</strong> yo lo sepa.»</em></p>
+    </div>
+    <div class="connector-item">
+      <span class="conn">con tal de que</span>
+      <p>Condición suficiente; disposición: <em>«Lo haré <strong>con tal de que</strong> me ayudes.»</em></p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <strong>Regla general:</strong> Todos los conectores anteriores (excepto <em>como + subj.</em> y <em>en caso de + infinitivo</em>) van seguidos de <strong>subjuntivo</strong>. El tiempo del subjuntivo depende de si la referencia es presente/futura (presente de subj.) o pasada (imperfecto de subj.).
+  </div>
+
+  <h3>«Como» condicional + subjuntivo (U95)</h3>
+  <p>Cuando «como» introduce una condición, equivale a «si» pero con un matiz de <strong>amenaza o advertencia</strong>. Va siempre con subjuntivo:</p>
+
+  <div class="example-block">
+    <div class="ex"><span class="form-highlight">Como</span> no <span class="verb-highlight">estudies</span>, <span class="verb-highlight">suspenderás</span>.</div>
+    <div class="gloss">= Si no estudias, suspenderás [con tono de advertencia]</div>
+    <div class="ex"><span class="form-highlight">Como</span> <span class="verb-highlight">llegues</span> tarde otra vez, te <span class="verb-highlight">quedas</span> sin postre.</div>
+    <div class="gloss">Condicional de amenaza — más enfático que «si»</div>
+    <div class="ex"><span class="form-highlight">Como</span> me <span class="verb-highlight">digas</span> eso una vez más, me <span class="verb-highlight">voy</span>.</div>
+    <div class="gloss">La apódosis puede llevar presente de indicativo para reforzar la certeza de la consecuencia</div>
+  </div>
+
+  <div class="callout warning">
+    <strong>⚠ «Como» vs. «si»:</strong> <em>«Si llegas tarde, te quedas sin postre»</em> es neutral. <em>«Como llegues tarde, te quedas sin postre»</em> añade un tono de advertencia, casi de amenaza. Es un condicional más enfático y expresivo.
+  </div>
+
+  <h3>«En caso de» + infinitivo (U98)</h3>
+  <p>Alternativa formal a «si + indicativo». El sujeto de ambas oraciones debe ser el mismo:</p>
+
+  <div class="example-block">
+    <div class="ex"><span class="form-highlight">En caso de</span> <span class="verb-highlight">tener</span> alguna duda, consulta el manual.</div>
+    <div class="gloss">= Si tienes alguna duda, consulta... (mismo sujeto implícito)</div>
+    <div class="ex"><span class="form-highlight">En caso de</span> <span class="verb-highlight">lluvia</span>, el acto se celebrará en el interior.</div>
+    <div class="gloss">Variante con sustantivo — típico de comunicados oficiales y registros formales</div>
+  </div>
+
+  <h3>Esquema completo: nexos condicionales y sus estructuras</h3>
+  <table class="contrast-table">
+    <tr><th>Nexo</th><th>Estructura</th><th>Matiz</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>como</strong></td>
+      <td class="mono">como + subj. → ind./futuro</td>
+      <td>Advertencia / amenaza</td>
+      <td><em><span style="color:var(--accent)">Como</span> llegues tarde, cerramos.</em></td>
+    </tr>
+    <tr>
+      <td><strong>que</strong></td>
+      <td class="mono">que + subj. → condicional</td>
+      <td>Condición informal/oral</td>
+      <td><em><span style="color:var(--gold)">Que</span> me ayudes, vendré; si no, no.</em></td>
+    </tr>
+    <tr>
+      <td><strong>siempre que</strong></td>
+      <td class="mono">siempre que + subj.</td>
+      <td>Condición necesaria / repetida</td>
+      <td><em><span style="color:var(--teal)">Siempre que</span> puedas, ven.</em></td>
+    </tr>
+    <tr>
+      <td><strong>a condición de que</strong></td>
+      <td class="mono">a condición de que + subj.</td>
+      <td>Acuerdo / pacto</td>
+      <td><em><span style="color:var(--teal)">A condición de que</span> me avises.</em></td>
+    </tr>
+    <tr>
+      <td><strong>con tal de que</strong></td>
+      <td class="mono">con tal de que + subj.</td>
+      <td>Disposición; condición suficiente</td>
+      <td><em><span style="color:var(--purple)">Con tal de que</span> termines, puedes salir.</em></td>
+    </tr>
+    <tr>
+      <td><strong>a no ser que</strong></td>
+      <td class="mono">a no ser que + subj.</td>
+      <td>Excepción negativa</td>
+      <td><em>Vendrá <span style="color:var(--accent)">a no ser que</span> llueva.</em></td>
+    </tr>
+    <tr>
+      <td><strong>a menos que</strong></td>
+      <td class="mono">a menos que + subj.</td>
+      <td>Excepción negativa (sinónimo)</td>
+      <td><em>Iré <span style="color:var(--accent)">a menos que</span> me llames.</em></td>
+    </tr>
+    <tr>
+      <td><strong>sin que</strong></td>
+      <td class="mono">sin que + subj.</td>
+      <td>Condición negativa implícita</td>
+      <td><em>No saldrá <span style="color:var(--slate)">sin que</span> yo lo autorice.</em></td>
+    </tr>
+    <tr>
+      <td><strong>en caso de</strong></td>
+      <td class="mono">en caso de + infinitivo</td>
+      <td>Registro formal; mismo sujeto</td>
+      <td><em><span style="color:var(--green)">En caso de</span> tener dudas, llame.</em></td>
+    </tr>
+    <tr>
+      <td><strong>en caso de que</strong></td>
+      <td class="mono">en caso de que + subj.</td>
+      <td>Formal; distintos sujetos posibles</td>
+      <td><em><span style="color:var(--green)">En caso de que</span> llegues antes, espera.</em></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════ PRÁCTICA ═══════════════════ -->
+<div class="tab-panel" id="tab-practica">
+  <div class="section-label">Práctica Interactiva</div>
+  <h2>Pon a prueba tu dominio</h2>
+  <p class="lead">25 preguntas organizadas por sección. Cada respuesta incluye una explicación razonada.</p>
+
+  <div id="score-bar">
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);margin-bottom:0.2rem;">Puntuación</div>
+      <div id="score-display">0 / 25</div>
+    </div>
+    <div style="flex:1;min-width:160px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);margin-bottom:0.4rem;">Progreso</div>
+      <div style="background:var(--mist);border-radius:20px;height:8px;overflow:hidden;">
+        <div id="score-progress" style="background:var(--green);height:100%;width:0%;transition:width 0.4s;border-radius:20px;"></div>
+      </div>
+    </div>
+    <div id="score-grade" style="font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--slate);"></div>
+  </div>
+
+  <div id="quiz-container"></div>
+
+  <div style="margin-top:1.5rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+    <button id="reset-quiz" style="background:var(--ink);color:var(--paper);border:none;border-radius:5px;padding:0.6rem 1.4rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;letter-spacing:0.05em;display:none;">↺ Reiniciar quiz</button>
+    <button id="show-all" style="background:var(--mist);color:var(--ink);border:1px solid var(--border);border-radius:5px;padding:0.6rem 1.4rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;letter-spacing:0.05em;display:none;">Ver todas las respuestas</button>
+  </div>
+</div>
+
+</main>
+
+<script>
+// ── Tabs ──
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+// ── Progress bar ──
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  document.getElementById('progress-bar').style.width =
+    (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+});
+
+// ── Quiz data ──
+const categories = [
+  { name: "A · Condicional simple vs. compuesto", color: "var(--teal)" },
+  { name: "B · Condicionales posibles (Si + indicativo)", color: "var(--gold)" },
+  { name: "C · Condicionales hipotéticas (Si + imperfecto subj.)", color: "var(--purple)" },
+  { name: "D · Condicionales pasadas (Si + pluscuamperfecto subj.)", color: "var(--accent)" },
+  { name: "E · Modos especiales y nexos condicionales", color: "var(--green)" }
+];
+
+const questions = [
+  // A: Simple vs compuesto
+  {
+    cat: 0,
+    q: "—¿Por qué no vino Marcos a la reunión? —No sé. _____ (tener) algún problema.",
+    options: ["Tendrá", "Tendría", "Habría tenido", "Hubiera tenido"],
+    correct: 1,
+    explanation: "Condicional simple de probabilidad en el pasado: se conjetura sobre algo que ocurrió en el pasado reciente. Paralelo al futuro de probabilidad pero referido al pasado: «¿Por qué no vino?» → «Tendría algún problema» (= supongo que tuvo)."
+  },
+  {
+    cat: 0,
+    q: "Yo en tu lugar no _____ (decir) eso ahora. Todavía estás a tiempo.",
+    options: ["habría dicho", "hubiera dicho", "diría", "dijera"],
+    correct: 2,
+    explanation: "Condicional simple de consejo: todavía se puede actuar, la situación es presente. Si fuera «habría dicho», implicaría que ya es tarde para actuar (condicional compuesto). «Diría» = consejo aplicable ahora."
+  },
+  {
+    cat: 0,
+    q: "Yo en tu lugar _____ (estudiar) más antes del examen del lunes pasado.",
+    options: ["estudiaría", "habría estudiado", "hubiera estudiado", "estudié"],
+    correct: 1,
+    explanation: "Condicional compuesto de consejo tardío: el examen ya pasó, no se puede cambiar nada. «Habría estudiado» = el consejo ya no es aplicable, se lamenta algo del pasado."
+  },
+  {
+    cat: 0,
+    q: "Según los testigos, el sospechoso _____ (abandonar) el edificio antes de medianoche.",
+    options: ["abandonaría", "habría abandonado", "hubiera abandonado", "abandonó"],
+    correct: 1,
+    explanation: "Condicional perfecto periodístico/atributivo: distanciamiento epistémico sobre un hecho pasado. La información se atribuye a los testigos sin confirmarla. Se usa el compuesto porque el hecho ya ocurrió."
+  },
+  {
+    cat: 0,
+    q: "Me _____ (gustar) conocer a Pessoa, pero murió antes de que yo naciera.",
+    options: ["gustaría", "habría gustado", "gustara", "hubiera gustado"],
+    correct: 1,
+    explanation: "Condicional compuesto de deseo imposible: el deseo es irreal por referirse a algo pasado e irrecuperable. «Habría gustado» = deseo que ya no puede cumplirse nunca. Si Pessoa viviera aún, usaríamos «me gustaría»."
+  },
+
+  // B: Posibles
+  {
+    cat: 1,
+    q: "Si _____ (tener, tú) fiebre, quédate en cama.",
+    options: ["tengas", "tendrías", "tienes", "tuvieras"],
+    correct: 2,
+    explanation: "Condicional posible con apódosis de imperativo: la condición es real y plausible. Prótasis con presente de indicativo («tienes»), no subjuntivo. La condición posible nunca lleva subjuntivo en la prótasis."
+  },
+  {
+    cat: 1,
+    q: "Si _____ (poner) agua al fuego, hierve a 100 grados.",
+    options: ["pongas", "pusiera", "pones", "pondrás"],
+    correct: 2,
+    explanation: "Condicional de verdad universal: siempre ocurre. Presente de indicativo en ambas cláusulas. Es la forma más básica de la condicional posible: Si + presente ind. → presente ind."
+  },
+  {
+    cat: 1,
+    q: "Si _____ (salir, tú) antes de las 8, llegarás a tiempo al aeropuerto.",
+    options: ["salgas", "saldrás", "sales", "salieras"],
+    correct: 2,
+    explanation: "Condicional posible: la condición es real y el resultado probable. Presente de indicativo en la prótasis («sales»), futuro simple en la apódosis («llegarás»). Nunca se usa futuro en la prótasis condicional."
+  },
+  {
+    cat: 1,
+    q: "Si _____ (llover) mucho de niño, me _____ (quedar) en casa jugando.",
+    options: ["llovía / quedaba", "llueve / quedo", "lloviera / quedaría", "hubiera llovido / me habría quedado"],
+    correct: 0,
+    explanation: "Condición habitual del pasado: si + imperfecto de indicativo → imperfecto de indicativo. Ambos en imperfecto porque expresan una costumbre repetida del pasado, no una hipótesis. No confundir con la condicional hipotética (que usa imperfecto de subjuntivo)."
+  },
+  {
+    cat: 1,
+    q: "¿Qué pasa si no _____ (venir, vosotros) a la reunión?",
+    options: ["vengáis", "vendréis", "venís", "vinierais"],
+    correct: 2,
+    explanation: "Pregunta sobre condición real y posible → presente de indicativo. «¿Qué pasa si no venís?» pregunta sobre una posibilidad concreta. No es hipotético: se usa indicativo, no subjuntivo."
+  },
+
+  // C: Hipotéticas
+  {
+    cat: 2,
+    q: "Si _____ (ser) más alto, _____ (jugar) al baloncesto profesionalmente.",
+    options: ["soy / juego", "fuera / jugaría", "sea / jugaré", "hubiera sido / habría jugado"],
+    correct: 1,
+    explanation: "Condicional hipotética: no soy alto (contrario a la realidad presente). Pretérito imperfecto de subjuntivo en la prótasis («fuera») + condicional simple en la apódosis («jugaría»)."
+  },
+  {
+    cat: 2,
+    q: "Si _____ (poder, yo) elegir, _____ (vivir) en una isla del Mediterráneo.",
+    options: ["puedo / vivo", "podría / viviría", "pudiera / viviría", "hubiera podido / habría vivido"],
+    correct: 2,
+    explanation: "Condición hipotética/imaginaria sobre el presente: no puedo elegir libremente. Imperfecto de subjuntivo («pudiera») + condicional simple («viviría»). La estructura es la propia de las hipotéticas o imaginarias."
+  },
+  {
+    cat: 2,
+    q: "¿Qué _____ (hacer, tú) si te _____ (tocar) la lotería?",
+    options: ["harías / tocara", "haces / toca", "harías / tocará", "habrías hecho / hubiera tocado"],
+    correct: 0,
+    explanation: "Pregunta hipotética clásica: ganar la lotería es posible pero improbable. Condicional simple en la apódosis («harías») + imperfecto de subjuntivo en la prótasis («tocara»). Es la estructura tipo de la hipotética."
+  },
+  {
+    cat: 2,
+    q: "Si la Tierra _____ (ser) plana, los barcos _____ (caer) por el borde.",
+    options: ["es / caen", "fuera / caerían", "sea / caigan", "hubiera sido / habrían caído"],
+    correct: 1,
+    explanation: "Condición claramente contraria a la realidad (la Tierra no es plana). Imperfecto de subjuntivo («fuera») + condicional simple («caerían»). El hablante sabe que la condición es falsa."
+  },
+  {
+    cat: 2,
+    q: "Selecciona la frase correcta en registro culto C1:",
+    options: [
+      "Si tendría más dinero, compraría esa casa.",
+      "Si tengo más dinero, compraría esa casa.",
+      "Si tuviera más dinero, compraría esa casa.",
+      "Si tuviera más dinero, compraba esa casa."
+    ],
+    correct: 2,
+    explanation: "La condicional hipotética correcta: Si + imperfecto de subjuntivo («tuviera») + condicional simple («compraría»). El condicional en la prótasis (*si tendría) es siempre un error. El imperfecto de indicativo en la apódosis (*compraba) es coloquial pero incorrecto en C1."
+  },
+
+  // D: Pasadas
+  {
+    cat: 3,
+    q: "Si _____ (estudiar, yo) más, _____ (aprobar) el examen.",
+    options: ["hubiera estudiado / habría aprobado", "estudiara / aprobaría", "hubiera estudiado / aprobaría", "estudié / aprobé"],
+    correct: 0,
+    explanation: "Condicional pasada: no estudié → no aprobé. Ambas acciones son irreales en el pasado. Pluscuamperfecto de subjuntivo en la prótasis («hubiera estudiado») + condicional compuesto en la apódosis («habría aprobado»)."
+  },
+  {
+    cat: 3,
+    q: "Si me _____ (avisar, vosotros) antes, _____ (venir, yo) a la fiesta.",
+    options: ["avisarais / vendría", "hubierais avisado / habría venido", "avisáis / vendré", "hubierais avisado / vendría"],
+    correct: 1,
+    explanation: "Condición pasada no cumplida: no me avisaron → no fui. Pluscuamperfecto de subjuntivo («hubierais avisado») + condicional compuesto («habría venido»). La opción (d) sería una condicional mixta pasado→presente."
+  },
+  {
+    cat: 3,
+    q: "Si _____ (nacer, yo) en otro país, _____ (hablar) otra lengua ahora. [mixta]",
+    options: [
+      "hubiera nacido / hablaría",
+      "naciera / hablaría",
+      "hubiera nacido / habría hablado",
+      "naciera / habría hablado"
+    ],
+    correct: 0,
+    explanation: "Condicional mixta pasado→presente: la condición es pasada (el nacimiento, irreal) pero la consecuencia es presente (hablar otra lengua ahora). Pluscuamperfecto de subjuntivo en la prótasis («hubiera nacido») + condicional simple en la apódosis («hablaría»)."
+  },
+  {
+    cat: 3,
+    q: "Si _____ (ser, yo) más valiente de carácter, _____ (decir) la verdad en aquel momento. [mixta]",
+    options: [
+      "hubiera sido / habría dicho",
+      "fuera / habría dicho",
+      "fuera / diría",
+      "hubiera sido / diría"
+    ],
+    correct: 1,
+    explanation: "Condicional mixta presente→pasado: la condición es de carácter presente (no soy valiente → rasgo presente) pero la consecuencia se sitúa en el pasado. Imperfecto de subjuntivo («fuera») + condicional compuesto («habría dicho»)."
+  },
+  {
+    cat: 3,
+    q: "Yo en tu lugar _____ (esperar) un poco más antes de enviar el correo.",
+    options: ["esperaré", "espero", "habría esperado", "esperara"],
+    correct: 2,
+    explanation: "Condicional compuesto de consejo tardío: el correo ya fue enviado, no se puede cambiar. «Habría esperado» = el consejo ya no es aplicable. Si el correo no se hubiera enviado todavía, usaríamos «esperaría» (consejo aún útil)."
+  },
+
+  // E: Modos especiales
+  {
+    cat: 4,
+    q: "_____ (llegar, tú) tarde otra vez, te quedas sin vacaciones. [amenaza]",
+    options: ["Si", "Como", "Siempre que", "A menos que"],
+    correct: 1,
+    explanation: "«Como» condicional de amenaza/advertencia. «Como llegues tarde» equivale a «si llegas tarde» pero con tono amenazante. Siempre va con subjuntivo. Es más enfático y expresivo que «si»."
+  },
+  {
+    cat: 4,
+    q: "Firmaré el contrato _____ me garanticen las condiciones acordadas.",
+    options: ["como", "sin que", "siempre que", "en caso de"],
+    correct: 2,
+    explanation: "«Siempre que» introduce una condición necesaria y repetida: solo firmaré si se garantizan las condiciones. Siempre va con subjuntivo. Equivale a «a condición de que»."
+  },
+  {
+    cat: 4,
+    q: "El acto se celebrará en el exterior, _____ llueva. [excepción]",
+    options: ["siempre que", "con tal de que", "a no ser que", "como"],
+    correct: 2,
+    explanation: "«A no ser que» introduce una excepción o condición negativa: el acto ocurrirá excepto si llueve. Sinónimo de «a menos que». Ambos van seguidos de subjuntivo."
+  },
+  {
+    cat: 4,
+    q: "No salgas _____ yo te lo diga. [condición negativa implícita]",
+    options: ["a menos que", "sin que", "con tal de que", "siempre que"],
+    correct: 1,
+    explanation: "«Sin que» expresa condición negativa implícita: la acción no debe ocurrir en ausencia de algo. «Sin que yo te lo diga» = a no ser que yo te dé permiso. Va con subjuntivo."
+  },
+  {
+    cat: 4,
+    q: "_____ tener alguna pregunta, no dude en contactarnos. [registro formal]",
+    options: ["En caso de", "Como", "Siempre que", "A condición de que"],
+    correct: 0,
+    explanation: "«En caso de + infinitivo» es la forma formal de condicional, típica de comunicados, instrucciones y registros oficiales. El sujeto de las dos cláusulas debe ser el mismo. Equivale a «si tiene alguna pregunta, no dude en contactar…»."
+  }
+];
+
+let score = 0, answered = 0;
+const TOTAL = questions.length;
+
+function updateScore() {
+  const pct = Math.round((score / TOTAL) * 100);
+  document.getElementById('score-display').textContent = score + ' / ' + TOTAL;
+  document.getElementById('score-progress').style.width = (answered / TOTAL * 100) + '%';
+  if (answered === TOTAL) {
+    let grade = pct >= 88 ? '🏆 Excelente — C1 consolidado'
+               : pct >= 72 ? '✅ Bien — repasa los errores'
+               : pct >= 56 ? '📚 Aprobado — necesitas refuerzo'
+               : '🔄 Sigue practicando';
+    document.getElementById('score-grade').textContent = grade;
+    document.getElementById('score-progress').style.background =
+      pct >= 72 ? 'var(--green)' : pct >= 56 ? 'var(--gold)' : 'var(--accent)';
+    document.getElementById('show-all').style.display = 'inline-block';
+  }
+}
+
+function renderQuiz() {
+  score = 0; answered = 0;
+  document.getElementById('score-display').textContent = '0 / ' + TOTAL;
+  document.getElementById('score-progress').style.width = '0%';
+  document.getElementById('score-progress').style.background = 'var(--green)';
+  document.getElementById('score-grade').textContent = '';
+
+  const container = document.getElementById('quiz-container');
+  container.innerHTML = '';
+
+  categories.forEach((cat, ci) => {
+    const catQs = questions.filter(q => q.cat === ci);
+    if (!catQs.length) return;
+
+    const h = document.createElement('div');
+    h.className = 'cat-header';
+    h.style.borderColor = cat.color;
+    h.innerHTML = `<span style="color:${cat.color}">${cat.name}</span>`;
+    container.appendChild(h);
+
+    catQs.forEach(q => {
+      const qi = questions.indexOf(q);
+      const div = document.createElement('div');
+      div.className = 'quiz-question';
+      div.innerHTML = `
+        <p><strong>${qi + 1}.</strong> ${q.q}</p>
+        <div class="quiz-options" id="opts-${qi}">
+          ${q.options.map((o, j) => `<button class="quiz-btn" data-q="${qi}" data-a="${j}">${o}</button>`).join('')}
+        </div>
+        <div class="quiz-feedback" id="fb-${qi}"></div>`;
+      container.appendChild(div);
+    });
+  });
+
+  document.querySelectorAll('.quiz-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const qi = parseInt(this.dataset.q);
+      const ai = parseInt(this.dataset.a);
+      const q = questions[qi];
+      const opts = document.querySelectorAll(`#opts-${qi} .quiz-btn`);
+      const fb = document.getElementById(`fb-${qi}`);
+      if (opts[0].disabled) return;
+
+      opts.forEach(b => b.disabled = true);
+      answered++;
+
+      if (ai === q.correct) {
+        this.classList.add('correct');
+        fb.textContent = '✓ ' + q.explanation;
+        fb.className = 'quiz-feedback ok show';
+        score++;
+      } else {
+        this.classList.add('incorrect');
+        opts[q.correct].classList.add('reveal');
+        fb.textContent = '✗ Respuesta correcta: «' + q.options[q.correct] + '». ' + q.explanation;
+        fb.className = 'quiz-feedback bad show';
+      }
+      document.getElementById('reset-quiz').style.display = 'inline-block';
+      updateScore();
+    });
+  });
+}
+
+document.getElementById('reset-quiz').addEventListener('click', () => {
+  renderQuiz();
+  document.getElementById('reset-quiz').style.display = 'none';
+  document.getElementById('show-all').style.display = 'none';
+  window.scrollTo({ top: document.getElementById('tab-practica').offsetTop - 100, behavior: 'smooth' });
+});
+
+document.getElementById('show-all').addEventListener('click', () => {
+  questions.forEach((q, qi) => {
+    const opts = document.querySelectorAll(`#opts-${qi} .quiz-btn`);
+    const fb = document.getElementById(`fb-${qi}`);
+    if (!opts[0].disabled) {
+      opts.forEach(b => b.disabled = true);
+      opts[q.correct].classList.add('reveal');
+      fb.textContent = '→ ' + q.options[q.correct] + '. ' + q.explanation;
+      fb.className = 'quiz-feedback ok show';
+    }
+  });
+  document.getElementById('show-all').style.display = 'none';
+});
+
+renderQuiz();
+</script>
+</body>
+</html>

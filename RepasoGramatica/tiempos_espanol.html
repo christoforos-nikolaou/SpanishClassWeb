@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Tiempos Verbales en Español — C1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink:      #1a1a2e;
+    --paper:    #f7f5f0;
+    --accent:   #c0392b;
+    --gold:     #b8860b;
+    --slate:    #4a5568;
+    --mist:     #e8e4dc;
+    --teal:     #2c7a7b;
+    --purple:   #553c9a;
+    --green:    #276749;
+    --border:   #d4cec4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px; right: -40px; bottom: -40px;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 28px,
+      rgba(255,255,255,0.025) 28px,
+      rgba(255,255,255,0.025) 30px
+    );
+  }
+  .header-inner { position: relative; z-index: 1; }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    color: rgba(247,245,240,0.6);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Nav tabs ── */
+  nav {
+    background: var(--ink);
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    background: none;
+    border: none;
+    color: rgba(247,245,240,0.45);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.2rem;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .tab-btn:hover { color: rgba(247,245,240,0.8); }
+  .tab-btn.active {
+    color: var(--paper);
+    border-bottom-color: var(--accent);
+  }
+
+  /* ── Content ── */
+  main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── Section blocks ── */
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .lead {
+    font-size: 1rem;
+    color: var(--slate);
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 1rem;
+  }
+  p { margin-bottom: 0.9rem; color: var(--slate); font-size: 0.95rem; }
+
+  /* ── Cards ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .card.red::before   { background: var(--accent); }
+  .card.gold::before  { background: var(--gold); }
+  .card.teal::before  { background: var(--teal); }
+  .card.purple::before{ background: var(--purple); }
+  .card.green::before { background: var(--green); }
+  .card.slate::before { background: var(--slate); }
+
+  .card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+  .card p { font-size: 0.85rem; margin-bottom: 0.4rem; }
+  .card .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.6rem;
+  }
+  .tag.red    { background: #fdecea; color: var(--accent); }
+  .tag.gold   { background: #fdf6e3; color: var(--gold); }
+  .tag.teal   { background: #e6f4f4; color: var(--teal); }
+  .tag.purple { background: #f0edf8; color: var(--purple); }
+  .tag.green  { background: #e8f4ee; color: var(--green); }
+  .tag.slate  { background: #eef0f3; color: var(--slate); }
+
+  /* ── Examples ── */
+  .example-block {
+    background: var(--ink);
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    margin: 0.8rem 0 1.4rem;
+  }
+  .example-block .ex {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--paper);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+  .example-block .gloss {
+    font-size: 0.78rem;
+    color: rgba(247,245,240,0.5);
+    letter-spacing: 0.03em;
+  }
+  .example-block .verb-highlight {
+    color: var(--gold);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* ── Contrast tables ── */
+  .contrast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.2rem 0 1.8rem;
+    font-size: 0.875rem;
+  }
+  .contrast-table th {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.65rem 1rem;
+    text-align: left;
+  }
+  .contrast-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--slate);
+    vertical-align: top;
+  }
+  .contrast-table tr:last-child td { border-bottom: none; }
+  .contrast-table tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+  .contrast-table .form {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ink);
+    font-size: 0.8rem;
+  }
+  .contrast-table em { color: var(--accent); font-style: italic; }
+
+  /* ── Timeline ── */
+  .timeline {
+    position: relative;
+    margin: 1.5rem 0 2rem;
+    padding-left: 1.5rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--gold), var(--teal));
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 1.4rem;
+    padding-left: 1rem;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.1rem;
+    top: 0.45rem;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--accent);
+  }
+  .timeline-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+  .timeline-item p { font-size: 0.85rem; margin-bottom: 0.2rem; }
+  .timeline-item code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    background: var(--mist);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    color: var(--ink);
+  }
+
+  /* ── Callout boxes ── */
+  .callout {
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 0.875rem;
+  }
+  .callout.warning {
+    background: #fdf6e3;
+    border-left: 3px solid var(--gold);
+    color: #7a5c00;
+  }
+  .callout.info {
+    background: #e6f4f4;
+    border-left: 3px solid var(--teal);
+    color: #1a5050;
+  }
+  .callout.danger {
+    background: #fdecea;
+    border-left: 3px solid var(--accent);
+    color: #8b1c1c;
+  }
+  .callout strong { font-weight: 600; }
+
+  /* ── Mini quiz ── */
+  .quiz-question {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    margin: 1rem 0;
+  }
+  .quiz-question p { color: var(--ink); font-weight: 500; margin-bottom: 0.8rem; }
+  .quiz-options { display: flex; flex-direction: column; gap: 0.4rem; }
+  .quiz-btn {
+    background: var(--mist);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0.9rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    color: var(--ink);
+  }
+  .quiz-btn:hover { background: var(--border); }
+  .quiz-btn.correct { background: #e8f4ee; border-color: var(--green); color: var(--green); }
+  .quiz-btn.incorrect { background: #fdecea; border-color: var(--accent); color: var(--accent); }
+  .quiz-btn.reveal { background: #e8f4ee; border-color: var(--green); color: var(--green); opacity: 0.6; }
+  .quiz-feedback {
+    margin-top: 0.7rem;
+    font-size: 0.82rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    display: none;
+  }
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.ok { background: #e8f4ee; color: var(--green); }
+  .quiz-feedback.bad { background: #fdecea; color: var(--accent); }
+
+  /* ── Divider ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  /* ── Scroll progress ── */
+  #progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: var(--accent);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.1s;
+  }
+
+  .pill {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin: 0.1rem;
+  }
+  .pill.uso { background: #fdecea; color: var(--accent); }
+  .pill.tiempo { background: #fdf6e3; color: var(--gold); }
+
+  @media (max-width: 600px) {
+    main { padding: 1.5rem 1rem 3rem; }
+    h2 { font-size: 1.5rem; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header>
+  <div class="header-inner">
+    <div class="kicker">Gramática Española · Nivel C1</div>
+    <h1>Los Tiempos Verbales<br>en Español</h1>
+    <p>Contrastes de tiempos en indicativo · Notas de estudio  · Christoforos Nikolaou  · junio 2026</p>
+  </div>
+</header>
+
+<nav id="nav">
+  <button class="tab-btn active" data-tab="indicativo">Presente &amp; Futuro</button>
+  <button class="tab-btn" data-tab="pasado">Los Pasados</button>
+  <button class="tab-btn" data-tab="contraste">Indef. vs Imperf.</button>
+  <button class="tab-btn" data-tab="compuestos">Tiempos Compuestos</button>
+  <button class="tab-btn" data-tab="subjuntivo">Subjuntivo</button>
+  <button class="tab-btn" data-tab="practica">Práctica</button>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════ INDICATIVO: PRESENTE & FUTURO -->
+<div class="tab-panel active" id="tab-indicativo">
+  <div class="section-label">Uso de tiempos en indicativo</div>
+  <h2>Presente &amp; Futuro: Contrastes</h2>
+  <p class="lead">El presente de indicativo y las distintas formas de futuro compiten en muchos contextos. El dominio de sus diferencias pragmáticas es una marca de nivel C1.</p>
+
+  <!-- A: Presente de indicativo -->
+  <h3>A · Presente de indicativo — usos</h3>
+  <p>El presente no solo expresa lo que ocurre ahora. En español tiene tres grandes valores:</p>
+  <div class="card-grid">
+    <div class="card teal">
+      <div class="tag teal">Presente / Hábito</div>
+      <h4>Estado actual y acciones habituales</h4>
+      <p>Lo que es verdad ahora o se repite con regularidad.</p>
+      <p><em>— ¿Dónde trabajas? — <strong>Trabajo</strong> en Madrid.</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Futuro próximo</div>
+      <h4>Acción futura cierta o programada</h4>
+      <p>Cuando hay certeza o un plan concreto. Equivale a «ir a + inf.» con aún más seguridad.</p>
+      <p><em>— ¿Abres tú? — <strong>Abro</strong> yo.</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Presente histórico (U34)</div>
+      <h4>Narración de hechos pasados</h4>
+      <p>Da inmediatez y viveza a eventos del pasado. Muy frecuente en noticias y relatos.</p>
+      <p><em>En 1478, <strong>pide</strong> Maradona explicaciones y <strong>gana</strong> el Mundial.</em></p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <strong>Nota sobre el presente histórico:</strong> Se usa en lugar del indefinido para hacer sentir los hechos pasados como más inmediatos y vívidos. Es típico del registro periodístico y literario. En noticias: <em>«Turquía <strong>pide</strong> explicaciones»</em> (aunque el evento ya ocurrió).
+  </div>
+
+  <!-- B: ir a + inf vs Futuro -->
+  <h3>B · «Ir a + infinitivo» vs. Futuro simple — certeza y proximidad</h3>
+  <p>El orden de certeza/proximidad de mayor a menor es:</p>
+
+  <div class="example-block">
+    <div class="ex"><span class="verb-highlight">Presente</span> &gt; <span class="verb-highlight">Voy a + inf.</span> &gt; <span class="verb-highlight">Futuro simple</span></div>
+    <div class="gloss">Mayor certeza / proximidad temporal → Mayor distancia o probabilidad</div>
+  </div>
+
+  <table class="contrast-table">
+    <tr><th>Forma</th><th>Valor</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>Presente</strong></td>
+      <td>Hecho futuro ya acordado o fijo (máxima certeza)</td>
+      <td class="form"><em>El tren <span style="color:var(--teal)">sale</span> a las 8.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Ir a + inf.</strong></td>
+      <td>Intención decidida; causa ya presente en el presente</td>
+      <td class="form"><em><span style="color:var(--gold)">Voy a</span> estudiar esta noche.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Futuro simple</strong></td>
+      <td>Predicción, promesa, probabilidad; más distante o formal</td>
+      <td class="form"><em><span style="color:var(--accent)">Estudiaré</span> cuando llegue a casa.</em></td>
+    </tr>
+  </table>
+
+  <div class="callout warning">
+    <strong>⚠ Clave de distinción:</strong> «Voy a + inf.» implica que ya hay señales o intención en el presente que apuntan al futuro (<em>«Mira esas nubes, va a llover»</em>). El futuro simple es más neutral o formal: <em>«Según el pronóstico, lloverá mañana»</em>. El presente solo funciona con acciones programadas externamente: horarios, citas, eventos fijados.
+  </div>
+
+  <div class="example-block">
+    <div class="ex">El examen <span class="verb-highlight">empieza</span> a las 9. → horario fijado (presente)</div>
+    <div class="ex"><span class="verb-highlight">Voy a llamar</span> a mi madre ahora. → intención inmediata (ir a + inf.)</div>
+    <div class="ex">Te <span class="verb-highlight">llamaré</span> cuando llegue. → promesa/predicción (futuro)</div>
+    <div class="ex">¿Cuántos años tiene? — <span class="verb-highlight">Tendrá</span> cuarenta. → probabilidad presente (futuro)</div>
+  </div>
+
+  <!-- C: Presente de indicativo para duración -->
+  <h3>C · Presente de indicativo para duración (U36)</h3>
+  <p>En español, cuando una acción <strong>comenzó en el pasado y sigue en curso ahora</strong>, se usa el <strong>presente de indicativo</strong> (no el pretérito perfecto como en inglés).</p>
+
+  <div class="callout danger">
+    <strong>Error típico por interferencia del inglés:</strong> En inglés se usa el «present perfect continuous» para esto (<em>«I have been waiting for months»</em>), pero en español usamos el presente simple o «llevar + gerundio».
+  </div>
+
+  <table class="contrast-table">
+    <tr><th>Construcción</th><th>Ejemplo</th><th>Matiz</th></tr>
+    <tr>
+      <td><strong>Presente simple</strong></td>
+      <td class="form"><em>Hace meses que no <span style="color:var(--teal)">como</span> dulces.</em></td>
+      <td>Duración hasta el presente; muy natural en español coloquial culto</td>
+    </tr>
+    <tr>
+      <td><strong>Llevar + gerundio</strong></td>
+      <td class="form"><em><span style="color:var(--gold)">Llevo</span> esperando desde las 2.</em></td>
+      <td>Énfasis en la duración acumulada; más expresivo</td>
+    </tr>
+    <tr>
+      <td><strong>Desde hace + presente</strong></td>
+      <td class="form"><em><span style="color:var(--purple)">Vivo</span> aquí desde hace tres años.</em></td>
+      <td>Con marcador temporal explícito</td>
+    </tr>
+  </table>
+
+  <div class="example-block">
+    <div class="ex">Hace meses que no <span class="verb-highlight">como</span> dulces. <span style="color:rgba(247,245,240,0.4);font-style:normal;font-size:0.8rem;">(= llevo meses sin comer dulces)</span></div>
+    <div class="ex"><span class="verb-highlight">Llevo</span> esperando <span class="verb-highlight">desde</span> las 2. <span style="color:rgba(247,245,240,0.4);font-style:normal;font-size:0.8rem;">(acción iniciada en el pasado, aún en curso)</span></div>
+    <div class="ex">¿Cuánto tiempo <span class="verb-highlight">llevas</span> estudiando español?</div>
+    <div class="gloss">✗ Incorrecto en este contexto: «He estado esperando desde las 2.» (calco del inglés)</div>
+  </div>
+
+  <!-- Línea del tiempo -->
+  <h3>Resumen: La línea temporal del indicativo</h3>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>Pretérito indefinido</h4>
+      <p>Evento completo y puntual en el pasado.</p>
+      <code>Ayer llegué tarde a clase.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Pretérito imperfecto</h4>
+      <p>Fondo/escenario, duración sin límites, hábito pasado.</p>
+      <code>Cuando era niño, vivía en Madrid.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Pretérito perfecto compuesto</h4>
+      <p>Pasado con relevancia presente; experiencia vital (España).</p>
+      <code>Esta semana he dormido poco.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Pretérito pluscuamperfecto</h4>
+      <p>Anterior a otro punto del pasado («pasado del pasado»).</p>
+      <code>Cuando llegué, ya se había ido.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Presente</h4>
+      <p>Ahora + hábito + presente histórico + futuro próximo + duración en curso.</p>
+      <code>Trabajo aquí / Mañana salgo / Hace años que no lo veo.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Ir a + infinitivo</h4>
+      <p>Futuro inmediato con base en el presente; intención.</p>
+      <code>Va a llover — mira esas nubes.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Futuro simple</h4>
+      <p>Predicción, promesa, probabilidad presente, mandato formal.</p>
+      <code>Tendrá unos cuarenta años. / No matarás.</code>
+    </div>
+    <div class="timeline-item">
+      <h4>Futuro perfecto</h4>
+      <p>Anterioridad futura; probabilidad sobre el pasado.</p>
+      <code>Ya habrá llegado a casa. / ¿Se habrá olvidado?</code>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SUBJUNTIVO -->
+<div class="tab-panel" id="tab-subjuntivo">
+  <div class="section-label">Modo Subjuntivo</div>
+  <h2>El Sistema del Subjuntivo</h2>
+  <p class="lead">El subjuntivo no expresa hechos, sino la actitud del hablante ante ellos: deseo, duda, emoción, valoración o negación de la realidad. Es el modo de la subjetividad.</p>
+
+  <h3>Marco WEIRDO — Desencadenantes del subjuntivo</h3>
+  <div class="card-grid">
+    <div class="card red">
+      <div class="tag red">W — Wishes</div>
+      <h4>Deseos y voluntad</h4>
+      <p><em>querer, desear, esperar, pretender, pedir, rogar, exigir…</em></p>
+      <p><small>«Quiero que <strong>vengas</strong>.»</small></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">E — Emotions</div>
+      <h4>Emociones</h4>
+      <p><em>alegrarse de, temer, sorprender, molestar, encantar…</em></p>
+      <p><small>«Me alegra que <strong>hayas llegado</strong>.»</small></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">I — Impersonal</div>
+      <h4>Expresiones impersonales</h4>
+      <p><em>es importante/necesario/posible/lógico/curioso que…</em></p>
+      <p><small>«Es esencial que <strong>estudies</strong>.»</small></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">R — Recommendations</div>
+      <h4>Recomendación / influencia</h4>
+      <p><em>recomendar, sugerir, aconsejar, proponer, permitir…</em></p>
+      <p><small>«Te sugiero que <strong>lo pienses</strong>.»</small></p>
+    </div>
+    <div class="card green">
+      <div class="tag green">D — Doubt / Denial</div>
+      <h4>Duda y negación</h4>
+      <p><em>dudar, no creer, negar, no estar seguro…</em></p>
+      <p><small>«No creo que <strong>sea</strong> verdad.»</small></p>
+    </div>
+    <div class="card slate">
+      <div class="tag slate">O — Ojalá / Que</div>
+      <h4>Construcciones directas</h4>
+      <p><em>ojalá, que (deseo), así, quizás, tal vez…</em></p>
+      <p><small>«¡Ojalá <strong>hubiera</strong> más tiempo!»</small></p>
+    </div>
+  </div>
+
+  <h3>Los cuatro tiempos del subjuntivo</h3>
+  <table class="contrast-table">
+    <tr><th>Tiempo</th><th>Referencia temporal</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>Presente subj.</strong></td>
+      <td>Presente/futuro</td>
+      <td class="form"><em>Espero que <span style="color:var(--accent)">llegues</span> pronto.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Pretérito perf. subj.</strong></td>
+      <td>Pasado anterior al presente</td>
+      <td class="form"><em>Me alegra que lo <span style="color:var(--accent)">hayas terminado</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Imperfecto subj.</strong></td>
+      <td>Pasado / hipótesis</td>
+      <td class="form"><em>Quería que <span style="color:var(--accent)">vinieras</span> / Si <span style="color:var(--accent)">tuviera</span> dinero…</em></td>
+    </tr>
+    <tr>
+      <td><strong>Pluscuamperf. subj.</strong></td>
+      <td>Anterior a pasado / hipótesis irreal</td>
+      <td class="form"><em>Si <span style="color:var(--accent)">hubiera estudiado</span>, habría aprobado.</em></td>
+    </tr>
+  </table>
+
+  <h3>Correlación temporal (regla clave C1)</h3>
+  <div class="callout info">
+    <strong>Regla:</strong> El tiempo del subjuntivo depende del tiempo del verbo principal (eje temporal):
+    <br>• Verbos principales en <strong>presente / futuro / imperativo</strong> → <strong>presente o pret. perfecto</strong> de subj.
+    <br>• Verbos principales en <strong>pasado / condicional</strong> → <strong>imperfecto o pluscuamperfecto</strong> de subj.
+  </div>
+  <div class="example-block">
+    <div class="ex">Le <span class="verb-highlight">pido</span> que <span class="verb-highlight">venga</span>. → presente → presente subj.</div>
+    <div class="ex">Le <span class="verb-highlight">pedí</span> que <span class="verb-highlight">viniera</span>. → pasado → imperfecto subj.</div>
+    <div class="ex">Le <span class="verb-highlight">habré pedido</span> que <span class="verb-highlight">venga</span>. → futuro → presente subj.</div>
+    <div class="ex">Le <span class="verb-highlight">pediría</span> que <span class="verb-highlight">viniera</span>. → condicional → imperfecto subj.</div>
+  </div>
+
+  <h3>Casos avanzados C1</h3>
+  <div class="card-grid">
+    <div class="card red">
+      <div class="tag red">Creer / Pensar</div>
+      <h4>La inversión afirmativo/negativo</h4>
+      <p>Afirmativo → indicativo: <em>«Creo que <strong>viene</strong>.»</em></p>
+      <p>Negativo → subjuntivo: <em>«No creo que <strong>venga</strong>.»</em></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Quizás / Tal vez</div>
+      <h4>Modo dual</h4>
+      <p>Con indicativo: el hablante inclina hacia la realidad.</p>
+      <p>Con subjuntivo: mayor grado de duda.</p>
+      <p><em>«Quizás <strong>viene</strong> / <strong>venga</strong>.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Advertir</div>
+      <h4>Cambio semántico según modo</h4>
+      <p><strong>Indicativo:</strong> informar → <em>«Te advierto que <strong>llegará</strong> tarde.»</em></p>
+      <p><strong>Subjuntivo:</strong> prohibir/rogar → <em>«Te advierto que no <strong>hagas</strong> eso.»</em></p>
+    </div>
+  </div>
+
+  <h3>Subjuntivo en subordinadas adverbiales</h3>
+  <table class="contrast-table">
+    <tr><th>Tipo</th><th>Indicativo</th><th>Subjuntivo</th></tr>
+    <tr>
+      <td>Temporal</td>
+      <td><em>Cuando <strong>llegó</strong>, comimos.</em><br><small>(hecho pasado)</small></td>
+      <td><em>Cuando <strong>llegues</strong>, come.</em><br><small>(futuro / hipótesis)</small></td>
+    </tr>
+    <tr>
+      <td>Condicional</td>
+      <td><em>Si <strong>tienes</strong> tiempo, ven.</em><br><small>(posible/real)</small></td>
+      <td><em>Si <strong>tuvieras</strong> tiempo, vendrías.</em><br><small>(hipótesis irreal)</small></td>
+    </tr>
+    <tr>
+      <td>Concesiva</td>
+      <td><em>Aunque <strong>está</strong> cansado, trabaja.</em><br><small>(hecho reconocido)</small></td>
+      <td><em>Aunque <strong>esté</strong> cansado, trabajará.</em><br><small>(concesión hipotética)</small></td>
+    </tr>
+    <tr>
+      <td>Final</td>
+      <td>—</td>
+      <td><em>Lo hizo para que <strong>entendieras</strong>.</em><br><small>(siempre subj.)</small></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ CONTRASTE: FUTURO SIMPLE vs COMPUESTO -->
+<div class="tab-panel" id="tab-contraste">
+  <div class="section-label">Contraste · Futuro simple vs. compuesto</div>
+  <h2>Futuro Simple vs. Futuro Compuesto (U48)</h2>
+  <p class="lead">Los dos futuros del indicativo — simple y compuesto — tienen valores temporales y modales distintos. Dominar su contraste es imprescindible para el nivel C1.</p>
+
+  <h3>Valores del futuro simple</h3>
+  <div class="card-grid">
+    <div class="card teal">
+      <div class="tag teal">Acciones futuras simples</div>
+      <h4>Pasan en un momento futuro</h4>
+      <p>El año que viene <strong>acabaré</strong> las clases.</p>
+      <p><small>Predicción o plan sobre un punto del futuro.</small></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Posibilidad en el presente</div>
+      <h4>«No puede venir / Tendrá dolor de cabeza»</h4>
+      <p>Cuando no se puede venir, se conjetura: <strong>Tendrá</strong> dolor de cabeza.</p>
+      <p><small>Probabilidad / conjetura sobre el presente.</small></p>
+    </div>
+  </div>
+
+  <h3>Valores del futuro compuesto (perfecto)</h3>
+  <div class="card-grid">
+    <div class="card purple">
+      <div class="tag purple">Acciones que estarán dos antes de un momento futuro</div>
+      <h4>Anterioridad futura</h4>
+      <p>Cuando me entre en la universidad, ya <strong>habré terminado</strong> el curso de español.</p>
+      <p><small>La acción del futuro compuesto se completa <em>antes</em> de otro punto futuro.</small></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Posibilidad sobre un hecho pasado</div>
+      <h4>Probabilidad sobre el pasado reciente</h4>
+      <p>¡Qué frío! <strong>Habrá nevado</strong> en la montaña.</p>
+      <p><small>Conjetura sobre algo que ocurrió antes del presente.</small></p>
+    </div>
+  </div>
+
+  <h3>Tabla comparativa directa</h3>
+  <table class="contrast-table">
+    <tr><th></th><th>Futuro simple</th><th>Futuro compuesto</th></tr>
+    <tr>
+      <td><strong>Forma</strong></td>
+      <td class="form">hablaré, comeré, viviré</td>
+      <td class="form">habré hablado, habré comido</td>
+    </tr>
+    <tr>
+      <td><strong>Acción futura</strong></td>
+      <td>Ocurre en ese momento futuro</td>
+      <td>Ya estará completada antes de ese momento</td>
+    </tr>
+    <tr>
+      <td><strong>Probabilidad</strong></td>
+      <td>Conjetura sobre el <strong>presente</strong></td>
+      <td>Conjetura sobre el <strong>pasado</strong> reciente</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo futuro</strong></td>
+      <td class="form"><em>El año que viene <span style="color:var(--teal)">acabaré</span> las clases.</em></td>
+      <td class="form"><em>Cuando me entre a la uni, ya <span style="color:var(--purple)">habré terminado</span> el español.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo probabilidad</strong></td>
+      <td class="form"><em>No puede venir — <span style="color:var(--gold)">tendrá</span> dolor de cabeza.</em></td>
+      <td class="form"><em>¡Qué frío! <span style="color:var(--accent)">Habrá nevado</span> en la montaña.</em></td>
+    </tr>
+  </table>
+
+  <div class="example-block">
+    <div class="ex">El año que viene <span class="verb-highlight">acabaré</span> las clases. → futuro simple (acción en ese momento)</div>
+    <div class="ex">Cuando me entre en la universidad, ya <span class="verb-highlight">habré terminado</span> el curso de español. → futuro compuesto (anterior a otro punto futuro)</div>
+    <div class="ex">No <span class="verb-highlight">puede</span> venir — <span class="verb-highlight">tendrá</span> dolor de cabeza. → futuro simple de probabilidad (conjetura sobre el presente)</div>
+    <div class="ex">¡Qué frío! <span class="verb-highlight">Habrá nevado</span> en la montaña. → futuro compuesto de probabilidad (conjetura sobre el pasado reciente)</div>
+  </div>
+
+  <div class="callout info">
+    <strong>Truco para distinguirlos:</strong> Si la probabilidad es sobre algo que <em>está ocurriendo o existe ahora</em> → futuro simple (<em>«Tendrá frío»</em>). Si la probabilidad es sobre algo que <em>ya ocurrió antes de ahora</em> → futuro compuesto (<em>«Habrá llegado ya»</em>).
+  </div>
+
+  <h3>Construcciones con «cuando» — futuro vs. subjuntivo</h3>
+  <p>Una trampa frecuente es usar el futuro donde se necesita subjuntivo:</p>
+  <table class="contrast-table">
+    <tr><th>❌ Error típico</th><th>✓ Correcto</th><th>Explicación</th></tr>
+    <tr>
+      <td class="form"><em>Cuando <span style="color:var(--accent)">llegará</span>, llámame.</em></td>
+      <td class="form"><em>Cuando <span style="color:var(--green)">llegue</span>, llámame.</em></td>
+      <td>Subordinada temporal con referencia futura → presente de subjuntivo, nunca futuro de indicativo</td>
+    </tr>
+    <tr>
+      <td class="form"><em>Cuando <span style="color:var(--accent)">habrá terminado</span>, saldremos.</em></td>
+      <td class="form"><em>Cuando <span style="color:var(--green)">haya terminado</span>, saldremos.</em></td>
+      <td>Con «cuando» + futuro compuesto en la subordinada → pretérito perfecto de subjuntivo</td>
+    </tr>
+    <tr>
+      <td colspan="3" style="color:var(--slate);font-size:0.82rem;padding-top:0.8rem;">El futuro de indicativo sí aparece en la oración principal: <em>«Cuando llegues, <strong>estaré</strong> listo.»</em></td>
+    </tr>
+  </table>
+
+  <h3>Recapitulación: todos los futuros del indicativo</h3>
+  <table class="contrast-table">
+    <tr><th>Forma</th><th>Valor temporal</th><th>Valor modal (probabilidad)</th></tr>
+    <tr>
+      <td><strong>Presente</strong></td>
+      <td>Futuro cercano y programado: <em>«Mañana salgo.»</em></td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Ir a + inf.</strong></td>
+      <td>Futuro con base en el presente: <em>«Va a llover.»</em></td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Futuro simple</strong></td>
+      <td>Predicción, promesa, mandato: <em>«Llamaré mañana.»</em></td>
+      <td>Probabilidad presente: <em>«Tendrá frío.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Futuro compuesto</strong></td>
+      <td>Anterioridad futura: <em>«Para el viernes habré acabado.»</em></td>
+      <td>Probabilidad sobre pasado reciente: <em>«Habrá llegado ya.»</em></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ LOS PASADOS -->
+<div class="tab-panel" id="tab-pasado">
+  <div class="section-label">Contrastes de tiempos de pasado</div>
+  <h2>Los Tiempos del Pasado</h2>
+  <p class="lead">El español distingue cuatro tiempos de pasado en indicativo, cada uno con un valor aspectual o discursivo propio. Sus contrastes son los más examinados en el DELE C1.</p>
+
+  <!-- D: Imperfecto vs Indefinido -->
+  <h3>D · Pretérito imperfecto vs. pretérito indefinido</h3>
+  <p>Es el contraste más fundamental del sistema de pasado. La clave es <strong>aspectual</strong>: el indefinido ve la acción como un todo cerrado; el imperfecto la presenta como proceso en desarrollo.</p>
+
+  <div class="example-block">
+    <div class="ex">Muy frecuentemente: <span class="verb-highlight">Imperfecto</span> — frase en desarrollo / <span class="verb-highlight">Indefinido</span> — acción puntual en la misma frase</div>
+    <div class="gloss">Mientras practicaba [IMPERF], se cayó de la bici [INDEF].</div>
+    <div class="gloss">Si ambas acciones están en desarrollo → ambas en imperfecto: «Mientras comía, veía la tele.»</div>
+  </div>
+
+  <table class="contrast-table">
+    <tr><th>Dimensión</th><th>Pretérito Imperfecto</th><th>Pretérito Indefinido</th></tr>
+    <tr>
+      <td><strong>Aspecto</strong></td>
+      <td>Imperfectivo — acción vista desde dentro, sin límites</td>
+      <td>Perfectivo — acción vista como bloque completo</td>
+    </tr>
+    <tr>
+      <td><strong>Función narrativa</strong></td>
+      <td>Fondo / escenario / contexto</td>
+      <td>Evento que avanza la narración</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>Sin límites visibles; proceso continuo</td>
+      <td>Acotada, vista como un bloque</td>
+    </tr>
+    <tr>
+      <td><strong>Frecuencia</strong></td>
+      <td>Hábito indefinido en el pasado</td>
+      <td>Número concreto de repeticiones</td>
+    </tr>
+    <tr>
+      <td><strong>Marcadores típicos</strong></td>
+      <td><em>siempre, todos los días, de niño, mientras, antes, generalmente</em></td>
+      <td><em>ayer, el lunes, en 1992, de repente, entonces, una vez</em></td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td class="form"><em>Lola <span style="color:var(--teal)">dormía</span> profundamente / <span style="color:var(--teal)">hacía</span> deporte todos los días.</em></td>
+      <td class="form"><em><span style="color:var(--accent)">Nació</span> el año 1978.</em></td>
+    </tr>
+  </table>
+
+  <div class="callout warning">
+    <strong>⚠ Verbos que cambian de significado según el tiempo:</strong><br>
+    <em>saber</em>: «<strong>supo</strong>» = se enteró / «<strong>sabía</strong>» = tenía conocimiento<br>
+    <em>querer</em>: «<strong>quiso</strong>» = intentó / «<strong>quería</strong>» = tenía el deseo<br>
+    <em>conocer</em>: «<strong>conoció</strong>» = se conocieron por primera vez / «<strong>conocía</strong>» = ya lo conocía<br>
+    <em>poder</em>: «<strong>pudo</strong>» = logró / «<strong>podía</strong>» = tenía capacidad<br>
+    <em>tener</em>: «<strong>tuvo</strong>» = recibió/obtuvo / «<strong>tenía</strong>» = poseía
+  </div>
+
+  <!-- E: Contrastes de tiempos de pasado -->
+  <h3>E · Contrastes de los cuatro tiempos de pasado (U43)</h3>
+  <p>Los cuatro tiempos de pasado se organizan en dos grandes grupos según su relación con el presente:</p>
+
+  <div class="card-grid">
+    <div class="card teal">
+      <div class="tag teal">Relacionados con el presente</div>
+      <h4>Pretérito perfecto (compuesto)</h4>
+      <p>Se refiere al pasado con conexión con el presente o un momento concreto del pasado conocido.</p>
+      <p><em>«<strong>Ha sido</strong> un día aburrido.»</em></p>
+      <p><em>«<strong>He vivido</strong> muchos años en Palma.»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Acciones realizadas y acabadas</div>
+      <h4>Pretérito indefinido</h4>
+      <p>Acciones acabadas situadas en el pasado, acciones habituales o acciones acabadas.</p>
+      <p><em>«<strong>Nació</strong> el año 1978.»</em></p>
+      <p><em>«<strong>Lola</strong> <strong>hizo</strong> deporte todos los días.»</em></p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <strong>Pretérito perfecto vs. indefinido — la diferencia clave:</strong><br>
+    El perfecto se refiere <strong>al pasado en relación con el presente</strong> («aún es hoy», «todavía en este período»). El indefinido sitúa la acción <strong>en un punto del pasado cerrado</strong>. En Latinoamérica, el indefinido cubre ambos usos.
+  </div>
+
+  <div class="example-block">
+    <div class="ex"><span class="verb-highlight">He sido</span> un niño muy travieso. <span style="color:rgba(247,245,240,0.45);font-size:0.8rem;">→ relevancia presente / experiencia vital (perfecto)</span></div>
+    <div class="ex"><span class="verb-highlight">Fui</span> un niño muy travieso. <span style="color:rgba(247,245,240,0.45);font-size:0.8rem;">→ pasado cerrado, perspectiva distanciada (indefinido)</span></div>
+    <div class="ex">Hace 3 años que <span class="verb-highlight">conocí</span> a tu mamá — cuando nos <span class="verb-highlight">conocimos</span>, nos enamoramos. <span style="color:rgba(247,245,240,0.45);font-size:0.8rem;">→ indefinido (pasado acabado)</span></div>
+    <div class="ex">Había 3 años que terminaste el ensayo — Había <span class="verb-highlight">terminado</span> con el ensayo <span class="verb-highlight">cuando llamaste</span>. <span style="color:rgba(247,245,240,0.45);font-size:0.8rem;">→ pluscuamperfecto (anterior a otro pasado)</span></div>
+  </div>
+
+  <h3>El pretérito imperfecto: usos propios</h3>
+  <div class="card-grid">
+    <div class="card red">
+      <div class="tag red">Durativo</div>
+      <h4>Acción en progreso en el pasado</h4>
+      <p><em>«Mientras <strong>leía</strong>, sonó el teléfono.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Habitual (U41)</div>
+      <h4>Costumbre del pasado</h4>
+      <p><em>«Lola <strong>dormía</strong> profundamente.»</em><br><em>«<strong>Hacía</strong> deporte todos los días.»</em></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Descriptivo</div>
+      <h4>Descripción / escenario de fondo</h4>
+      <p><em>«La habitación <strong>era</strong> pequeña y <strong>olía</strong> a humedad.»</em></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Cortesía</div>
+      <h4>Imperfecto de atenuación</h4>
+      <p><em>«<strong>Quería</strong> preguntarle algo.»</em> (más suave que «quiero»)</p>
+    </div>
+  </div>
+
+  <h3>El pretérito pluscuamperfecto</h3>
+  <p>Expresa un evento <strong>anterior a otro punto del pasado</strong>. Es el «pasado del pasado».</p>
+
+  <div class="example-block">
+    <div class="ex">Cuando <span class="verb-highlight">llegué</span> a la fiesta, todo el mundo ya se <span class="verb-highlight">había ido</span>.</div>
+    <div class="gloss">llegué (indefinido — punto de referencia en el pasado)</div>
+    <div class="gloss">se había ido (pluscuamperfecto — anterior a ese punto)</div>
+  </div>
+
+  <div class="callout warning">
+    <strong>Pluscuamperfecto obligatorio:</strong> Cuando el orden de mención difiere del orden cronológico real, el pluscuamperfecto es imprescindible para evitar ambigüedad: <em>«Cuando llegué, <strong>se había ido</strong>»</em> (ya no estaba) ≠ <em>«Cuando llegué, <strong>se fue</strong>»</em> (se fue después de que yo llegara).
+  </div>
+
+  <h3>Visión de conjunto: los cuatro pasados</h3>
+  <table class="contrast-table">
+    <tr><th>Tiempo</th><th>Punto de referencia</th><th>Ejemplo clave</th></tr>
+    <tr>
+      <td><strong>Pret. perf. compuesto</strong></td>
+      <td>El presente (o el hoy)</td>
+      <td class="form"><em>Esta semana <span style="color:var(--teal)">he trabajado</span> mucho.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Pret. indefinido</strong></td>
+      <td>Un punto del pasado cerrado</td>
+      <td class="form"><em>El lunes <span style="color:var(--accent)">trabajé</span> doce horas.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Pret. imperfecto</strong></td>
+      <td>Fondo / proceso / estado en ese pasado</td>
+      <td class="form"><em>Antes siempre <span style="color:var(--gold)">trabajaba</span> desde casa.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Pret. pluscuamperfecto</strong></td>
+      <td>Anterior a otro punto del pasado</td>
+      <td class="form"><em>Cuando llegué, ya <span style="color:var(--purple)">había terminado</span>.</em></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ COMPUESTOS -->
+<div class="tab-panel" id="tab-compuestos">
+  <div class="section-label">Tiempos Compuestos</div>
+  <h2>Los Tiempos Compuestos</h2>
+  <p class="lead">Los tiempos compuestos se forman con <strong>haber + participio</strong>. Expresan anterioridad respecto a un punto de referencia temporal. Todos los modos verbales —indicativo, subjuntivo e infinitivo— tienen sus formas compuestas.</p>
+
+  <h3>Formación: haber + participio</h3>
+  <div class="example-block">
+    <div class="ex">haber (conjugado en el tiempo base) + participio pasado invariable</div>
+    <div class="gloss">he / has / ha / hemos / habéis / han → pret. perfecto</div>
+    <div class="gloss">había / habías / había… → pluscuamperfecto</div>
+    <div class="gloss">habré / habrás / habrá… → futuro perfecto</div>
+    <div class="gloss">habría / habrías / habría… → condicional perfecto</div>
+  </div>
+
+  <div class="callout warning">
+    <strong>Regla invariable:</strong> El participio en tiempos compuestos es <strong>siempre invariable</strong>: <em>«Ellas <strong>han llegado</strong>»</em>, no <em>«han llegadas»</em>. Nada puede interponerse entre <em>haber</em> y el participio: <em>«No lo he hecho»</em>, nunca <em>«he no lo hecho»</em>. Los pronombres van antes de <em>haber</em>, no entre los dos elementos.
+  </div>
+
+  <h3>Participios irregulares — lista esencial C1</h3>
+  <table class="contrast-table">
+    <tr><th>Infinitivo</th><th>Participio</th><th>Infinitivo</th><th>Participio</th></tr>
+    <tr><td>abrir</td><td class="form">abierto</td><td>morir</td><td class="form">muerto</td></tr>
+    <tr><td>cubrir</td><td class="form">cubierto</td><td>poner</td><td class="form">puesto</td></tr>
+    <tr><td>decir</td><td class="form">dicho</td><td>resolver</td><td class="form">resuelto</td></tr>
+    <tr><td>escribir</td><td class="form">escrito</td><td>romper</td><td class="form">roto</td></tr>
+    <tr><td>freír</td><td class="form">frito / freído</td><td>ver</td><td class="form">visto</td></tr>
+    <tr><td>hacer</td><td class="form">hecho</td><td>volver</td><td class="form">vuelto</td></tr>
+    <tr><td>imprimir</td><td class="form">impreso / imprimido</td><td>satisfacer</td><td class="form">satisfecho</td></tr>
+  </table>
+  <div class="callout info">
+    <strong>Dobles participios:</strong> Algunos verbos tienen dos participios: uno regular (para tiempos compuestos) y uno irregular (solo adjetivo). <em>«He <strong>imprimido</strong> el documento»</em> ✓ / <em>«El documento está <strong>impreso</strong>»</em> ✓. Pero <em>«He <strong>impreso</strong> el documento»</em> también es aceptado hoy por la RAE.
+  </div>
+
+  <h3>Los seis tiempos compuestos del indicativo y subjuntivo</h3>
+  <table class="contrast-table">
+    <tr><th>Nombre</th><th>Formación</th><th>Modo</th><th>Uso principal</th></tr>
+    <tr>
+      <td><strong>Pret. perfecto compuesto</strong></td>
+      <td class="form">he hablado</td>
+      <td>Indicativo</td>
+      <td>Pasado con relevancia en el presente; pasado reciente (España)</td>
+    </tr>
+    <tr>
+      <td><strong>Pret. pluscuamperfecto</strong></td>
+      <td class="form">había hablado</td>
+      <td>Indicativo</td>
+      <td>Anterior a otro punto del pasado («pasado del pasado»)</td>
+    </tr>
+    <tr>
+      <td><strong>Futuro perfecto</strong></td>
+      <td class="form">habré hablado</td>
+      <td>Indicativo</td>
+      <td>Anterioridad futura; probabilidad/conjetura sobre el pasado</td>
+    </tr>
+    <tr>
+      <td><strong>Condicional perfecto</strong></td>
+      <td class="form">habría hablado</td>
+      <td>Indicativo</td>
+      <td>Hipótesis irreal sobre el pasado; reproche; apódosis condicional tipo 3</td>
+    </tr>
+    <tr>
+      <td><strong>Pret. perf. de subjuntivo</strong></td>
+      <td class="form">haya hablado</td>
+      <td>Subjuntivo</td>
+      <td>Anterioridad respecto a verbo principal en presente/futuro</td>
+    </tr>
+    <tr>
+      <td><strong>Pret. pluscuamperf. de subj.</strong></td>
+      <td class="form">hubiera / hubiese hablado</td>
+      <td>Subjuntivo</td>
+      <td>Anterior a punto pasado en subjuntivo; hipótesis irreal pasada</td>
+    </tr>
+  </table>
+
+  <h3>Formas no personales compuestas</h3>
+  <p>Tan importantes como los tiempos conjugados, estas formas aparecen frecuentemente en textos C1:</p>
+  <table class="contrast-table">
+    <tr><th>Forma</th><th>Construcción</th><th>Ejemplo y uso</th></tr>
+    <tr>
+      <td><strong>Infinitivo compuesto</strong></td>
+      <td class="form">haber + participio</td>
+      <td><em>«Después de <strong>haber llegado</strong>, descansó.»</em> — anterioridad al verbo principal</td>
+    </tr>
+    <tr>
+      <td><strong>Gerundio compuesto</strong></td>
+      <td class="form">habiendo + participio</td>
+      <td><em>«<strong>Habiendo terminado</strong> el examen, salió.»</em> — anterioridad; registro formal/literario</td>
+    </tr>
+    <tr>
+      <td><strong>Participio (compuesto)</strong></td>
+      <td class="form">— (el participio mismo)</td>
+      <td><em>«<strong>Terminado</strong> el proyecto, celebraron.»</em> — construcción absoluta</td>
+    </tr>
+  </table>
+  <div class="callout info">
+    <strong>Infinitivo compuesto vs. infinitivo simple:</strong> <em>«Lamento <strong>haber llegado</strong> tarde»</em> (el llegar fue anterior al lamentar) ≠ <em>«Lamento <strong>llegar</strong> tarde»</em> (llegar tarde es habitual/simultáneo). Esta distinción es un marcador de precisión en C1.
+  </div>
+
+  <h3>El pretérito perfecto compuesto en profundidad</h3>
+  <p>Su uso varía significativamente según la variedad geográfica:</p>
+  <div class="card-grid">
+    <div class="card red">
+      <div class="tag red">España central/norte</div>
+      <h4>Relevancia presente</h4>
+      <p>Se usa para eventos en un marco temporal que incluye el presente (<em>hoy, esta semana, este año, ya, todavía, alguna vez</em>).</p>
+      <p><em>«Esta mañana <strong>he desayunado</strong> tarde.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Latinoamérica</div>
+      <h4>Reemplazado por indefinido</h4>
+      <p>El pretérito perfecto compuesto es raro. Se usa el indefinido para todo el pasado, incluido el reciente.</p>
+      <p><em>«Esta mañana <strong>desayuné</strong> tarde.»</em></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Experiencia vital</div>
+      <h4>«Alguna vez» en la vida</h4>
+      <p>Ambas variedades usan el perfecto para experiencias acumuladas sin tiempo específico.</p>
+      <p><em>«<strong>He vivido</strong> en cuatro países.»</em></p>
+    </div>
+  </div>
+
+  <h3>El futuro perfecto — un tiempo subestimado</h3>
+  <p>Tiene tres valores que el C1 debe distinguir con fluidez:</p>
+  <div class="card-grid">
+    <div class="card gold">
+      <div class="tag gold">Anterioridad futura</div>
+      <h4>Completado antes de otro evento futuro</h4>
+      <p><em>«Cuando llegues, ya <strong>habremos comido</strong>.»</em></p>
+      <p><small>Muy frecuente con <em>cuando, para cuando, en cuanto</em>.</small></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Probabilidad pasada</div>
+      <h4>Conjetura sobre algo pasado reciente</h4>
+      <p><em>«—¿Por qué no vino? —<strong>Se habrá olvidado</strong>.»</em></p>
+      <p><small>Paralelo al futuro simple (probabilidad presente).</small></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Reproche / incredulidad</div>
+      <h4>Incredulidad ante un hecho</h4>
+      <p><em>«¿<strong>Habrá dicho</strong> eso de verdad?»</em></p>
+      <p><small>Entonación interrogativa, valor exclamativo-expresivo.</small></p>
+    </div>
+  </div>
+
+  <h3>El condicional perfecto en profundidad</h3>
+  <p>Más allá de las condicionales irreales, el condicional perfecto tiene usos expresivos propios:</p>
+  <div class="example-block">
+    <div class="ex">Si hubiera estudiado, <span class="verb-highlight">habría aprobado</span>.</div>
+    <div class="gloss">Apódosis de condicional tipo 3 (irreal pasado) — uso central</div>
+    <div class="ex">Con más tiempo, <span class="verb-highlight">habría hecho</span> un mejor trabajo.</div>
+    <div class="gloss">Condición implícita sin «si» — muy frecuente en textos escritos C1</div>
+    <div class="ex">¡<span class="verb-highlight">Haberlo dicho</span> antes!</div>
+    <div class="gloss">Infinitivo compuesto exclamativo = reproche. No es condicional perfecto, pero comparte el valor de «acción pasada no realizada».</div>
+    <div class="ex">Según el fiscal, el acusado <span class="verb-highlight">habría cometido</span> el delito.</div>
+    <div class="gloss">Condicional periodístico/atributivo: distanciamiento epistémico, muy usado en prensa y registros formales C1.</div>
+  </div>
+
+  <div class="callout danger">
+    <strong>El condicional periodístico</strong> — conocido también como <em>condicional de rumor</em> — atribuye información a una fuente sin garantizarla. Es una construcción de registro formal muy apreciada en el DELE C1 escrito: <em>«El ministro <strong>habría firmado</strong> el acuerdo en secreto»</em> equivale a <em>«se dice que firmó»</em> pero con mayor distancia del hablante.
+  </div>
+
+  <h3>El pretérito pluscuamperfecto de subjuntivo: forma en -se</h3>
+  <p>En español existe una variante alternativa del imperfecto y pluscuamperfecto de subjuntivo con la terminación <em>-se</em>:</p>
+  <table class="contrast-table">
+    <tr><th>Forma en -ra</th><th>Forma en -se</th><th>Nota</th></tr>
+    <tr>
+      <td class="form">hubiera hablado</td>
+      <td class="form">hubiese hablado</td>
+      <td>Equivalentes en la mayoría de contextos; la forma <em>-se</em> es más literaria/formal</td>
+    </tr>
+    <tr>
+      <td class="form">tuviera</td>
+      <td class="form">tuviese</td>
+      <td>En apódosis condicionales, solo se usa la forma <em>-ra</em>: <em>«Si lo supiera / *si lo supiese, lo diría»</em></td>
+    </tr>
+  </table>
+  <div class="callout warning">
+    <strong>Uso exclusivo de -ra:</strong> En la apódosis (resultado) de las condicionales, la norma culta actual prefiere la forma <em>-ra</em>: <em>«Si hubiera tiempo, lo <strong>haría</strong>»</em>. La forma <em>-se</em> en apódosis (<em>«lo hiciese»</em>) es arcaísmo literario, no recomendado en producción C1.
+  </div>
+
+  <h3>Condicionales complejas — visión de conjunto C1</h3>
+  <table class="contrast-table">
+    <tr><th>Tipo</th><th>Prótasis (si…)</th><th>Apódosis</th><th>Ejemplo completo</th></tr>
+    <tr>
+      <td><strong>Real / posible</strong></td>
+      <td><em>presente ind.</em></td>
+      <td><em>presente / futuro / imperativo</em></td>
+      <td><em>Si <span style="color:var(--teal)">tienes</span> tiempo, <span style="color:var(--teal)">llámame</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Hipotética presente</strong></td>
+      <td><em>imperfecto subj.</em></td>
+      <td><em>condicional simple</em></td>
+      <td><em>Si <span style="color:var(--gold)">tuvieras</span> tiempo, <span style="color:var(--gold)">me llamarías</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Irreal pasada</strong></td>
+      <td><em>pluscuamperf. subj.</em></td>
+      <td><em>condicional perfecto</em></td>
+      <td><em>Si <span style="color:var(--accent)">hubieras tenido</span> tiempo, <span style="color:var(--accent)">habrías llamado</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Mixta C1 (pasado→presente)</strong></td>
+      <td><em>pluscuamperf. subj.</em></td>
+      <td><em>condicional simple</em></td>
+      <td><em>Si <span style="color:var(--purple)">hubieras estudiado</span> medicina, <span style="color:var(--purple)">serías</span> médico ahora.</em></td>
+    </tr>
+    <tr>
+      <td><strong>Mixta C1 (presente→pasado)</strong></td>
+      <td><em>imperfecto subj.</em></td>
+      <td><em>condicional perfecto</em></td>
+      <td><em>Si <span style="color:var(--green)">fuera</span> más valiente, <span style="color:var(--green)">habría dicho</span> la verdad entonces.</em></td>
+    </tr>
+  </table>
+  <div class="callout info">
+    <strong>Las condicionales mixtas</strong> combinan marcos temporales distintos en prótasis y apódosis. Son un rasgo distintivo del C1 y aparecen frecuentemente en la prueba escrita. Requieren identificar si la condición y el resultado pertenecen al mismo plano temporal o no.
+  </div>
+
+  <h3>Perífrasis verbales con participio y gerundio compuesto</h3>
+  <p>Las perífrasis forman otro sistema de «aspecto compuesto» paralelo a los tiempos compuestos:</p>
+  <table class="contrast-table">
+    <tr><th>Perífrasis</th><th>Aspecto</th><th>Ejemplo</th></tr>
+    <tr>
+      <td class="form">llevar + gerundio</td>
+      <td>Duración acumulada hasta ahora</td>
+      <td><em>«<strong>Llevo</strong> tres horas <strong>estudiando</strong>.»</em></td>
+    </tr>
+    <tr>
+      <td class="form">llevar + participio</td>
+      <td>Acumulación de resultado</td>
+      <td><em>«<strong>Llevo</strong> leídas cien páginas.»</em></td>
+    </tr>
+    <tr>
+      <td class="form">tener + participio</td>
+      <td>Resultado acumulado; énfasis en el logro</td>
+      <td><em>«<strong>Tengo</strong> <strong>corregidos</strong> todos los exámenes.»</em></td>
+    </tr>
+    <tr>
+      <td class="form">acabar de + infinitivo</td>
+      <td>Inmediatez del pasado reciente</td>
+      <td><em>«<strong>Acabo de</strong> <strong>llegar</strong>.»</em></td>
+    </tr>
+    <tr>
+      <td class="form">haber de + infinitivo</td>
+      <td>Obligación o probabilidad (registro formal)</td>
+      <td><em>«<strong>Ha de</strong> <strong>ser</strong> difícil.»</em></td>
+    </tr>
+  </table>
+  <div class="callout warning">
+    <strong>«Tener + participio» vs. «haber + participio»:</strong> Con <em>tener</em>, el participio concuerda con el objeto directo: <em>«<strong>Tengo</strong> los libros <strong>ordenados</strong>»</em>. Con <em>haber</em>, el participio es invariable: <em>«<strong>He</strong> <strong>ordenado</strong> los libros»</em>. Esta concordancia es un marcador de precisión gramatical apreciado en el DELE C1.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ PRÁCTICA -->
+<div class="tab-panel" id="tab-practica">
+  <div class="section-label">Práctica Interactiva</div>
+  <h2>Pon a prueba tu dominio</h2>
+  <p class="lead">28 preguntas organizadas por categoría. Selecciona la opción correcta; cada respuesta incluye una explicación razonada.</p>
+
+  <div id="score-bar" style="background:white;border:1px solid var(--border);border-radius:6px;padding:1rem 1.4rem;margin-bottom:1.5rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);margin-bottom:0.2rem;">Puntuación</div>
+      <div id="score-display" style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--ink);">0 / 28</div>
+    </div>
+    <div style="flex:1;min-width:160px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);margin-bottom:0.4rem;">Progreso</div>
+      <div style="background:var(--mist);border-radius:20px;height:8px;overflow:hidden;">
+        <div id="score-progress" style="background:var(--green);height:100%;width:0%;transition:width 0.4s;border-radius:20px;"></div>
+      </div>
+    </div>
+    <div id="score-grade" style="font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--slate);"></div>
+  </div>
+
+  <div id="quiz-container"></div>
+
+  <div style="margin-top:1.5rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+    <button id="reset-quiz" style="background:var(--ink);color:var(--paper);border:none;border-radius:5px;padding:0.6rem 1.4rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;letter-spacing:0.05em;display:none;">↺ Reiniciar quiz</button>
+    <button id="show-all-answers" style="background:var(--mist);color:var(--ink);border:1px solid var(--border);border-radius:5px;padding:0.6rem 1.4rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;letter-spacing:0.05em;display:none;">Ver todas las respuestas</button>
+  </div>
+</div>
+
+</main>
+
+<script>
+// ── Tab navigation ──────────────────────────────────────────────
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => b.classList.remove('active'));
+    tabPanels.forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+// ── Scroll progress ──────────────────────────────────────────────
+const bar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  bar.style.width = pct + '%';
+});
+
+// ── Quiz ─────────────────────────────────────────────────────────
+const categories = [
+  {
+    name: "A · Indicativo: presente, futuro y probabilidad",
+    color: "var(--teal)"
+  },
+  {
+    name: "B · Los tiempos del pasado",
+    color: "var(--gold)"
+  },
+  {
+    name: "C · Tiempos compuestos del indicativo",
+    color: "var(--purple)"
+  },
+  {
+    name: "D · Subjuntivo: desencadenantes y correlación",
+    color: "var(--accent)"
+  },
+  {
+    name: "E · Condicionales y subjuntivo avanzado",
+    color: "var(--green)"
+  },
+  {
+    name: "F · Contrastes y casos difíciles C1",
+    color: "var(--slate)"
+  }
+];
+
+const questions = [
+  // ── A: Presente, futuro, probabilidad ──
+  {
+    cat: 0,
+    q: "¿Qué hora es? —No sé exactamente… _____ (ser) las tres.",
+    options: ["Son", "Eran", "Serán", "Fueron"],
+    correct: 2,
+    explanation: "Futuro de probabilidad en el presente: cuando se conjetura sobre algo actual sin certeza, se usa el futuro simple. «Serán las tres» = calculo que son las tres."
+  },
+  {
+    cat: 0,
+    q: "El tren _____ (salir) a las 8:15 según el horario oficial.",
+    options: ["saldrá", "sale", "va a salir", "saliera"],
+    correct: 1,
+    explanation: "Presente de indicativo para acciones futuras previstas y fijas (horarios, programas). Es más definitivo que «va a salir» o el futuro."
+  },
+  {
+    cat: 0,
+    q: "Según el informe, los precios _____ (subir) un 3% el próximo trimestre.",
+    options: ["suben", "subirán", "van a subir", "habrán subido"],
+    correct: 1,
+    explanation: "Predicción formal sobre el futuro. El futuro simple es el tiempo natural en registros formales (informes, análisis). «Van a subir» es también correcto pero más coloquial."
+  },
+  {
+    cat: 0,
+    q: "—¿Dónde está Miguel? —No sé, _____ (ir) al gimnasio a esta hora.",
+    options: ["va", "fue", "irá", "iría"],
+    correct: 2,
+    explanation: "Futuro de probabilidad: el hablante conjetura sobre dónde está alguien ahora. «Irá» = supongo que ha ido / está yendo."
+  },
+
+  // ── B: Tiempos del pasado ──
+  {
+    cat: 1,
+    q: "Cuando era pequeño, _____ (ir) al parque todos los domingos.",
+    options: ["iba", "fue", "ha ido", "vaya"],
+    correct: 0,
+    explanation: "Hábito del pasado = imperfecto de indicativo. «Todos los domingos» es marcador de costumbre iterativa → «iba»."
+  },
+  {
+    cat: 1,
+    q: "_____ (llover) cuando salí de casa, así que cogí el paraguas.",
+    options: ["Llovió", "Llovía", "Ha llovido", "Llueve"],
+    correct: 1,
+    explanation: "Imperfecto como fondo/escenario de otra acción. La lluvia era una situación en progreso (fondo) mientras que «salí» es el evento que avanza la narración."
+  },
+  {
+    cat: 1,
+    q: "Ayer _____ (llamar, yo) a mi madre tres veces pero no contestó.",
+    options: ["llamaba", "he llamado", "llamé", "llamo"],
+    correct: 2,
+    explanation: "«Ayer» es un marcador de pasado cerrado y distante del presente → pretérito indefinido. Además, «tres veces» indica número concreto de repeticiones (acción perfectiva)."
+  },
+  {
+    cat: 1,
+    q: "Cuando llegué al aeropuerto, el avión ya _____ (despegar).",
+    options: ["despegaba", "despegó", "había despegado", "ha despegado"],
+    correct: 2,
+    explanation: "Pluscuamperfecto: el despegue ocurrió antes de la llegada. Es el «pasado del pasado». Sin el pluscuamperfecto, la frase implicaría que los dos eventos son simultáneos o que el avión despegó después."
+  },
+  {
+    cat: 1,
+    q: "—¿Alguna vez _____ (visitar) Japón? —Sí, fui hace dos años.",
+    options: ["visitas", "visitaste", "has visitado", "habrías visitado"],
+    correct: 2,
+    explanation: "Experiencia vital sin marco temporal específico = pretérito perfecto compuesto. «Alguna vez» activa el valor de experiencia acumulada del pretérito perfecto (en España y en el estándar internacional para este uso)."
+  },
+
+  // ── C: Tiempos compuestos del indicativo ──
+  {
+    cat: 2,
+    q: "Para cuando llegues al aeropuerto, el avión ya _____ (despegar).",
+    options: ["despega", "ha despegado", "habrá despegado", "haya despegado"],
+    correct: 2,
+    explanation: "Futuro perfecto de anterioridad: expresa que una acción estará completada antes de un punto futuro. «Para cuando llegues» sitúa el punto de referencia en el futuro → futuro perfecto."
+  },
+  {
+    cat: 2,
+    q: "—¿Por qué no vino Sofía a la reunión? —No sé. _____ (tener) algún problema.",
+    options: ["Tenía", "Tuvo", "Tendrá", "Habrá tenido"],
+    correct: 3,
+    explanation: "Futuro perfecto de probabilidad pasada: conjetura sobre algo que ocurrió en el pasado reciente. Paralelo al futuro simple (probabilidad presente) pero referido a acciones completadas."
+  },
+  {
+    cat: 2,
+    q: "Según el fiscal, el acusado _____ (falsificar) varios documentos.",
+    options: ["falsificó", "falsificaba", "habría falsificado", "habrá falsificado"],
+    correct: 2,
+    explanation: "Condicional periodístico/atributivo: distancia epistémica ante una afirmación atribuida a una fuente. Muy frecuente en textos periodísticos y legales. No implica duda personal del hablante, sino responsabilidad de la fuente."
+  },
+  {
+    cat: 2,
+    q: "Llevo tres horas _____ (esperar) y nadie ha llamado.",
+    options: ["esperando", "esperado", "esperar", "que espero"],
+    correct: 0,
+    explanation: "«Llevar + gerundio» expresa duración acumulada hasta el momento presente. El gerundio es obligatorio en esta perífrasis aspectual."
+  },
+  {
+    cat: 2,
+    q: "Ya _____ (corregir, yo) todos los exámenes — están en la mesa.",
+    options: ["corregí", "he corregido", "tengo corregidos", "llevo corregidos"],
+    correct: 2,
+    explanation: "«Tener + participio» enfatiza el resultado acumulado con valor perfectivo. A diferencia de «he corregido», «tengo corregidos» pone el foco en que el resultado está disponible ahora. El participio concuerda con el objeto directo: «corregidos» (masculino plural)."
+  },
+
+  // ── D: Subjuntivo ──
+  {
+    cat: 3,
+    q: "Cuando _____ (llegar, tú) a casa, ya habremos cenado.",
+    options: ["llegas", "llegues", "llegabas", "llegarás"],
+    correct: 1,
+    explanation: "Subordinadas temporales con referencia al futuro siempre llevan subjuntivo. «Cuando» + futuro = presente de subjuntivo. Si fuera pasado habitual usaríamos indicativo: «cuando llegaba»."
+  },
+  {
+    cat: 3,
+    q: "No creo que Pedro _____ (tener) razón en este asunto.",
+    options: ["tiene", "tenga", "tendrá", "tendría"],
+    correct: 1,
+    explanation: "«No creer» activa la duda → subjuntivo. La negación invierte el modo: «creo que tiene» (indicativo) vs. «no creo que tenga» (subjuntivo). Es el caso clásico de la inversión afirmativo/negativo."
+  },
+  {
+    cat: 3,
+    q: "Me alegra mucho que _____ (conseguir, tú) el trabajo al fin.",
+    options: ["consigues", "conseguiste", "hayas conseguido", "hubieras conseguido"],
+    correct: 2,
+    explanation: "«Alegrarse de que» desencadena subjuntivo (emoción). El evento (conseguir el trabajo) es anterior a la alegría de hablar → pretérito perfecto de subjuntivo, no presente."
+  },
+  {
+    cat: 3,
+    q: "Era fundamental que todos los participantes _____ (firmar) el contrato.",
+    options: ["firman", "firmen", "firmaran", "firmaron"],
+    correct: 2,
+    explanation: "Correlación temporal: «era» (pasado) + expresión impersonal de necesidad → subjuntivo en imperfecto. Si fuera «es fundamental», usaríamos «firmen» (presente de subjuntivo)."
+  },
+  {
+    cat: 3,
+    q: "Aunque _____ (estar) cansada, siguió trabajando hasta medianoche. [hecho real]",
+    options: ["esté", "estaría", "estaba", "estuviera"],
+    correct: 2,
+    explanation: "«Aunque» + indicativo = concesión sobre un hecho reconocido (estaba cansada y eso es cierto). «Aunque esté / estuviera» sería hipotético, cambiando el significado."
+  },
+  {
+    cat: 3,
+    q: "Quizás _____ (llover) esta tarde; mejor lleva paraguas.",
+    options: ["llueve y lluevan son ambos correctos", "llueve", "llovería", "lloviera"],
+    correct: 0,
+    explanation: "Con «quizás» y «tal vez» se puede usar tanto indicativo como subjuntivo. Indicativo («llueve»): el hablante se inclina a creer que ocurrirá. Subjuntivo («llueva»): mayor grado de duda. Ambos son gramaticalmente correctos en C1."
+  },
+
+  // ── E: Condicionales y subj. avanzado ──
+  {
+    cat: 4,
+    q: "Si _____ (estudiar, yo) más de joven, habría llegado más lejos.",
+    options: ["estudiaría", "hubiera estudiado", "habría estudiado", "estudiara"],
+    correct: 1,
+    explanation: "Condicional tipo 3 (irreal pasado): prótasis = pluscuamperfecto de subjuntivo; apódosis = condicional perfecto. «Hubiera estudiado» en la prótasis, «habría llegado» en la apódosis."
+  },
+  {
+    cat: 4,
+    q: "Si hubiera nacido en otro país, _____ (hablar) otra lengua ahora.",
+    options: ["hablaría", "habría hablado", "hablara", "hablase"],
+    correct: 0,
+    explanation: "Condicional mixta (pasado → presente): la condición es irreal-pasada (pluscuamp. subj.) pero el resultado se sitúa en el presente → condicional simple («hablaría»), no condicional perfecto."
+  },
+  {
+    cat: 4,
+    q: "Te _____ (decir) la verdad antes de que llegaran los demás.",
+    options: ["dije", "diré", "habría dicho", "hubiera dicho"],
+    correct: 2,
+    explanation: "Condicional perfecto con condición implícita: equivale a «si hubiera podido / si me lo hubieras pedido, te habría dicho la verdad». La condición no se expresa pero se sobrentiende."
+  },
+  {
+    cat: 4,
+    q: "¡_____ (decir, tú) eso antes! Ahora ya es tarde.",
+    options: ["Dirías", "Habrías dicho", "Hubieras dicho", "Haberlo dicho"],
+    correct: 3,
+    explanation: "«Haber + participio» en infinitivo compuesto exclamativo expresa reproche por una acción no realizada en el pasado. Es una construcción fija: «¡Haberlo dicho!» = deberías haberlo dicho."
+  },
+  {
+    cat: 4,
+    q: "Ojalá _____ (poder, yo) acompañarte, pero tengo trabajo.",
+    options: ["puedo", "podré", "pudiera", "haya podido"],
+    correct: 2,
+    explanation: "«Ojalá» siempre lleva subjuntivo. Con referencia al presente/futuro y expresando deseo difícil de cumplir → imperfecto de subjuntivo («pudiera»). Si el deseo fuera realizable, usaríamos presente de subjuntivo: «Ojalá pueda»."
+  },
+
+  // ── F: Contrastes difíciles C1 ──
+  {
+    cat: 5,
+    q: "«Supo» que su amigo había muerto. → El verbo «saber» en indefinido significa:",
+    options: ["tenía conocimiento de algo", "se enteró de algo en ese momento", "sabía hacer algo", "tuvo la capacidad de saber"],
+    correct: 1,
+    explanation: "«Supo» (indefinido) = se enteró en ese momento. «Sabía» (imperfecto) = ya tenía ese conocimiento. Muchos verbos cambian de significado según el tiempo: saber, conocer, querer, poder, tener."
+  },
+  {
+    cat: 5,
+    q: "«Tengo corregidos los exámenes» vs. «He corregido los exámenes». ¿Cuál es la diferencia?",
+    options: [
+      "Son exactamente equivalentes",
+      "«Tengo corregidos» enfatiza el resultado disponible ahora; «he corregido» enfatiza la acción realizada",
+      "«Tengo corregidos» es incorrecto",
+      "«He corregido» solo se usa en Latinoamérica"
+    ],
+    correct: 1,
+    explanation: "«Tener + participio» (que concuerda con el OD: corregidos) enfatiza el resultado presente y su disponibilidad. «Haber + participio» (invariable) enfatiza la acción completada. No son intercambiables en todos los contextos."
+  },
+  {
+    cat: 5,
+    q: "«Después de _____ (llegar), se duchó.» ¿Infinitivo simple o compuesto?",
+    options: ["llegar", "haber llegado", "llegando", "habiendo llegado"],
+    correct: 1,
+    explanation: "«Después de» + infinitivo compuesto («haber llegado») indica que la llegada fue anterior a ducharse. El infinitivo simple («llegar») con «después de» es también aceptado coloquialmente, pero el compuesto es más preciso y preferido en registro C1 formal."
+  },
+  {
+    cat: 5,
+    q: "Selecciona la oración gramaticalmente correcta en registro culto:",
+    options: [
+      "Si tuvieras dinero, lo comprabas.",
+      "Si tuvieras dinero, lo comprarías.",
+      "Si tendrías dinero, lo comprarías.",
+      "Si tendrías dinero, lo comprabas."
+    ],
+    correct: 1,
+    explanation: "La condicional hipotética exige: prótasis con imperfecto de subjuntivo («tuvieras») + apódosis con condicional simple («comprarías»). El imperfecto de indicativo en la apódosis («comprabas») es coloquial pero incorrecto en registro formal. El condicional en la prótasis («tendrías») es siempre un error."
+  }
+];
+
+let score = 0;
+let answered = 0;
+
+function updateScore() {
+  const pct = Math.round((score / questions.length) * 100);
+  document.getElementById('score-display').textContent = score + ' / ' + questions.length;
+  document.getElementById('score-progress').style.width = (answered / questions.length * 100) + '%';
+  if (answered === questions.length) {
+    let grade = '';
+    if (pct >= 90) grade = '🏆 Excelente — nivel C1 consolidado';
+    else if (pct >= 75) grade = '✅ Bien — repasa los errores';
+    else if (pct >= 60) grade = '📚 Aprobado — necesitas refuerzo';
+    else grade = '🔄 Sigue practicando';
+    document.getElementById('score-grade').textContent = grade;
+    document.getElementById('score-progress').style.background = pct >= 75 ? 'var(--green)' : pct >= 60 ? 'var(--gold)' : 'var(--accent)';
+    document.getElementById('show-all-answers').style.display = 'inline-block';
+  }
+}
+
+function renderQuiz() {
+  score = 0; answered = 0;
+  document.getElementById('score-display').textContent = '0 / ' + questions.length;
+  document.getElementById('score-progress').style.width = '0%';
+  document.getElementById('score-progress').style.background = 'var(--green)';
+  document.getElementById('score-grade').textContent = '';
+
+  const container = document.getElementById('quiz-container');
+  container.innerHTML = '';
+
+  // Group by category
+  categories.forEach((cat, ci) => {
+    const catQuestions = questions.filter(q => q.cat === ci);
+    if (!catQuestions.length) return;
+
+    const catHeader = document.createElement('div');
+    catHeader.style.cssText = `margin: 2rem 0 1rem; padding: 0.5rem 1rem; border-left: 3px solid ${cat.color}; background: white; border-radius: 0 4px 4px 0;`;
+    catHeader.innerHTML = `<span style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:0.1em;color:${cat.color};font-weight:500;">${cat.name}</span>`;
+    container.appendChild(catHeader);
+
+    catQuestions.forEach(q => {
+      const qi = questions.indexOf(q);
+      const div = document.createElement('div');
+      div.className = 'quiz-question';
+      div.id = 'q-block-' + qi;
+      div.innerHTML = `
+        <p><strong>${qi + 1}.</strong> ${q.q}</p>
+        <div class="quiz-options" id="opts-${qi}">
+          ${q.options.map((o, j) => `<button class="quiz-btn" data-q="${qi}" data-a="${j}">${o}</button>`).join('')}
+        </div>
+        <div class="quiz-feedback" id="fb-${qi}"></div>
+      `;
+      container.appendChild(div);
+    });
+  });
+
+  document.querySelectorAll('.quiz-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const qi = parseInt(this.dataset.q);
+      const ai = parseInt(this.dataset.a);
+      const q = questions[qi];
+      const opts = document.querySelectorAll(`#opts-${qi} .quiz-btn`);
+      const fb = document.getElementById(`fb-${qi}`);
+      if (opts[0].disabled) return;
+
+      opts.forEach(b => b.disabled = true);
+      answered++;
+
+      if (ai === q.correct) {
+        this.classList.add('correct');
+        fb.textContent = '✓ ' + q.explanation;
+        fb.className = 'quiz-feedback ok show';
+        score++;
+      } else {
+        this.classList.add('incorrect');
+        opts[q.correct].classList.add('reveal');
+        fb.textContent = '✗ Respuesta correcta: «' + q.options[q.correct] + '». ' + q.explanation;
+        fb.className = 'quiz-feedback bad show';
+      }
+
+      document.getElementById('reset-quiz').style.display = 'inline-block';
+      updateScore();
+    });
+  });
+}
+
+document.getElementById('reset-quiz').addEventListener('click', () => {
+  renderQuiz();
+  document.getElementById('reset-quiz').style.display = 'none';
+  document.getElementById('show-all-answers').style.display = 'none';
+  window.scrollTo({ top: document.getElementById('tab-practica').offsetTop - 100, behavior: 'smooth' });
+});
+
+document.getElementById('show-all-answers').addEventListener('click', () => {
+  questions.forEach((q, qi) => {
+    const opts = document.querySelectorAll(`#opts-${qi} .quiz-btn`);
+    const fb = document.getElementById(`fb-${qi}`);
+    if (!opts[0].disabled) {
+      opts.forEach(b => b.disabled = true);
+      opts[q.correct].classList.add('reveal');
+      fb.textContent = '→ Respuesta: «' + q.options[q.correct] + '». ' + q.explanation;
+      fb.className = 'quiz-feedback ok show';
+    }
+  });
+  document.getElementById('show-all-answers').style.display = 'none';
+});
+
+renderQuiz();
+</script>
+</body>
+</html>

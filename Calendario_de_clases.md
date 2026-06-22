@@ -2,9 +2,23 @@
 
 ---
 
+junio 2026
+
+* Repaso de Gramatica Intensivo (20-30 de junio)
+
+    * Dia 1: Empezaremos con un test de repaso de gramatica general que puedes encontrar aqui :point_right: [Test de Repaso General, C1](https://deleahora.com/actividades/examenes/test-de-repaso-nivel-c1)
+    * Dia 2: Repaso de uso de tiempos. Vamos a trabajar con el uso de tiempos poniendo el foco en contrastes del uso. Cual es el tiempo adecuado para el pasado? Cuando utilizamos el presente para hablar del futuro? Cuando y como utilizamos el subjuntivo? Puedes revisar las reglas y practicar aqui :point_right: [Uso de Tiempos Verbales]()
+    * Dia 3: Repaso de condicional. Hoy trabajaremos con el uso de modo condicional. Cuando utilizamos el condicional simple y cuando el compuesto? Cuales son los tres modos principales de oraciones condicionales? Puedes revisar las reglas y practicar aqui :point_right: [Uso de Condicional]()
+
+---
+
 #### mayo 2026
 
 ---
+
+* jueves, 28 de mayo: Test de expression oral
+
+   - :🗣️: _Expresion Oral. Claves C1. Examen 2. Prueba 4, p 165-167_
 
 * martes, 26 de mayo: Repaso de Gramatica
 
