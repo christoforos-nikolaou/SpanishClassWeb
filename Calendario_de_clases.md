@@ -2,7 +2,8 @@
 
 ---
 
-junio 2026
+#### junio 2026
+---
 
 * Repaso de Gramatica Intensivo (20-30 de junio)
 
