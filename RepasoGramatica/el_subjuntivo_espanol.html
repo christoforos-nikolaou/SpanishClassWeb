@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/chris/Downloads/subjuntivo_espanol.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Subjuntivo en Español — C1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink:      #1a1a2e;
+    --paper:    #f7f5f0;
+    --accent:   #c0392b;
+    --gold:     #b8860b;
+    --slate:    #4a5568;
+    --mist:     #e8e4dc;
+    --teal:     #2c7a7b;
+    --purple:   #553c9a;
+    --green:    #276749;
+    --border:   #d4cec4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px; right: -40px; bottom: -40px;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 28px,
+      rgba(255,255,255,0.025) 28px, rgba(255,255,255,0.025) 30px
+    );
+  }
+  .header-inner { position: relative; z-index: 1; }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  header p {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    color: rgba(247,245,240,0.6);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Nav ── */
+  nav {
+    background: var(--ink);
+    padding: 0 1.5rem;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    background: none;
+    border: none;
+    color: rgba(247,245,240,0.45);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.2rem;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .tab-btn:hover { color: rgba(247,245,240,0.8); }
+  .tab-btn.active { color: var(--paper); border-bottom-color: var(--accent); }
+
+  /* ── Layout ── */
+  main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 1.2rem 0 0.3rem;
+  }
+  .lead {
+    font-size: 1rem;
+    color: var(--slate);
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 1rem;
+  }
+  p { margin-bottom: 0.9rem; color: var(--slate); font-size: 0.95rem; }
+
+  /* ── Cards ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.2rem 0;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .card.red::before    { background: var(--accent); }
+  .card.gold::before   { background: var(--gold); }
+  .card.teal::before   { background: var(--teal); }
+  .card.purple::before { background: var(--purple); }
+  .card.green::before  { background: var(--green); }
+  .card.slate::before  { background: var(--slate); }
+  .card h4 { font-size: 0.95rem; margin: 0 0 0.4rem; }
+  .card p  { font-size: 0.84rem; margin-bottom: 0.3rem; }
+  .card .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.63rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+  }
+  .tag.red    { background: #fdecea; color: var(--accent); }
+  .tag.gold   { background: #fdf6e3; color: var(--gold); }
+  .tag.teal   { background: #e6f4f4; color: var(--teal); }
+  .tag.purple { background: #f0edf8; color: var(--purple); }
+  .tag.green  { background: #e8f4ee; color: var(--green); }
+  .tag.slate  { background: #eef0f3; color: var(--slate); }
+
+  /* ── Examples ── */
+  .example-block {
+    background: var(--ink);
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    margin: 0.8rem 0 1.4rem;
+  }
+  .example-block .ex {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--paper);
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.5;
+  }
+  .example-block .gloss {
+    font-size: 0.77rem;
+    color: rgba(247,245,240,0.45);
+    letter-spacing: 0.03em;
+    margin-bottom: 0.2rem;
+  }
+  .verb-highlight  { color: var(--gold);  font-style: normal; font-weight: 700; }
+  .form-highlight  { color: #7dd3d4; font-style: normal; font-weight: 600; }
+  .wrong-highlight { color: #f87171; font-style: normal; font-weight: 600; }
+
+  /* ── Tables ── */
+  .contrast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.2rem 0 1.8rem;
+    font-size: 0.875rem;
+  }
+  .contrast-table th {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.65rem 1rem;
+    text-align: left;
+  }
+  .contrast-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--slate);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .contrast-table tr:last-child td { border-bottom: none; }
+  .contrast-table tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+  .mono { font-family: 'JetBrains Mono', monospace; color: var(--ink); font-size: 0.8rem; }
+
+  /* ── Split compare ── */
+  .compare-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 1.2rem 0 1.8rem;
+  }
+  .compare-col { padding: 1.1rem 1.3rem; background: white; }
+  .compare-col:first-child { border-right: 1px solid var(--border); }
+  .compare-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid;
+  }
+  .compare-col.ind h4  { color: var(--teal);  border-color: var(--teal); }
+  .compare-col.subj h4 { color: var(--purple); border-color: var(--purple); }
+  .compare-col.inf h4  { color: var(--green);  border-color: var(--green); }
+  .compare-col ul { list-style: none; padding: 0; }
+  .compare-col li {
+    font-size: 0.85rem;
+    color: var(--slate);
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--mist);
+    line-height: 1.5;
+  }
+  .compare-col li:last-child { border-bottom: none; }
+  .compare-col li em { color: var(--ink); font-style: italic; }
+
+  /* ── Formula ── */
+  .formula {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+  .formula-part {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+  }
+  .fp-red    { background: #fdecea; color: var(--accent); }
+  .fp-teal   { background: #e6f4f4; color: var(--teal); }
+  .fp-purple { background: #f0edf8; color: var(--purple); }
+  .fp-gold   { background: #fdf6e3; color: var(--gold); }
+  .fp-green  { background: #e8f4ee; color: var(--green); }
+  .formula-arrow { font-size: 1.1rem; color: var(--slate); }
+  .formula-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate);
+    width: 100%;
+    margin-top: 0.1rem;
+  }
+
+  /* ── Callouts ── */
+  .callout {
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 0.875rem;
+    line-height: 1.65;
+  }
+  .callout.warning { background: #fdf6e3; border-left: 3px solid var(--gold);   color: #7a5c00; }
+  .callout.info    { background: #e6f4f4; border-left: 3px solid var(--teal);   color: #1a5050; }
+  .callout.danger  { background: #fdecea; border-left: 3px solid var(--accent); color: #8b1c1c; }
+  .callout.purple  { background: #f0edf8; border-left: 3px solid var(--purple); color: #3b2570; }
+  .callout strong  { font-weight: 600; }
+
+  /* ── Divider ── */
+  hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+  /* ── Quiz ── */
+  #score-bar {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  #score-display {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .quiz-question {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    margin: 1rem 0;
+  }
+  .quiz-question > p { color: var(--ink); font-weight: 500; margin-bottom: 0.8rem; font-size: 0.93rem; }
+  .quiz-options { display: flex; flex-direction: column; gap: 0.4rem; }
+  .quiz-btn {
+    background: var(--mist);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0.9rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    color: var(--ink);
+  }
+  .quiz-btn:hover:not(:disabled) { background: var(--border); }
+  .quiz-btn.correct   { background: #e8f4ee; border-color: var(--green);  color: var(--green); }
+  .quiz-btn.incorrect { background: #fdecea; border-color: var(--accent); color: var(--accent); }
+  .quiz-btn.reveal    { background: #e8f4ee; border-color: var(--green);  color: var(--green); opacity: 0.6; }
+  .quiz-feedback {
+    margin-top: 0.7rem;
+    font-size: 0.82rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    display: none;
+    line-height: 1.55;
+  }
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.ok  { background: #e8f4ee; color: var(--green); }
+  .quiz-feedback.bad { background: #fdecea; color: var(--accent); }
+  .cat-header {
+    margin: 2rem 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    background: white;
+    border-left: 3px solid;
+  }
+  .cat-header span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+
+  /* ── Progress ── */
+  #progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: var(--accent);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.1s;
+  }
+
+  @media (max-width: 600px) {
+    main { padding: 1.5rem 1rem 3rem; }
+    h2 { font-size: 1.5rem; }
+    .card-grid { grid-template-columns: 1fr; }
+    .compare-block { grid-template-columns: 1fr; }
+    .compare-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header>
+  <div class="header-inner">
+    <div class="kicker">Gramática Española · Nivel C1</div>
+    <h1>El Subjuntivo<br>en Español</h1>
+    <p>Usos generales · Indicativo vs. Subjuntivo · Infinitivo vs. Subjuntivo · Christoforos Nikolaou · junio 2026</p>
+  </div>
+</header>
+
+<nav>
+  <button class="tab-btn active" data-tab="uso-general">Uso General</button>
+  <button class="tab-btn" data-tab="ind-vs-subj">Indicativo vs. Subj.</button>
+  <button class="tab-btn" data-tab="inf-vs-subj">Infinitivo vs. Subj.</button>
+  <button class="tab-btn" data-tab="practica">Práctica</button>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════════════
+     TAB A: USO GENERAL
+══════════════════════════════════════════════════════ -->
+<div class="tab-panel active" id="tab-uso-general">
+  <div class="section-label">Sección (a) · Uso general</div>
+  <h2>El Subjuntivo: Uso General</h2>
+  <p class="lead">El subjuntivo no expresa hechos, sino la <strong>actitud del hablante</strong> ante ellos: deseo, emoción, valoración, duda o negación de la realidad. Aparece principalmente en subordinadas introducidas por «que».</p>
+
+  <!-- i. Deseos, exclamaciones, posibilidad, duda -->
+  <h3>i. Deseos, exclamaciones, posibilidad y duda</h3>
+  <p>El subjuntivo aparece directamente —sin «que»— en construcciones que expresan:</p>
+
+  <div class="card-grid">
+    <div class="card gold">
+      <div class="tag gold">Deseos</div>
+      <h4>Ojalá, quién…</h4>
+      <p><em>«¡<strong>Ojalá</strong> <span style="color:var(--gold)">venga</span> pronto!»</em></p>
+      <p><em>«¡<strong>Quién</strong> <span style="color:var(--gold)">pudiera</span> volar!»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Exclamaciones</div>
+      <h4>Que + subj. exclamativo</h4>
+      <p><em>«¡<strong>Que</strong> <span style="color:var(--accent)">te</span> <span style="color:var(--accent)">mejores</span>!»</em></p>
+      <p><em>«¡<strong>Que</strong> <span style="color:var(--accent)">aproveche</span>!»</em></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Posibilidad</div>
+      <h4>Tal vez, quizás, acaso…</h4>
+      <p>Con subjuntivo → mayor duda.</p>
+      <p><em>«<strong>Tal vez</strong> <span style="color:var(--teal)">venga</span> mañana.»</em></p>
+      <p><em>«<strong>Quizás</strong> <span style="color:var(--teal)">haya</span> solución.»</em></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Órdenes negativas</div>
+      <h4>Imperativo negativo</h4>
+      <p>El imperativo negativo siempre usa subjuntivo.</p>
+      <p><em>«<strong>No</strong> <span style="color:var(--purple)">hagas</span> eso.»</em></p>
+      <p><em>«<strong>No</strong> <span style="color:var(--purple)">salgas</span> todavía.»</em></p>
+    </div>
+  </div>
+
+  <div class="callout warning">
+    <strong>Tal vez / quizás — modo doble:</strong> Con indicativo el hablante se inclina hacia la realidad (<em>«Tal vez <strong>viene</strong>»</em> = probablemente viene). Con subjuntivo expresa mayor incertidumbre (<em>«Tal vez <strong>venga</strong>»</em> = no estoy seguro). Ambos son correctos; el modo marca el grado de confianza del hablante.
+  </div>
+
+  <!-- ii. Oraciones con «que» + otra persona -->
+  <h3>ii. Oraciones con «que» que introducen otra persona</h3>
+  <p>Cuando la oración principal expresa la actitud del hablante hacia una acción realizada por <strong>otra persona</strong>, el subjuntivo aparece en la subordinada con «que»:</p>
+
+  <div class="formula">
+    <span class="formula-part fp-teal">Verbo principal (actitud)</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part fp-red">que</span>
+    <span class="formula-arrow">+</span>
+    <span class="formula-part fp-purple">Sujeto 2 + Subjuntivo</span>
+    <span class="formula-label">Sujeto distinto entre oración principal y subordinada → subjuntivo obligatorio</span>
+  </div>
+
+  <h4>a. Deseo, necesidad, esperanza</h4>
+  <div class="card-grid">
+    <div class="card teal">
+      <div class="tag teal">Deseo</div>
+      <h4>querer, desear, esperar…</h4>
+      <p><em>«<strong>Quiero</strong> que te <span style="color:var(--teal)">calles</span>.»</em></p>
+      <p><em>«<strong>Espero</strong> que <span style="color:var(--teal)">llegues</span> pronto.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Necesidad</div>
+      <h4>necesitar, hacer falta…</h4>
+      <p><em>«<strong>Necesito</strong> que me <span style="color:var(--gold)">ayudes</span>.»</em></p>
+      <p><em>«<strong>Hace falta</strong> que <span style="color:var(--gold)">vengas</span>.»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Esperanza</div>
+      <h4>ojalá, esperar, confiar en…</h4>
+      <p><em>«<strong>Confío en</strong> que <span style="color:var(--accent)">puedas</span> hacerlo.»</em></p>
+    </div>
+  </div>
+
+  <div class="example-block">
+    <div class="ex"><span class="verb-highlight">Quiero</span> que te <span class="form-highlight">calles</span>.</div>
+    <div class="gloss">yo (quiero) ≠ tú (te calles) → sujetos distintos → subjuntivo</div>
+  </div>
+
+  <h4>b. Permiso, obligación, disculpa</h4>
+  <div class="card-grid">
+    <div class="card purple">
+      <div class="tag purple">Permiso</div>
+      <h4>permitir, dejar, autorizar…</h4>
+      <p><em>«Te <strong>permito</strong> que <span style="color:var(--purple)">salgas</span> antes.»</em></p>
+    </div>
+    <div class="card red">
+      <div class="tag red">Obligación</div>
+      <h4>exigir, pedir, ordenar, mandar…</h4>
+      <p><em>«<strong>Exigen</strong> que los empleados <span style="color:var(--accent)">lleguen</span> a las 9.»</em></p>
+    </div>
+    <div class="card slate">
+      <div class="tag slate">Disculpa / lamento</div>
+      <h4>sentir, lamentar, disculparse de…</h4>
+      <p><em>«<strong>Siento</strong> que te <span style="color:var(--slate)">hayas</span> sentido mal.»</em></p>
+    </div>
+  </div>
+
+  <h4>c. Consejos, órdenes, sugerencias</h4>
+  <div class="card-grid">
+    <div class="card green">
+      <div class="tag green">Consejo</div>
+      <h4>aconsejar, recomendar, sugerir…</h4>
+      <p><em>«Te <strong>recomiendo</strong> que <span style="color:var(--green)">estudies</span> más.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Sugerencia</div>
+      <h4>proponer, sugerir…</h4>
+      <p><em>«<strong>Propongo</strong> que <span style="color:var(--gold)">empecemos</span> ya.»</em></p>
+    </div>
+    <div class="card teal">
+      <div class="tag teal">Expresión impersonal</div>
+      <h4>es importante / necesario / bueno que…</h4>
+      <p><em>«<strong>Es importante</strong> que <span style="color:var(--teal)">llegues</span> puntual.»</em></p>
+    </div>
+  </div>
+
+  <!-- iii. Conectores temporales con futuro -->
+  <h3>iii. Oraciones con conectores temporales que se refieren al futuro</h3>
+  <p>Cuando los conectores temporales introducen una subordinada con referencia al <strong>futuro o hipotética</strong>, el verbo va en subjuntivo. Si se refieren al <strong>pasado o habitual</strong>, van con indicativo.</p>
+
+  <table class="contrast-table">
+    <tbody><tr><th>Conector</th><th>Futuro → Subjuntivo</th><th>Pasado/habitual → Indicativo</th></tr>
+    <tr>
+      <td><strong>cuando</strong></td>
+      <td><em>«<strong>Cuando</strong> <span style="color:var(--purple)">vengas</span>, llámame.»</em></td>
+      <td><em>«<strong>Cuando</strong> <span style="color:var(--teal)">venía</span>, siempre traía algo.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>en cuanto</strong></td>
+      <td><em>«<strong>En cuanto</strong> <span style="color:var(--purple)">llegues</span>, avísame.»</em></td>
+      <td><em>«<strong>En cuanto</strong> <span style="color:var(--teal)">llegaba</span>, nos saludaba.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>hasta que</strong></td>
+      <td><em>«<strong>Hasta que</strong> no <span style="color:var(--purple)">termines</span>, no saldrás.»</em></td>
+      <td><em>«<strong>Hasta que</strong> no <span style="color:var(--teal)">terminé</span>, no salí.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>tan pronto como</strong></td>
+      <td><em>«<strong>Tan pronto como</strong> <span style="color:var(--purple)">entres</span>…»</em></td>
+      <td><em>«<strong>Tan pronto como</strong> <span style="color:var(--teal)">entró</span>…»</em></td>
+    </tr>
+  </tbody></table>
+
+  <div class="example-block">
+    <div class="ex">«Te <span class="verb-highlight">importa</span> que <span class="form-highlight">venga</span> Nona?» → futuro / hipótesis → subjuntivo</div>
+    <div class="gloss">conector temporal + referencia futura → subjuntivo</div>
+    <div class="ex">«Cuando <span class="form-highlight">vengas</span>, llámame.» → llegará en el futuro → subjuntivo</div>
+    <div class="ex">«Tan pronto como <span class="form-highlight">vengas</span> como <span class="form-highlight">entres</span>…» → conectores temporales + futuro → subjuntivo</div>
+    <div class="gloss">Siempre que el conector apunte al futuro o a algo no ocurrido, se usa subjuntivo</div>
+  </div>
+
+  <div class="callout info">
+    <strong>Regla clave:</strong> Con conectores temporales (<em>cuando, en cuanto, hasta que, tan pronto como, antes de que, después de que…</em>), el modo depende de si la acción es real/pasada (indicativo) o futura/hipotética (subjuntivo). Esta regla no tiene excepciones en el registro culto.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     TAB B: INDICATIVO vs SUBJUNTIVO
+══════════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-ind-vs-subj">
+  <div class="section-label">Sección (b) · U64 &amp; U67</div>
+  <h2>Indicativo vs. Subjuntivo</h2>
+  <p class="lead">El contraste de modo más complejo del español C1. La elección entre indicativo y subjuntivo codifica la posición epistémica del hablante: si presenta algo como hecho o como filtrado por su actitud.</p>
+
+  <!-- Afirmación vs. Negación -->
+  <h3>1. Afirmación → indicativo / Negación → subjuntivo (U64)</h3>
+  <p>Con verbos de opinión y creencia, la afirmación introduce indicativo (el hablante afirma la verdad) y la negación introduce subjuntivo (el hablante niega o duda):</p>
+
+  <div class="compare-block">
+    <div class="compare-col ind">
+      <h4>Afirmación → Indicativo</h4>
+      <ul>
+        <li><em>«<strong>Creo que</strong> <span style="color:var(--teal)">habrá</span> tiempo.»</em></li>
+        <li><em>«<strong>Pienso que</strong> <span style="color:var(--teal)">viene</span> mañana.»</em></li>
+        <li><em>«<strong>Es verdad que</strong> <span style="color:var(--teal)">tiene</span> razón.»</em></li>
+        <li><em>«<strong>Está claro que</strong> <span style="color:var(--teal)">sabe</span> hacerlo.»</em></li>
+      </ul>
+    </div>
+    <div class="compare-col subj">
+      <h4>Negación → Subjuntivo</h4>
+      <ul>
+        <li><em>«<strong>No creo que</strong> <span style="color:var(--purple)">haya</span> tiempo.»</em></li>
+        <li><em>«<strong>No pienso que</strong> <span style="color:var(--purple)">venga</span> mañana.»</em></li>
+        <li><em>«<strong>No es verdad que</strong> <span style="color:var(--purple)">tenga</span> razón.»</em></li>
+        <li><em>«<strong>No está claro que</strong> <span style="color:var(--purple)">sepa</span> hacerlo.»</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout warning">
+    <strong>Matiz con la negación:</strong> No siempre la negación fuerza el subjuntivo. Verbos como <em>saber, recordar, darse cuenta de</em> mantienen el indicativo incluso en negación porque presentan información factual: <em>«<strong>No</strong> <strong>sé</strong> si <span style="color:var(--teal)">viene</span>»</em>. La clave es si la negación niega la verdad de la subordinada o solo la afirmación del sujeto.
+  </div>
+
+  <!-- Verbos de percepción física -->
+  <h3>2. Verbos de percepción física (U67) — siempre indicativo</h3>
+  <p>Los verbos que expresan <strong>percepción sensorial directa</strong> —ver, oír, notar, sentir (físico), observar— van siempre con <strong>indicativo</strong>, incluso en negación:</p>
+
+  <div class="example-block">
+    <div class="ex"><span class="verb-highlight">Veo</span> que <span class="form-highlight">viene</span> un coche. → percepción visual directa → indicativo</div>
+    <div class="ex">No <span class="verb-highlight">oigo</span> que <span class="form-highlight">hable</span> nadie. → <span class="wrong-highlight">❌ incorrecto</span></div>
+    <div class="ex">No <span class="verb-highlight">oigo</span> que <span class="form-highlight">habla</span> nadie. → ✓ percepción auditiva directa → indicativo aunque negado</div>
+    <div class="gloss">ver, oír, notar, percibir (físicamente) → SIEMPRE indicativo, también en negación</div>
+  </div>
+
+  <table class="contrast-table">
+    <tbody><tr><th>Verbo</th><th>Indicativo (siempre)</th><th>Nota</th></tr>
+    <tr>
+      <td><strong>ver</strong></td>
+      <td><em>«Veo que <span style="color:var(--teal)">tiene</span> prisa.»</em></td>
+      <td>Percepción visual directa, real</td>
+    </tr>
+    <tr>
+      <td><strong>oír</strong></td>
+      <td><em>«Oigo que <span style="color:var(--teal)">canta</span> alguien.»</em></td>
+      <td>Percepción auditiva directa</td>
+    </tr>
+    <tr>
+      <td><strong>notar</strong></td>
+      <td><em>«Noto que <span style="color:var(--teal)">está</span> cansado.»</em></td>
+      <td>Percepción sensorial/intuitiva directa</td>
+    </tr>
+    <tr>
+      <td><strong>sentir</strong> (físico)</td>
+      <td><em>«Siento que <span style="color:var(--teal)">tiembla</span> el suelo.»</em></td>
+      <td>Percepción táctil/física — no emotivo</td>
+    </tr>
+  </tbody></table>
+
+  <div class="callout danger">
+    <strong>⚠ Trampa frecuente:</strong> <em>«Sentir»</em> tiene dos valores. Como percepción física → indicativo: <em>«Siento que <strong>tiembla</strong>»</em>. Como emoción/lamento → subjuntivo: <em>«Siento que no <strong>puedas</strong> venir»</em> (= lamento que no puedas). El contexto y el significado determinan el modo.
+  </div>
+
+  <!-- «que» con indeterminación -->
+  <h3>3. «Que» con indeterminación — subjuntivo (U170)</h3>
+  <p>Cuando «que» introduce a una persona o cosa <strong>indeterminada o cuya existencia se duda</strong>, el verbo siguiente va en subjuntivo. Si la persona o cosa es <strong>conocida y determinada</strong>, va en indicativo:</p>
+
+  <div class="compare-block">
+    <div class="compare-col ind">
+      <h4>Determinado → Indicativo</h4>
+      <ul>
+        <li><em>«Busco a la chica <strong>que</strong> <span style="color:var(--teal)">habla</span> chino.»</em><br><small>(sé quién es, existe)</small></li>
+        <li><em>«¿Dónde está el libro <strong>que</strong> <span style="color:var(--teal)">tiene</span> la respuesta?»</em></li>
+        <li><em>«Ven el coche <strong>que</strong> <span style="color:var(--teal)">pasa</span> por allí.»</em></li>
+      </ul>
+    </div>
+    <div class="compare-col subj">
+      <h4>Indeterminado → Subjuntivo</h4>
+      <ul>
+        <li><em>«Busco a alguien <strong>que</strong> <span style="color:var(--purple)">hable</span> chino.»</em><br><small>(no sé quién es, puede no existir)</small></li>
+        <li><em>«Necesito un libro <strong>que</strong> <span style="color:var(--purple)">tenga</span> la respuesta.»</em></li>
+        <li><em>«¿Hay alguien <strong>que</strong> <span style="color:var(--purple)">sepa</span> la respuesta?»</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="example-block">
+    <div class="ex"><span class="verb-highlight">Necesito</span> que alguien me <span class="form-highlight">cuide</span> el perro.</div>
+    <div class="gloss">«alguien» → indeterminado → subjuntivo</div>
+    <div class="ex"><span class="verb-highlight">Pídame</span> lo que <span class="form-highlight">quiera</span>.</div>
+    <div class="gloss">«lo que» → referente indeterminado → subjuntivo</div>
+    <div class="ex"><span class="verb-highlight">Pídame</span> lo que <span class="form-highlight">quiere</span>.</div>
+    <div class="gloss">→ lo que ya quiere (determinado, ya lo sé) → indicativo</div>
+  </div>
+
+  <!-- Negación con «como», «vamos», «adónde» -->
+  <h3>4. Negación con «cómo», «vamos», «adónde», «cuándo»…</h3>
+  <p>Algunos adverbios y expresiones con valor negativo implícito activan el subjuntivo porque niegan la realidad o la posibilidad del evento:</p>
+
+  <div class="example-block">
+    <div class="ex">«¿Y <span class="verb-highlight">cómo</span> <span class="form-highlight">quieres</span> que <span class="form-highlight">venga</span>?» → implica: es imposible que venga → subj.</div>
+    <div class="ex">«<span class="verb-highlight">Vamos</span>, que no me <span class="form-highlight">conoces</span>.» → afirmación irónica/enfática → indicativo</div>
+    <div class="ex">«¿<span class="verb-highlight">Adónde</span> <span class="form-highlight">prefieres</span> tú?» → pregunta real → indicativo</div>
+    <div class="gloss">La clave: ¿el adverbio introduce una pregunta real (ind.) o una negación implícita/retórica (subj.)?</div>
+  </div>
+
+  <!-- Imperativo + negación -->
+  <h3>5. Cuidado: imperativo o futuro + negación</h3>
+  <div class="callout danger">
+    <strong>⚠ Error frecuente:</strong> Cuando la negación sigue a un imperativo o a un futuro, el verbo siguiente puede ir en indicativo o subjuntivo según su función. La negación afecta al modo del verbo que niega, no al de la subordinada.
+    <br><br>
+    <em>«No <strong>limpias</strong> lo que no me <strong>conoces</strong>»</em> → el verbo en indicativo sigue siendo indicativo aunque la oración sea negativa.
+    <br>
+    <em>«No <strong>hagas</strong> lo que no <strong>quieras</strong>»</em> → imperativo negativo (subjuntivo) + relativo con indeterminación (subjuntivo).
+  </div>
+
+  <table class="contrast-table">
+    <tbody><tr><th>Construcción</th><th>Modo</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>Verbo principal negado (opinión)</strong></td>
+      <td class="mono">→ Subjuntivo</td>
+      <td><em>«No creo que <span style="color:var(--purple)">venga</span>.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Verbo de percepción negado</strong></td>
+      <td class="mono">→ Indicativo</td>
+      <td><em>«No veo que <span style="color:var(--teal)">haya</span> problema.»</em> ← ojo: «haya» también correcto aquí</td>
+    </tr>
+    <tr>
+      <td><strong>Imperativo negativo</strong></td>
+      <td class="mono">→ Subjuntivo</td>
+      <td><em>«No <span style="color:var(--purple)">hagas</span> eso.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Relativo con referente conocido</strong></td>
+      <td class="mono">→ Indicativo</td>
+      <td><em>«No limpias lo que no me <span style="color:var(--teal)">conoces</span>.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Relativo con referente desconocido</strong></td>
+      <td class="mono">→ Subjuntivo</td>
+      <td><em>«No hagas lo que no <span style="color:var(--purple)">quieras</span>.»</em></td>
+    </tr>
+  </tbody></table>
+
+  <div class="callout info">
+    <strong>Resumen operativo:</strong> Antes de elegir indicativo o subjuntivo, hazte estas preguntas:
+    ¿El verbo principal expresa <em>hecho / percepción directa / certeza</em>? → <strong>indicativo</strong>.
+    ¿El verbo principal expresa <em>deseo / emoción / duda / valoración / negación de verdad</em>? → <strong>subjuntivo</strong>.
+    ¿El antecedente del relativo es <em>determinado</em>? → <strong>indicativo</strong>. ¿Indeterminado o dudoso? → <strong>subjuntivo</strong>.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     TAB C: INFINITIVO vs SUBJUNTIVO
+══════════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-inf-vs-subj">
+  <div class="section-label">Sección (c) · Contraste</div>
+  <h2>Infinitivo vs. Subjuntivo</h2>
+  <p class="lead">La elección entre infinitivo y subjuntivo depende de una sola variable: ¿los sujetos de las dos oraciones son el mismo o distintos?</p>
+
+  <h3>La regla central</h3>
+  <div class="compare-block">
+    <div class="compare-col inf">
+      <h4>Misma persona → Infinitivo</h4>
+      <ul>
+        <li>El sujeto de los dos verbos es idéntico.</li>
+        <li>No se usa «que».</li>
+        <li><em>«Es fácil <span style="color:var(--green)">ganar</span>.»</em></li>
+        <li><em>«Quiero <span style="color:var(--green)">ir</span> al cine.»</em> (yo quiero → yo ir)</li>
+        <li><em>«Es difícil <span style="color:var(--green)">concentrarse</span> con ruido.»</em></li>
+        <li><em>«Prefiero <span style="color:var(--green)">quedarme</span> en casa.»</em></li>
+      </ul>
+    </div>
+    <div class="compare-col subj">
+      <h4>Distinta persona → Subjuntivo</h4>
+      <ul>
+        <li>El sujeto de la subordinada es diferente al principal.</li>
+        <li>Se usa «que» para introducir la subordinada.</li>
+        <li><em>«Es fácil que la gente <span style="color:var(--purple)">cambie</span>.»</em></li>
+        <li><em>«Quiero que <strong>tú</strong> <span style="color:var(--purple)">vayas</span> al cine.»</em></li>
+        <li><em>«Es difícil que <strong>él</strong> <span style="color:var(--purple)">se concentre</span>.»</em></li>
+        <li><em>«Prefiero que <strong>vosotros</strong> <span style="color:var(--purple)">os quedéis</span>.»</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="example-block">
+    <div class="ex">Es fácil <span class="verb-highlight">ganar</span>. → sujeto genérico implícito único → infinitivo</div>
+    <div class="ex">Es fácil que la gente <span class="form-highlight">cambie</span>. → sujeto distinto (la gente) → subjuntivo</div>
+    <div class="ex">Quiero <span class="verb-highlight">ir</span> al cine. → yo quiero → yo ir → mismo sujeto → infinitivo</div>
+    <div class="ex">Quiero que <span class="form-highlight">vayas</span> tú. → yo quiero → tú vas → sujetos distintos → subjuntivo</div>
+  </div>
+
+  <h3>Casos especiales con expresiones impersonales</h3>
+  <p>Las expresiones impersonales (<em>es + adjetivo</em>) son el contexto donde esta distinción aparece con más frecuencia:</p>
+
+  <table class="contrast-table">
+    <tbody><tr><th>Expresión impersonal</th><th>+ Infinitivo (sujeto genérico)</th><th>+ que + Subjuntivo (sujeto específico)</th></tr>
+    <tr>
+      <td><strong>Es fácil</strong></td>
+      <td><em>«Es fácil <span style="color:var(--green)">perder</span> el hilo.»</em></td>
+      <td><em>«Es fácil que la gente <span style="color:var(--purple)">pierda</span> el hilo.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Es importante</strong></td>
+      <td><em>«Es importante <span style="color:var(--green)">llegar</span> puntual.»</em></td>
+      <td><em>«Es importante que tú <span style="color:var(--purple)">llegues</span> puntual.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Es necesario</strong></td>
+      <td><em>«Es necesario <span style="color:var(--green)">descansar</span>.»</em></td>
+      <td><em>«Es necesario que todos <span style="color:var(--purple)">descansen</span>.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Es mejor</strong></td>
+      <td><em>«Es mejor <span style="color:var(--green)">no</span> <span style="color:var(--green)">decir</span> nada.»</em></td>
+      <td><em>«Es mejor que no <span style="color:var(--purple)">digas</span> nada.»</em></td>
+    </tr>
+    <tr>
+      <td><strong>Es difícil</strong></td>
+      <td><em>«Es difícil <span style="color:var(--green)">aprender</span> solo.»</em></td>
+      <td><em>«Es difícil que <span style="color:var(--purple)">aprendas</span> sin práctica.»</em></td>
+    </tr>
+  </tbody></table>
+
+  <h3>Casos donde solo cabe una opción</h3>
+  <div class="card-grid">
+    <div class="card green">
+      <div class="tag green">Solo infinitivo</div>
+      <h4>Mismo sujeto — siempre infinitivo</h4>
+      <p><em>«<strong>Quiero</strong> <span style="color:var(--green)">ir</span>.»</em> (yo → yo)</p>
+      <p><em>«<strong>Necesito</strong> <span style="color:var(--green)">descansar</span>.»</em></p>
+      <p><em>«<strong>Espero</strong> <span style="color:var(--green)">poder</span> verte.»</em></p>
+    </div>
+    <div class="card purple">
+      <div class="tag purple">Solo subjuntivo</div>
+      <h4>Sujeto distinto — siempre subjuntivo</h4>
+      <p><em>«<strong>Quiero</strong> que <span style="color:var(--purple)">vayas</span> tú.»</em> (yo → tú)</p>
+      <p><em>«<strong>Necesito</strong> que <span style="color:var(--purple)">descanses</span>.»</em></p>
+      <p><em>«<strong>Espero</strong> que <span style="color:var(--purple)">puedas</span> venir.»</em></p>
+    </div>
+    <div class="card gold">
+      <div class="tag gold">Ambos posibles</div>
+      <h4>Algunos verbos admiten las dos estructuras</h4>
+      <p><em>«<strong>Permite</strong> <span style="color:var(--green)">salir</span>.»</em> (reflexivo)</p>
+      <p><em>«<strong>Permite</strong> que <span style="color:var(--purple)">salgas</span>.»</em> (otro sujeto)</p>
+      <p><small>También: <em>hacer, dejar, ver, oír</em> + infinitivo vs. + que + subjuntivo</small></p>
+    </div>
+  </div>
+
+  <div class="callout warning">
+    <strong>⚠ Verbos de percepción con infinitivo:</strong> Ver, oír, sentir (físico) también admiten infinitivo cuando el sujeto percibido queda claro: <em>«<strong>Vi</strong> <span style="color:var(--green)">llegar</span> al director»</em> (percepción directa, mismo referente). Con «que» + indicativo el matiz es más descriptivo: <em>«<strong>Vi</strong> que el director <span style="color:var(--teal)">llegaba</span>»</em>.
+  </div>
+
+  <h3>Cuadro sinóptico: tres estructuras posibles</h3>
+  <table class="contrast-table">
+    <tbody><tr><th>Estructura</th><th>Cuándo</th><th>Ejemplo</th></tr>
+    <tr>
+      <td><strong>V + infinitivo</strong></td>
+      <td>Mismo sujeto en ambas oraciones</td>
+      <td><em>Quiero <span style="color:var(--green)">salir</span>.</em></td>
+    </tr>
+    <tr>
+      <td><strong>V + que + subjuntivo</strong></td>
+      <td>Sujeto distinto; verbo principal expresa actitud</td>
+      <td><em>Quiero que <span style="color:var(--purple)">salgas</span> tú.</em></td>
+    </tr>
+    <tr>
+      <td><strong>V + que + indicativo</strong></td>
+      <td>Sujeto distinto; verbo principal expresa hecho/percepción</td>
+      <td><em>Veo que <span style="color:var(--teal)">sales</span> pronto.</em></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     TAB D: PRÁCTICA
+══════════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-practica">
+  <div class="section-label">Práctica Interactiva</div>
+  <h2>Pon a prueba tu dominio</h2>
+  <p class="lead">27 preguntas en cuatro categorías. Selecciona la opción correcta; cada respuesta incluye explicación razonada.</p>
+
+  <div id="score-bar">
+    <div>
+      <div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);margin-bottom:0.2rem;">Puntuación</div>
+      <div id="score-display">0 / 26</div>
+    </div>
+    <div style="flex:1;min-width:160px;">
+      <div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--slate);margin-bottom:0.4rem;">Progreso</div>
+      <div style="background:var(--mist);border-radius:20px;height:8px;overflow:hidden;">
+        <div id="score-progress" style="background:var(--green);height:100%;width:0%;transition:width 0.4s;border-radius:20px;"></div>
+      </div>
+    </div>
+    <div id="score-grade" style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.8rem;color:var(--slate);"></div>
+  </div>
+
+  <div id="quiz-container"><div class="cat-header" style="border-color: var(--gold);"><span style="color:var(--gold)">A · Uso general: deseos, exclamaciones y conectores temporales</span></div><div class="quiz-question">
+        <p><strong>1.</strong> ¡_____ (tener, tú) mucha suerte en el examen! [deseo exclamativo]</p>
+        <div class="quiz-options" id="opts-0">
+          <button class="quiz-btn" data-q="0" data-a="0">Tienes</button><button class="quiz-btn" data-q="0" data-a="1">Tengas</button><button class="quiz-btn" data-q="0" data-a="2">Tendrás</button><button class="quiz-btn" data-q="0" data-a="3">Tuvieras</button>
+        </div>
+        <div class="quiz-feedback" id="fb-0"></div></div><div class="quiz-question">
+        <p><strong>2.</strong> ¡_____ (poder, yo) volar! Llegaría antes. [deseo irreal]</p>
+        <div class="quiz-options" id="opts-1">
+          <button class="quiz-btn" data-q="1" data-a="0">Puedo</button><button class="quiz-btn" data-q="1" data-a="1">Pueda</button><button class="quiz-btn" data-q="1" data-a="2">Pudiera</button><button class="quiz-btn" data-q="1" data-a="3">Podré</button>
+        </div>
+        <div class="quiz-feedback" id="fb-1"></div></div><div class="quiz-question">
+        <p><strong>3.</strong> Tal vez _____ (haber) una solución mejor. [máxima duda]</p>
+        <div class="quiz-options" id="opts-2">
+          <button class="quiz-btn" data-q="2" data-a="0">hay</button><button class="quiz-btn" data-q="2" data-a="1">habrá</button><button class="quiz-btn" data-q="2" data-a="2">hubiera</button><button class="quiz-btn" data-q="2" data-a="3">haya</button>
+        </div>
+        <div class="quiz-feedback" id="fb-2"></div></div><div class="quiz-question">
+        <p><strong>4.</strong> Cuando _____ (llegar, vosotros) a Madrid, mandadme un mensaje.</p>
+        <div class="quiz-options" id="opts-3">
+          <button class="quiz-btn" data-q="3" data-a="0">llegáis</button><button class="quiz-btn" data-q="3" data-a="1">llegaréis</button><button class="quiz-btn" data-q="3" data-a="2">lleguéis</button><button class="quiz-btn" data-q="3" data-a="3">llegarais</button>
+        </div>
+        <div class="quiz-feedback" id="fb-3"></div></div><div class="quiz-question">
+        <p><strong>5.</strong> En cuanto _____ (terminar) la reunión, te llamo.</p>
+        <div class="quiz-options" id="opts-4">
+          <button class="quiz-btn" data-q="4" data-a="0">termina</button><button class="quiz-btn" data-q="4" data-a="1">terminará</button><button class="quiz-btn" data-q="4" data-a="2">termine</button><button class="quiz-btn" data-q="4" data-a="3">terminara</button>
+        </div>
+        <div class="quiz-feedback" id="fb-4"></div></div><div class="quiz-question">
+        <p><strong>6.</strong> No _____ (salir, tú) de casa sin abrigo. [orden negativa]</p>
+        <div class="quiz-options" id="opts-5">
+          <button class="quiz-btn" data-q="5" data-a="0">saldrás</button><button class="quiz-btn" data-q="5" data-a="1">sales</button><button class="quiz-btn" data-q="5" data-a="2">salgas</button><button class="quiz-btn" data-q="5" data-a="3">salieras</button>
+        </div>
+        <div class="quiz-feedback" id="fb-5"></div></div><div class="cat-header" style="border-color: var(--teal);"><span style="color:var(--teal)">B · Oraciones con «que» y otra persona</span></div><div class="quiz-question">
+        <p><strong>7.</strong> ¿Te importa que _____ (venir) Nona también?</p>
+        <div class="quiz-options" id="opts-6">
+          <button class="quiz-btn" data-q="6" data-a="0">viene</button><button class="quiz-btn" data-q="6" data-a="1">vendrá</button><button class="quiz-btn" data-q="6" data-a="2">venga</button><button class="quiz-btn" data-q="6" data-a="3">vendría</button>
+        </div>
+        <div class="quiz-feedback" id="fb-6"></div></div><div class="quiz-question">
+        <p><strong>8.</strong> El jefe _____ (pedir) que los empleados _____ (llegar) a las 8.</p>
+        <div class="quiz-options" id="opts-7">
+          <button class="quiz-btn" data-q="7" data-a="0">pedía / llegaban</button><button class="quiz-btn" data-q="7" data-a="1">pidió / llegaran</button><button class="quiz-btn" data-q="7" data-a="2">pidió / llegaron</button><button class="quiz-btn" data-q="7" data-a="3">pide / llegarán</button>
+        </div>
+        <div class="quiz-feedback" id="fb-7"></div></div><div class="quiz-question">
+        <p><strong>9.</strong> Es fundamental que todos _____ (respetar) las normas.</p>
+        <div class="quiz-options" id="opts-8">
+          <button class="quiz-btn" data-q="8" data-a="0">respetan</button><button class="quiz-btn" data-q="8" data-a="1">respetarán</button><button class="quiz-btn" data-q="8" data-a="2">respeten</button><button class="quiz-btn" data-q="8" data-a="3">respetaran</button>
+        </div>
+        <div class="quiz-feedback" id="fb-8"></div></div><div class="quiz-question">
+        <p><strong>10.</strong> Te _____ (recomendar, yo) que _____ (leer) ese libro antes del examen.</p>
+        <div class="quiz-options" id="opts-9">
+          <button class="quiz-btn" data-q="9" data-a="0">recomiendo / lees</button><button class="quiz-btn" data-q="9" data-a="1">recomiendo / leas</button><button class="quiz-btn" data-q="9" data-a="2">recomendaré / leerás</button><button class="quiz-btn" data-q="9" data-a="3">recomendé / leyeras</button>
+        </div>
+        <div class="quiz-feedback" id="fb-9"></div></div><div class="quiz-question">
+        <p><strong>11.</strong> Siento mucho que no _____ (poder, tú) venir a la fiesta.</p>
+        <div class="quiz-options" id="opts-10">
+          <button class="quiz-btn" data-q="10" data-a="0">puedes</button><button class="quiz-btn" data-q="10" data-a="1">podrás</button><button class="quiz-btn" data-q="10" data-a="2">puedas</button><button class="quiz-btn" data-q="10" data-a="3">hubieras podido</button>
+        </div>
+        <div class="quiz-feedback" id="fb-10"></div></div><div class="cat-header" style="border-color: var(--purple);"><span style="color:var(--purple)">C · Indicativo vs. subjuntivo: afirmación/negación y percepción</span></div><div class="quiz-question">
+        <p><strong>12.</strong> No creo que Pedro _____ (tener) razón en este asunto.</p>
+        <div class="quiz-options" id="opts-11">
+          <button class="quiz-btn" data-q="11" data-a="0">tiene</button><button class="quiz-btn" data-q="11" data-a="1">tendrá</button><button class="quiz-btn" data-q="11" data-a="2">tenga</button><button class="quiz-btn" data-q="11" data-a="3">tuviera</button>
+        </div>
+        <div class="quiz-feedback" id="fb-11"></div></div><div class="quiz-question">
+        <p><strong>13.</strong> Veo que _____ (venir) un coche muy rápido por la calle.</p>
+        <div class="quiz-options" id="opts-12">
+          <button class="quiz-btn" data-q="12" data-a="0">venga</button><button class="quiz-btn" data-q="12" data-a="1">vendría</button><button class="quiz-btn" data-q="12" data-a="2">viniera</button><button class="quiz-btn" data-q="12" data-a="3">viene</button>
+        </div>
+        <div class="quiz-feedback" id="fb-12"></div></div><div class="quiz-question">
+        <p><strong>14.</strong> No oigo que _____ (hablar) nadie en la habitación de al lado.</p>
+        <div class="quiz-options" id="opts-13">
+          <button class="quiz-btn" data-q="13" data-a="0">hable</button><button class="quiz-btn" data-q="13" data-a="1">hablara</button><button class="quiz-btn" data-q="13" data-a="2">habla</button><button class="quiz-btn" data-q="13" data-a="3">hablará</button>
+        </div>
+        <div class="quiz-feedback" id="fb-13"></div></div><div class="quiz-question">
+        <p><strong>15.</strong> Busco a alguien que _____ (saber) hablar mandarín.</p>
+        <div class="quiz-options" id="opts-14">
+          <button class="quiz-btn" data-q="14" data-a="0">sabe</button><button class="quiz-btn" data-q="14" data-a="1">sabrá</button><button class="quiz-btn" data-q="14" data-a="2">sepa</button><button class="quiz-btn" data-q="14" data-a="3">supiera</button>
+        </div>
+        <div class="quiz-feedback" id="fb-14"></div></div><div class="quiz-question">
+        <p><strong>16.</strong> Busco a la traductora que _____ (trabajar) contigo el año pasado.</p>
+        <div class="quiz-options" id="opts-15">
+          <button class="quiz-btn" data-q="15" data-a="0">trabaje</button><button class="quiz-btn" data-q="15" data-a="1">trabajara</button><button class="quiz-btn" data-q="15" data-a="2">trabajó</button><button class="quiz-btn" data-q="15" data-a="3">trabajaba</button>
+        </div>
+        <div class="quiz-feedback" id="fb-15"></div></div><div class="quiz-question">
+        <p><strong>17.</strong> ¿Hay alguien que _____ (poder) ayudarme con esto?</p>
+        <div class="quiz-options" id="opts-16">
+          <button class="quiz-btn" data-q="16" data-a="0">puede</button><button class="quiz-btn" data-q="16" data-a="1">podrá</button><button class="quiz-btn" data-q="16" data-a="2">pudiera</button><button class="quiz-btn" data-q="16" data-a="3">pueda</button>
+        </div>
+        <div class="quiz-feedback" id="fb-16"></div></div><div class="quiz-question">
+        <p><strong>18.</strong> Está claro que la situación _____ (ser) complicada.</p>
+        <div class="quiz-options" id="opts-17">
+          <button class="quiz-btn" data-q="17" data-a="0">sea</button><button class="quiz-btn" data-q="17" data-a="1">fuera</button><button class="quiz-btn" data-q="17" data-a="2">sería</button><button class="quiz-btn" data-q="17" data-a="3">es</button>
+        </div>
+        <div class="quiz-feedback" id="fb-17"></div></div><div class="quiz-question">
+        <p><strong>19.</strong> No está claro que la situación _____ (ser) complicada.</p>
+        <div class="quiz-options" id="opts-18">
+          <button class="quiz-btn" data-q="18" data-a="0">es</button><button class="quiz-btn" data-q="18" data-a="1">sería</button><button class="quiz-btn" data-q="18" data-a="2">sea</button><button class="quiz-btn" data-q="18" data-a="3">fuera</button>
+        </div>
+        <div class="quiz-feedback" id="fb-18"></div></div><div class="cat-header" style="border-color: var(--green);"><span style="color:var(--green)">D · Infinitivo vs. subjuntivo</span></div><div class="quiz-question">
+        <p><strong>20.</strong> Quiero _____ (ir) al cine esta noche. [yo → yo]</p>
+        <div class="quiz-options" id="opts-19">
+          <button class="quiz-btn" data-q="19" data-a="0">que vaya</button><button class="quiz-btn" data-q="19" data-a="1">ir</button><button class="quiz-btn" data-q="19" data-a="2">que fui</button><button class="quiz-btn" data-q="19" data-a="3">vaya</button>
+        </div>
+        <div class="quiz-feedback" id="fb-19"></div></div><div class="quiz-question">
+        <p><strong>21.</strong> Quiero que _____ (venir, tú) a cenar esta noche. [yo → tú]</p>
+        <div class="quiz-options" id="opts-20">
+          <button class="quiz-btn" data-q="20" data-a="0">vienes</button><button class="quiz-btn" data-q="20" data-a="1">vendrás</button><button class="quiz-btn" data-q="20" data-a="2">venir</button><button class="quiz-btn" data-q="20" data-a="3">vengas</button>
+        </div>
+        <div class="quiz-feedback" id="fb-20"></div></div><div class="quiz-question">
+        <p><strong>22.</strong> Es importante _____ para el examen. [referencia genérica]</p>
+        <div class="quiz-options" id="opts-21">
+          <button class="quiz-btn" data-q="21" data-a="0">que estudien</button><button class="quiz-btn" data-q="21" data-a="1">que estudies</button><button class="quiz-btn" data-q="21" data-a="2">estudiar</button><button class="quiz-btn" data-q="21" data-a="3">estudiando</button>
+        </div>
+        <div class="quiz-feedback" id="fb-21"></div></div><div class="quiz-question">
+        <p><strong>23.</strong> Es fácil que la gente _____ (perder) la paciencia en situaciones difíciles.</p>
+        <div class="quiz-options" id="opts-22">
+          <button class="quiz-btn" data-q="22" data-a="0">pierde</button><button class="quiz-btn" data-q="22" data-a="1">perderá</button><button class="quiz-btn" data-q="22" data-a="2">perdiera</button><button class="quiz-btn" data-q="22" data-a="3">pierda</button>
+        </div>
+        <div class="quiz-feedback" id="fb-22"></div></div><div class="quiz-question">
+        <p><strong>24.</strong> El médico le aconsejó _____ más agua. [mismo referente]</p>
+        <div class="quiz-options" id="opts-23">
+          <button class="quiz-btn" data-q="23" data-a="0">que bebe</button><button class="quiz-btn" data-q="23" data-a="1">beber</button><button class="quiz-btn" data-q="23" data-a="2">que bebiera</button><button class="quiz-btn" data-q="23" data-a="3">bebiendo</button>
+        </div>
+        <div class="quiz-feedback" id="fb-23"></div></div><div class="quiz-question">
+        <p><strong>25.</strong> Oigo _____ llegar a alguien por las escaleras. [percepción directa]</p>
+        <div class="quiz-options" id="opts-24">
+          <button class="quiz-btn" data-q="24" data-a="0">que llega</button><button class="quiz-btn" data-q="24" data-a="1">llegar</button><button class="quiz-btn" data-q="24" data-a="2">que llegue</button><button class="quiz-btn" data-q="24" data-a="3">llegando</button>
+        </div>
+        <div class="quiz-feedback" id="fb-24"></div></div><div class="quiz-question">
+        <p><strong>26.</strong> Prefiero _____ (quedarse, nosotros) en casa hoy.</p>
+        <div class="quiz-options" id="opts-25">
+          <button class="quiz-btn" data-q="25" data-a="0">que nos quedáramos</button><button class="quiz-btn" data-q="25" data-a="1">quedarnos</button><button class="quiz-btn" data-q="25" data-a="2">que nos quedemos</button><button class="quiz-btn" data-q="25" data-a="3">quedemos</button>
+        </div>
+        <div class="quiz-feedback" id="fb-25"></div></div></div>
+
+  <div style="margin-top:1.5rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+    <button id="reset-quiz" style="background:var(--ink);color:var(--paper);border:none;border-radius:5px;padding:0.6rem 1.4rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;display:none;">↺ Reiniciar</button>
+    <button id="show-all" style="background:var(--mist);color:var(--ink);border:1px solid var(--border);border-radius:5px;padding:0.6rem 1.4rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;display:none;">Ver todas las respuestas</button>
+  </div>
+</div>
+
+</main>
+
+<script>
+// ── Tabs ──────────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+// ── Progress bar ──────────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  document.getElementById('progress-bar').style.width =
+    (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+});
+
+// ── Quiz ─────────────────────────────────────────────────────────
+const categories = [
+  { name: "A · Uso general: deseos, exclamaciones y conectores temporales", color: "var(--gold)" },
+  { name: "B · Oraciones con «que» y otra persona", color: "var(--teal)" },
+  { name: "C · Indicativo vs. subjuntivo: afirmación/negación y percepción", color: "var(--purple)" },
+  { name: "D · Infinitivo vs. subjuntivo", color: "var(--green)" }
+];
+
+const questions = [
+  // A: Uso general
+  {
+    cat: 0,
+    q: "¡_____ (tener, tú) mucha suerte en el examen! [deseo exclamativo]",
+    options: ["Tienes", "Tengas", "Tendrás", "Tuvieras"],
+    correct: 1,
+    explanation: "Exclamación de deseo con «que» implícito: «¡Que tengas mucha suerte!». El subjuntivo expresa el deseo del hablante dirigido a otra persona. Es una fórmula fija muy frecuente en español oral."
+  },
+  {
+    cat: 0,
+    q: "¡_____ (poder, yo) volar! Llegaría antes. [deseo irreal]",
+    options: ["Puedo", "Pueda", "Pudiera", "Podré"],
+    correct: 2,
+    explanation: "«¡Quién pudiera…!» es la construcción de deseo irreal con imperfecto de subjuntivo. Expresa algo que el hablante sabe imposible o muy improbable. «¡Ojalá pudiera!» tiene el mismo valor."
+  },
+  {
+    cat: 0,
+    q: "Tal vez _____ (haber) una solución mejor. [máxima duda]",
+    options: ["hay", "habrá", "hubiera", "haya"],
+    correct: 3,
+    explanation: "«Tal vez» con subjuntivo («haya») expresa mayor grado de duda o incertidumbre. Con indicativo («hay» / «habrá») el hablante se inclina más hacia la realidad. Ambos son correctos; el subjuntivo indica más incertidumbre."
+  },
+  {
+    cat: 0,
+    q: "Cuando _____ (llegar, vosotros) a Madrid, mandadme un mensaje.",
+    options: ["llegáis", "llegaréis", "lleguéis", "llegarais"],
+    correct: 2,
+    explanation: "Conector temporal «cuando» con referencia al futuro → presente de subjuntivo («lleguéis»). La acción aún no ha ocurrido. Con referencia al pasado habitual usaríamos indicativo: «Cuando llegabais, siempre llamabais»."
+  },
+  {
+    cat: 0,
+    q: "En cuanto _____ (terminar) la reunión, te llamo.",
+    options: ["termina", "terminará", "termine", "terminara"],
+    correct: 2,
+    explanation: "«En cuanto» con referencia futura → presente de subjuntivo. La reunión no ha terminado todavía. Todos los conectores temporales (en cuanto, hasta que, tan pronto como, cuando) siguen esta misma regla: futuro = subjuntivo."
+  },
+  {
+    cat: 0,
+    q: "No _____ (salir, tú) de casa sin abrigo. [orden negativa]",
+    options: ["saldrás", "sales", "salgas", "salieras"],
+    correct: 2,
+    explanation: "El imperativo negativo siempre usa el presente de subjuntivo en español. «No salgas» es la forma correcta. Nunca se usa el imperativo afirmativo en negativo: *«No sal»* es incorrecto."
+  },
+
+  // B: Oraciones con «que» + otra persona
+  {
+    cat: 1,
+    q: "¿Te importa que _____ (venir) Nona también?",
+    options: ["viene", "vendrá", "venga", "vendría"],
+    correct: 2,
+    explanation: "«Importar» expresa valoración subjetiva → subjuntivo. Además, el sujeto de «importar» es el oyente (tú) y el sujeto de la subordinada es Nona → sujetos distintos. Doble razón para el subjuntivo."
+  },
+  {
+    cat: 1,
+    q: "El jefe _____ (pedir) que los empleados _____ (llegar) a las 8.",
+    options: ["pedía / llegaban", "pidió / llegaran", "pidió / llegaron", "pide / llegarán"],
+    correct: 1,
+    explanation: "«Pedir» expresa mandato/petición → subjuntivo en la subordinada. Correlación temporal: «pidió» (indefinido, pasado) → imperfecto de subjuntivo «llegaran» en la subordinada. Si fuera «pide», usaríamos «lleguen»."
+  },
+  {
+    cat: 1,
+    q: "Es fundamental que todos _____ (respetar) las normas.",
+    options: ["respetan", "respetarán", "respeten", "respetaran"],
+    correct: 2,
+    explanation: "Expresión impersonal de valoración («es fundamental que») → subjuntivo obligatorio. El tiempo del subjuntivo es presente porque el verbo principal está en presente. Sujeto distinto: impersonal → todos."
+  },
+  {
+    cat: 1,
+    q: "Te _____ (recomendar, yo) que _____ (leer) ese libro antes del examen.",
+    options: ["recomiendo / lees", "recomiendo / leas", "recomendaré / leerás", "recomendé / leyeras"],
+    correct: 1,
+    explanation: "«Recomendar» expresa consejo → subjuntivo. Presente de indicativo en el verbo principal → presente de subjuntivo en la subordinada. Sujeto distinto: yo (recomendar) ≠ tú (leer)."
+  },
+  {
+    cat: 1,
+    q: "Siento mucho que no _____ (poder, tú) venir a la fiesta.",
+    options: ["puedes", "podrás", "puedas", "hubieras podido"],
+    correct: 2,
+    explanation: "«Sentir» con valor de lamento/emoción → subjuntivo. Distinto de «sentir» físico (ver, oír, notar). «Siento que no puedas» = lamento que no puedas. El verbo principal está en presente → presente de subjuntivo."
+  },
+
+  // C: Indicativo vs subjuntivo
+  {
+    cat: 2,
+    q: "No creo que Pedro _____ (tener) razón en este asunto.",
+    options: ["tiene", "tendrá", "tenga", "tuviera"],
+    correct: 2,
+    explanation: "«No creer» con negación activa la duda → subjuntivo. La inversión afirmativo/negativo: «Creo que tiene» (ind.) vs. «No creo que tenga» (subj.). Es uno de los pares más examinados en C1."
+  },
+  {
+    cat: 2,
+    q: "Veo que _____ (venir) un coche muy rápido por la calle.",
+    options: ["venga", "vendría", "viniera", "viene"],
+    correct: 3,
+    explanation: "«Ver» es verbo de percepción sensorial directa → siempre indicativo, incluso en negación. «Veo que viene» = percepción visual real y directa. Si fuera valoración/emoción, usaríamos subjuntivo."
+  },
+  {
+    cat: 2,
+    q: "No oigo que _____ (hablar) nadie en la habitación de al lado.",
+    options: ["hable", "hablara", "habla", "hablará"],
+    correct: 2,
+    explanation: "«Oír» es verbo de percepción auditiva → siempre indicativo, también en negación. «No oigo que habla nadie» = no percibo el sonido de que hable alguien. La negación no cambia el modo con verbos de percepción física."
+  },
+  {
+    cat: 2,
+    q: "Busco a alguien que _____ (saber) hablar mandarín.",
+    options: ["sabe", "sabrá", "sepa", "supiera"],
+    correct: 2,
+    explanation: "Antecedente indeterminado («alguien») → subjuntivo. No sé quién es esa persona, puede que ni exista. Si dijera «Busco a la persona que sabe mandarín», con referente conocido, usaría indicativo."
+  },
+  {
+    cat: 2,
+    q: "Busco a la traductora que _____ (trabajar) contigo el año pasado.",
+    options: ["trabaje", "trabajara", "trabajó", "trabajaba"],
+    correct: 3,
+    explanation: "Antecedente determinado y conocido: sé quién es, es una persona concreta del pasado. El imperfecto de indicativo («trabajaba») describe la característica de esa persona real ya identificada. No es subjuntivo porque la persona existe y es conocida."
+  },
+  {
+    cat: 2,
+    q: "¿Hay alguien que _____ (poder) ayudarme con esto?",
+    options: ["puede", "podrá", "pudiera", "pueda"],
+    correct: 3,
+    explanation: "Pregunta sobre existencia de persona indeterminada → subjuntivo. «¿Hay alguien que pueda?» = no sé si existe esa persona. Si la persona fuera conocida: «¿Está la persona que puede ayudarme?» → indicativo."
+  },
+  {
+    cat: 2,
+    q: "Está claro que la situación _____ (ser) complicada.",
+    options: ["sea", "fuera", "sería", "es"],
+    correct: 3,
+    explanation: "«Estar claro que» expresa certeza → indicativo. Las expresiones de certeza (es evidente que, está claro que, es obvio que) llevan indicativo. Solo en su forma negada llevan subjuntivo: «No está claro que sea complicada»."
+  },
+  {
+    cat: 2,
+    q: "No está claro que la situación _____ (ser) complicada.",
+    options: ["es", "sería", "sea", "fuera"],
+    correct: 2,
+    explanation: "«No estar claro que» niega la certeza → subjuntivo. Es la inversión del caso anterior. «Está claro que es» (ind.) → «No está claro que sea» (subj.). El presente de subjuntivo corresponde al presente del verbo principal."
+  },
+
+  // D: Infinitivo vs subjuntivo
+  {
+    cat: 3,
+    q: "Quiero _____ (ir) al cine esta noche. [yo → yo]",
+    options: ["que vaya", "ir", "que fui", "vaya"],
+    correct: 1,
+    explanation: "Mismo sujeto: yo quiero → yo ir → infinitivo. No se usa «que» + subjuntivo cuando el sujeto es el mismo. «Quiero ir» (mismo sujeto) ≠ «Quiero que vayas tú» (sujeto distinto)."
+  },
+  {
+    cat: 3,
+    q: "Quiero que _____ (venir, tú) a cenar esta noche. [yo → tú]",
+    options: ["vienes", "vendrás", "venir", "vengas"],
+    correct: 3,
+    explanation: "Sujetos distintos: yo (querer) ≠ tú (venir) → subjuntivo obligatorio con «que». «Quiero que vengas» es la estructura correcta. El infinitivo solo es posible si el sujeto es el mismo."
+  },
+  {
+    cat: 3,
+    q: "Es importante _____ para el examen. [referencia genérica]",
+    options: ["que estudien", "que estudies", "estudiar", "estudiando"],
+    correct: 2,
+    explanation: "Expresión impersonal con referencia genérica (nadie concreto): infinitivo. «Es importante estudiar» = en general, para cualquiera. Si hubiera un sujeto específico: «Es importante que tú estudies»."
+  },
+  {
+    cat: 3,
+    q: "Es fácil que la gente _____ (perder) la paciencia en situaciones difíciles.",
+    options: ["pierde", "perderá", "perdiera", "pierda"],
+    correct: 3,
+    explanation: "Expresión impersonal + sujeto específico distinto («la gente») → que + subjuntivo. «Es fácil que la gente pierda» (sujeto: la gente) ≠ «Es fácil perder» (referencia genérica, infinitivo)."
+  },
+  {
+    cat: 3,
+    q: "El médico le aconsejó _____ más agua. [mismo referente]",
+    options: ["que bebe", "beber", "que bebiera", "bebiendo"],
+    correct: 1,
+    explanation: "El verbo «aconsejar» puede usarse con infinitivo cuando el objeto indirecto coincide con el sujeto implícito de la acción: «le aconsejó beber» = le aconsejó [a él] que [él] bebiera. Con sujeto explícito distinto: «Le aconsejó que bebiera»."
+  },
+  {
+    cat: 3,
+    q: "Oigo _____ llegar a alguien por las escaleras. [percepción directa]",
+    options: ["que llega", "llegar", "que llegue", "llegando"],
+    correct: 1,
+    explanation: "Verbos de percepción (oír, ver, sentir) + infinitivo: percepción directa e inmediata del evento. «Oigo llegar a alguien» = percibo el sonido del llegar. Con «que» + indicativo sería más descriptivo: «Oigo que llega alguien»."
+  },
+  {
+    cat: 3,
+    q: "Prefiero _____ (quedarse, nosotros) en casa hoy.",
+    options: ["que nos quedáramos", "quedarnos", "que nos quedemos", "quedemos"],
+    correct: 1,
+    explanation: "«Prefiero» + mismo sujeto (nosotros) → infinitivo reflexivo «quedarnos». El pronombre reflexivo se adjunta al infinitivo. Si el sujeto de «preferir» y el de «quedarse» fueran distintos, usaríamos «que se quede»."
+  }
+];
+
+let score = 0, answered = 0;
+const TOTAL = questions.length;
+
+function updateScore() {
+  const pct = Math.round((score / TOTAL) * 100);
+  document.getElementById('score-display').textContent = score + ' / ' + TOTAL;
+  document.getElementById('score-progress').style.width = (answered / TOTAL * 100) + '%';
+  if (answered === TOTAL) {
+    const grade = pct >= 89 ? '🏆 Excelente — C1 consolidado'
+                : pct >= 74 ? '✅ Bien — repasa los errores'
+                : pct >= 59 ? '📚 Aprobado — necesitas refuerzo'
+                : '🔄 Sigue practicando';
+    document.getElementById('score-grade').textContent = grade;
+    document.getElementById('score-progress').style.background =
+      pct >= 74 ? 'var(--green)' : pct >= 59 ? 'var(--gold)' : 'var(--accent)';
+    document.getElementById('show-all').style.display = 'inline-block';
+  }
+}
+
+function renderQuiz() {
+  score = 0; answered = 0;
+  document.getElementById('score-display').textContent = '0 / ' + TOTAL;
+  document.getElementById('score-progress').style.width = '0%';
+  document.getElementById('score-progress').style.background = 'var(--green)';
+  document.getElementById('score-grade').textContent = '';
+
+  const container = document.getElementById('quiz-container');
+  container.innerHTML = '';
+
+  categories.forEach((cat, ci) => {
+    const catQs = questions.filter(q => q.cat === ci);
+    if (!catQs.length) return;
+
+    const h = document.createElement('div');
+    h.className = 'cat-header';
+    h.style.borderColor = cat.color;
+    h.innerHTML = `<span style="color:${cat.color}">${cat.name}</span>`;
+    container.appendChild(h);
+
+    catQs.forEach(q => {
+      const qi = questions.indexOf(q);
+      const div = document.createElement('div');
+      div.className = 'quiz-question';
+      div.innerHTML = `
+        <p><strong>${qi + 1}.</strong> ${q.q}</p>
+        <div class="quiz-options" id="opts-${qi}">
+          ${q.options.map((o, j) => `<button class="quiz-btn" data-q="${qi}" data-a="${j}">${o}</button>`).join('')}
+        </div>
+        <div class="quiz-feedback" id="fb-${qi}"></div>`;
+      container.appendChild(div);
+    });
+  });
+
+  document.querySelectorAll('.quiz-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const qi = parseInt(this.dataset.q);
+      const ai = parseInt(this.dataset.a);
+      const q = questions[qi];
+      const opts = document.querySelectorAll(`#opts-${qi} .quiz-btn`);
+      const fb = document.getElementById(`fb-${qi}`);
+      if (opts[0].disabled) return;
+
+      opts.forEach(b => b.disabled = true);
+      answered++;
+
+      if (ai === q.correct) {
+        this.classList.add('correct');
+        fb.textContent = '✓ ' + q.explanation;
+        fb.className = 'quiz-feedback ok show';
+        score++;
+      } else {
+        this.classList.add('incorrect');
+        opts[q.correct].classList.add('reveal');
+        fb.textContent = '✗ Respuesta correcta: «' + q.options[q.correct] + '». ' + q.explanation;
+        fb.className = 'quiz-feedback bad show';
+      }
+      document.getElementById('reset-quiz').style.display = 'inline-block';
+      updateScore();
+    });
+  });
+}
+
+document.getElementById('reset-quiz').addEventListener('click', () => {
+  renderQuiz();
+  document.getElementById('reset-quiz').style.display = 'none';
+  document.getElementById('show-all').style.display = 'none';
+  window.scrollTo({ top: document.getElementById('tab-practica').offsetTop - 100, behavior: 'smooth' });
+});
+
+document.getElementById('show-all').addEventListener('click', () => {
+  questions.forEach((q, qi) => {
+    const opts = document.querySelectorAll(`#opts-${qi} .quiz-btn`);
+    const fb = document.getElementById(`fb-${qi}`);
+    if (!opts[0].disabled) {
+      opts.forEach(b => b.disabled = true);
+      opts[q.correct].classList.add('reveal');
+      fb.textContent = '→ ' + q.options[q.correct] + '. ' + q.explanation;
+      fb.className = 'quiz-feedback ok show';
+    }
+  });
+  document.getElementById('show-all').style.display = 'none';
+});
+
+renderQuiz();
+</script>
+
+
+</body></html>
