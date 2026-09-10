@@ -2,6 +2,26 @@
 
 ---
 
+#### septiembre 2026
+
+* jueves, 10 de septiembre: Simulacion de Examenes: Ejercicios de Comprension de Lectura y Comprension Auditiva
+
+   - :books: _Claves C1. Examen 3. Prueba 1, Solo los ejercicios de las Paginas 183-188_
+   - :headphones: _Claves C1. Examen 3. Prueba 2, Audios en Paginas 190-192_
+     - - encuentra los audios (No 47-50) en este enlace: [Audios de Comprension Auditiva](https://www.dropbox.com/scl/fo/3h0rhy7rsebdkwbrykwdp/AJQIAyMqFv0A1iSSGq8dwx8?rlkey=65k3ef5d3l1lkru580n7ekwor&dl=0)
+   - :pencil2: _Tareas: Comprension de Lectura. Claves C1, Examen 4, Prueba 1, Paginas 198-203_
+   - :pencil2: _Tareas: Expresion Escrita. Claves C1, Examen 4, Prueba 3, Paginas 208-209_
+
+
+* martes, 8 de septiembre: Simulacion de Examenes: Ejercicios de Comprension de Lectura y Uso de la Lengua
+
+   - :books: _Claves C1. Examenes 3-5. Prueba 1, Solo los ejercicios de las Paginas 189, 204, 219_
+   - :pencil2: _Tareas: Comprension de Lectura. Claves C1, Examen 3, Prueba 1, Paginas 183-188_
+   - :pencil2: _Tareas: Expresion Escrita. Claves C1, Examen 3, Prueba 3, Paginas 193-194_
+
+
+---
+
 #### junio 2026
 
 ---
