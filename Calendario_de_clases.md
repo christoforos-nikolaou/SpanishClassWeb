@@ -4,21 +4,41 @@
 
 #### septiembre 2026
 
+---
+
+* martes, 22 de septiembre: Lectura, Vocabulario y Expresion Oral
+   - :books: _Trabajamos con Expresion Escrita.  Libro B1/C1 Escolar, Examen 2, Prueba 3, Pagina 46_ 
+   - :pencil2: _Tareas: Comprension Auditiva. Libro B1/C1 Escolar, Examen 1, Prueba 2, Paginas 18-21; encuentra los audios (No 1-7) en este enlace: [Audios de Comprension Auditiva](https://www.dropbox.com/scl/fo/g1ddy1hkteo38bi8mim3h/ADLQXvoUe7xzWM0QNEtfR3s?rlkey=pf4ohgbq1qkekl4glebkwbb0z&st=mhh090j9&dl=0)
+   - :pencil2: _Tareas: Expresion Escrita.  Libro B1/C1 Escolar, Examen 2, Prueba 3, Pagina 46_
+
+
+* jueves, 17 de septiembre: Expresion Escrita, Oral.
+
+   - :books: _Claves C1. Examen 4. Prueba 3, Exresion Escrita. Practica en clase_
+   - :books: _Libro B1/C1 Escolar, Examen 1, Prueba 4, Exresion Oral (p29). Practica en clase_
+   - :pencil2: _Tareas: Comprension de Lectura. Libro B1/C1 Escolar, Examen 1, Prueba 1, Paginas 32-39; Expresion Escrita, Prueba 3, Tarea 2, p. 47_
+
+
+* martes, 15 de septiembre: Expresion Oral.
+
+   - :books: _Claves C1. Examen 3. Prueba 4, Exresion Oral, Paginas 195-197_
+   - :pencil2: _Tareas: Comprension de Lectura. Libro B1/C1 Escolar, Examen 1, Prueba 1, Paginas 8-17_
+
 * jueves, 10 de septiembre: Simulacion de Examenes: Ejercicios de Comprension de Lectura y Comprension Auditiva
 
    - :books: _Claves C1. Examen 3. Prueba 1, Solo los ejercicios de las Paginas 183-188_
    - :headphones: _Claves C1. Examen 3. Prueba 2, Audios en Paginas 190-192_
-     - - encuentra los audios (No 47-50) en este enlace: [Audios de Comprension Auditiva](https://www.dropbox.com/scl/fo/3h0rhy7rsebdkwbrykwdp/AJQIAyMqFv0A1iSSGq8dwx8?rlkey=65k3ef5d3l1lkru580n7ekwor&dl=0)
+
+      - encuentra los audios (No 47-50) en este enlace: [Audios de Comprension Auditiva](https://www.dropbox.com/scl/fo/3h0rhy7rsebdkwbrykwdp/AJQIAyMqFv0A1iSSGq8dwx8?rlkey=65k3ef5d3l1lkru580n7ekwor&dl=0)
+
    - :pencil2: _Tareas: Comprension de Lectura. Claves C1, Examen 4, Prueba 1, Paginas 198-203_
    - :pencil2: _Tareas: Expresion Escrita. Claves C1, Examen 4, Prueba 3, Paginas 208-209_
-
 
 * martes, 8 de septiembre: Simulacion de Examenes: Ejercicios de Comprension de Lectura y Uso de la Lengua
 
    - :books: _Claves C1. Examenes 3-5. Prueba 1, Solo los ejercicios de las Paginas 189, 204, 219_
    - :pencil2: _Tareas: Comprension de Lectura. Claves C1, Examen 3, Prueba 1, Paginas 183-188_
    - :pencil2: _Tareas: Expresion Escrita. Claves C1, Examen 3, Prueba 3, Paginas 193-194_
-
 
 ---
 
@@ -30,16 +50,19 @@
 
    * Dia 1: Empezaremos con un test de repaso de gramatica general que puedes encontrar aqui :point_right: [Test de Repaso General, C1](https://deleahora.com/actividades/examenes/test-de-repaso-nivel-c1)
    * Dia 2: Repaso de uso de tiempos. Vamos a trabajar con el uso de tiempos poniendo el foco en contrastes del uso. Cual es el tiempo adecuado para el pasado? Cuando utilizamos el presente para hablar del futuro? Cuando y como utilizamos el subjuntivo? Puedes revisar las reglas y practicar aqui :point_right: [Uso de Tiempos Verbales](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/tiempos_espanol.html).
+
       * a. Lee la teoria en las notas que encontraras en el fichero de arriba
       * b. Haz los ejercicios que vas a encontrar [aqui](https://www.dropbox.com/scl/fi/t1bfadja7fd8g68c8h7ef/Ejercicios_Uso_de_tiempos.pdf?rlkey=0e0bsv2wogcc44q13vo13fun0&st=c6k4u05k&dl=0)
       * c. Vuelve a [las notas](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/tiempos_espanol.html) y intenta el quiz que vas a encontrar en el ultimo tab.
 
    * Dia 3: Repaso de condicional. Hoy trabajaremos con el uso de modo condicional. Cuando utilizamos el condicional simple y cuando el compuesto? Cuales son los tres modos principales de oraciones condicionales? Puedes revisar las reglas y practicar aqui :point_right: [Uso de Condicional](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/condicional_espanol.html). La idea sigue igual.
+
       * a. Lee la teoria en las notas que encontraras en el [fichero de arriba](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/condicional_espanol.html)
       * b. Haz los ejercicios que vas a encontrar [aqui]([RepasoGramatica/Ejercicios_Uso_de_condicional.pdf](https://www.dropbox.com/scl/fi/xhd1ebm3cs7nsx1kgla68/Ejercicios_Uso_de_condicional.pdf?rlkey=gl1zeedfg5y5kwaz4k3xfxsnx&st=wo0gjarb&dl=0))
-      * c. Vuelve a [las notas](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/condicional_espanol.html) y intenta el quiz que vas a encontrar en el ultimo tab.  
-  
+      * c. Vuelve a [las notas](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/condicional_espanol.html) y intenta el quiz que vas a encontrar en el ultimo tab.
+
    * Dia 4: Repaso de Subjuntivo. Hoy trabajaremos con el uso de modo subjuntivo. Cuando utilizamos el subjuntivo y cuando el indicativo? Cuales son los tres modos principales de oraciones condicionales? Puedes revisar las reglas y practicar aqui :point_right: [Uso de Subjuntivo](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/el_subjuntivo_espanol.html). La idea sigue igual.
+
       * a. Lee la teoria en las notas que encontraras en el [fichero de arriba](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/el_subjuntivo_espanol.html)
       * b. Haz los ejercicios que vas a encontrar [aqui](https://www.dropbox.com/scl/fi/4uxsewhkgphg6un1w7rfl/Ejercicios_Uso_de_subjuntivo.pdf?rlkey=vdtb5dr64so7uiquzik6x0duf&st=hsjxlgej&dl=0)
       * c. Vuelve a [las notas](https://christoforos-nikolaou.github.io/SpanishClassWeb/RepasoGramatica/subjuntivo_espanol.html) y intenta el quiz que vas a encontrar en el ultimo tab.
