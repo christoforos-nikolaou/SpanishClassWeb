@@ -2,6 +2,16 @@
 
 ---
 
+#### octubre 2026
+
+Todo el mes se dedicara en simulaciones de examenes y ejercicios para fomentar la expresion oral y escrita.
+
+Puedes encontrar mas:
+
+1. Vocabulario, conectores, frases utiles para tus ensayos y cartas en este enlace de [Notas de Expresion Escrita]()
+
+---
+
 #### septiembre 2026
 
 ---
